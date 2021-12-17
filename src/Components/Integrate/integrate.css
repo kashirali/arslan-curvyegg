@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+
+@font-face {
+    font-family: muliRegular;
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+
+
+@font-face {
+	font-family: 'gothic';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+
+
+.integrate_top{
+    width:100% ;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+   
+}
+
+.dsflex{
+    display:grid;
+    grid-template-columns: 70% 30%;
+  
+}
+
+
+.integrate_main_head{
+font-family: gothic;
+color: #446beb;
+font-size: 50px;
+font-weight: bold;
+width: 50%;
+
+}
+
+.integrate_main_para{
+    font-family: muliRegular;
+    width: 78%;
+color: #6b7c93;
+font-size: 17px;
+font-weight: 700;
+line-height: 27px;
+text-align: justify;
+margin:40px 0px 20px 0px;
+
+}
+.integrate_para{
+    font-family: muliRegular;
+font-size: 17px;
+font-weight: 700;
+color: #6b7c93;
+
+}
+.integrate_para span{
+    color:#446beb;
+}
+.integrate_img{
+    margin-top: -160px;
+}
+.sec_half{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .dsflex{
+        
+        overflow:hidden;
+        grid-template-columns: 60% 40%;
+        grid-gap: 15px;
+    }
+
+    .integrate_main_head{
+        width: 99%;
+        font-size: 36px;
+        text-align: center;
+        margin-top:80px;
+    }
+   .sec_half{
+       width: 100%;
+   }
+    .integrate_img{
+        margin-top: 0;
+        width: 95%;
+    }
+    
+    .integrate_main_head{
+        font-family: gothic;
+        color: #446beb;
+        font-size: 34px;
+        font-weight: bold;
+        width: 100%;
+        
+        }
+        
+        .integrate_main_para{
+           
+            width: 100%;
+        color: #6b7c93;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 27px;
+        text-align: justify;
+        margin:40px 0px 20px 0px;
+        
+        }
+   
+}

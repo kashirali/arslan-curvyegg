@@ -1,0 +1,101 @@
+
+
+@font-face {
+    font-family: muliRegular;
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+
+
+@font-face {
+	font-family: 'gothic';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+@font-face {
+	font-family: 'gothic-sub';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+
+.btngroup{
+    background:white;
+    padding:15px 35px 20px 35px;
+box-shadow: 0px 8px  rgba(167, 167, 167, 0.25);
+border:1px solid lightgrey;
+font-family: muliRegular;
+font-size: 18px;
+font-weight: 700;
+cursor:pointer;
+}
+.btn1{
+    border-top-left-radius: 15px;
+}
+.btn_clicked{
+    box-shadow: 0px 8px  #446beb;
+}
+.btn3{
+    border-top-right-radius: 15px;
+}
+.somethingText{
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: muliRegular;
+    /* font-weight: 700; */
+    color:#58595b;
+}
+.termhead{
+    font-size: 58px;
+    font-family: muliRegular;
+    color:#446beb;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.para_text{
+    color:#6b7c93;
+    font-size: 18px;
+    font-family: muliRegular;
+}
+.submitbtn{
+    
+    margin-left: 10px;
+    margin:30px 0 140px 10px;
+}
+.submitbtn button{
+    padding:10px 60px;
+    margin:0px 20px;
+    outline:none;
+    border:0;
+    border-radius: 2px;
+    font-family: muliRegular;
+}
+.btnone{
+    background:#dfe5fb;
+    color:#446beb;
+    
+}
+.btntwo{
+    background:#446beb;
+    color:white;
+}
+
+@media only screen and (max-width: 992px) {
+    .btngroup{
+        padding:10px 20px 10px 20px;
+    font-size: 16px;
+   
+    }
+    .somethingText{
+        margin-top: 24px;
+        font-size: 22px;
+     
+    }
+    .termhead{
+        font-size: 50px;
+     
+        margin-bottom: 25px;
+    }
+    
+}

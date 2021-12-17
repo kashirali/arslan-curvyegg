@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: muliRegular;
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+
+
+@font-face {
+	font-family: 'gothic';
+	src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
+}
+@font-face {
+	font-family: 'gothic-sub';
+	src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
+}
+
+
+
+
+.glanceCard{
+    width: 218px;
+    max-width: 218px;
+    padding:20px;
+    height: 300px;
+    border-radius: 25px;
+
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+cursor:pointer;
+
+}
+.glancecardImg{
+    margin-top: 30%;
+    margin-bottom:30% ;
+}
+.glanceCard_nactive{
+    background-color: #0a021d;
+    transition: background-color 0.1s linear;
+}
+.glanceCard_active{
+    background-color: #446beb;
+    transition: background-color 0.1s linear;
+    box-shadow: 0px 0px 25.2px 4.8px rgba(0, 0, 0, 0.27);
+
+
+}
+.glancecardtext{
+    text-align: center;
+    font-family: gothic;
+color: #ffffff;
+font-size: 30px;
+font-weight: 700;
+line-height: 26px;
+
+}
+@media only screen and (max-width: 992px) {
+    .glanceCard{
+        max-width: 98px ;
+        height:150px;
+    }
+    .glancecardtext{
+        font-size: 14px;
+    }
+    .glancecardImg{
+        width: 45px;
+        margin-bottom: 12px;
+    }
+}

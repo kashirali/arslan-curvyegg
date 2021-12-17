@@ -1,0 +1,241 @@
+
+@font-face {
+    font-family: muliRegular;
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+@font-face {
+	font-family: 'gothic';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+@font-face {
+	font-family: 'gothic-sub';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+.footer_top{
+    min-height:630px;
+    width: 100%;
+    background-color: #191919;
+    position:'relative';
+    top:276px;
+    border:1px solid black;
+}
+.onlyFooter_top{
+    
+    min-height:450px;
+    width: 100%;
+    background-color: #191919;
+    padding:100px 30px 30px 30px;
+}
+.footer_img_hide{
+    display:none;
+}
+.footer_img_show{
+    display:block;
+}
+.main_content{
+    margin-top: 276px;
+
+
+}
+
+
+.flex{
+    display:flex;
+    border-bottom:1px solid grey;
+    
+}
+.flex .logo{
+    margin-right: 100px;
+    margin-left:70px;
+}
+
+.grid,.only_grid{
+    width: 100%;
+    padding-bottom: 30px;;
+   
+    display:grid;
+    grid-template-columns: auto auto auto auto ;
+
+  
+}
+
+.grid >div .logo,.only_grid >div .logo{
+   
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid div h4,.only_grid div h4{
+    font-family: muliRegular;
+color: #ffffff;
+font-size: 20px;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 20px;
+
+
+}
+.only_grid div h4{
+    font-family: muliRegular;
+color: #ffffff;
+font-size: 20px;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 20px;
+
+
+}
+.grid div ul{
+    display:flex;
+    flex-direction: column;
+  
+    padding-left: 0;
+    
+}
+.only_grid div ul{
+    display:flex;
+    flex-direction: column;
+    padding-left: 0;
+    
+}
+.grid div ul li{
+    list-style: none;
+    font-family: muliRegular;
+color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+margin-bottom: 10px;
+}
+.only_grid div ul li{
+    list-style: none;
+    font-family: muliRegular;
+color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+margin-bottom: 10px;
+}
+.two-grid{
+    width: 90%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    font-family: muliRegular;
+}
+.two-grid div ul{
+    display:flex;
+    flex-direction: row;
+   margin-top: 20px;
+    padding-left: 0;
+}
+.two-grid div ul li{
+    list-style: none;
+    margin-right: 30px;
+    font-family: muliRegular;
+    color: #ffffff;
+    font-size: 13px;
+}
+.logo{
+    margin-right: 50px;
+}
+ul li .link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.only_footer_img_hide{
+    display: none;
+}
+@media only screen and (max-width: 992px) {
+    
+    .footer_top{
+       
+        overflow: hidden;
+    }
+    .onlyFooter_top{
+        position: relative;
+        height: auto;
+        width: 100%;
+       
+    }
+    .flex{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:370px;
+        border-bottom: 0;
+    }
+   .footer_img_hide{
+       display:block;
+      
+       position:absolute;
+       top:50px;
+       width:100%;
+       margin:20px auto 0px auto;
+       display:flex;
+       justify-content: center;
+       padding-bottom: 30px;
+       border-bottom:1px solid grey;
+   }
+   .only_footer_img_hide{
+    display:block;
+   
+    position:absolute;
+    /* top:200px; */
+    width:85%;
+    
+    /* margin:20px auto; */
+    display:flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom:1px solid grey;
+}
+   
+   .footer_img_show{
+       display:none;
+   }
+    .grid{
+      
+        margin:-90px 0px 20px 0px;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto ;
+        justify-content: space-around;
+        
+    
+
+    }
+    .only_grid{
+        
+        margin:-150px 0px 40px 0px;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto ;
+        justify-content: space-around;
+        
+    
+
+    }
+    .grid div ul li,.only_grid div ul li{
+     
+    margin-bottom: 15px;
+    }
+    .two-grid{
+        grid-template-columns: auto;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+    .two-grid div ul{
+        justify-content: center;
+       
+    }
+    .two-grid div ul li .link{
+        font-size: 12px;
+    }
+}

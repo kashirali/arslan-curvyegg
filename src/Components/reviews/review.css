@@ -1,0 +1,127 @@
+.main_hold
+{
+    width: 100%;
+    width: 100%;
+    min-height: 200px;
+    margin: 1%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+
+}
+.review_card
+{
+    padding: 2%;
+}
+
+.review_data
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(56, 49, 49, 0.4);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 4px 40px -6px rgba(0,0,0,0.54);
+    display: grid;
+    align-items: center;
+    grid-template-areas: "pic pic auth auth"
+                          "pic pic para para"
+                          "pic pic para para";
+}
+.picture
+{    
+    padding: 5%;
+    grid-area:pic;
+    align-self: center;
+}
+.container_img
+{
+    width: 100%;
+    padding: 5%;
+    border-radius: 25px;
+    border: 1px solid black;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.author
+{
+    grid-area: auth;
+    padding-top: 1%;
+    
+}
+.para
+{
+    grid-area: para;
+    width: 100%;
+    padding: 1%;
+
+}
+
+.auth_head
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #446beb;
+}
+.auth_name
+{
+    color: rgba(0,0,0,0.54);
+    
+}
+.main_img_card
+{
+    width: 100%;
+    height:auto;
+}
+
+.card_data
+{
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-bottom: 1%;
+}
+
+.image
+{
+    padding: 5%;
+}
+
+.case
+{
+    padding: 1%;
+    margin: 1%;
+}
+.sigh
+{
+    width: 100%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 992px)
+{
+    .main_hold
+    {
+        display: block;
+        margin-bottom: 26%;
+    }
+    .card_data
+    {
+        flex-direction: column;
+    }
+    .ratched
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .sigh
+    {
+        text-align: center;
+    }
+}

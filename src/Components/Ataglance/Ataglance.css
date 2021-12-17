@@ -1,0 +1,188 @@
+
+
+@font-face {
+    font-family: muliRegular;
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+@font-face {
+	font-family: 'gothic';
+	src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
+}
+@font-face {
+	font-family: 'gothic-sub';
+	src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
+}
+@font-face {
+    font-family: binx;
+    src: url(../WeHave/Binx.ttf);
+}
+
+.glancetext{
+    font-family: gothic;
+}
+.glancesubtext{
+    font-family: gothic;
+}
+.icon-container {
+    padding: 10px;
+    float: left;
+    cursor: pointer;
+}
+.glance_top{
+      
+    margin-top: 100px;
+    margin-bottom: 50px;
+ 
+}
+[class*="eicon-"] {
+    display: block;
+}
+[class*="eicon-"]:before {
+    content: '';
+    display: block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+}
+
+.svgText_main{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding:10px;
+
+}
+.svgText_main >div{
+    display:flex;
+    flex-direction: column;
+   
+    align-items: center;
+    
+    
+} 
+.svgText_main >div >div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.info_card{
+    width:80%;
+    margin:0 auto;
+   position: relative;
+    margin-bottom: 100px;
+ 
+
+}
+.info_card span{
+    
+    color: #1b1b1b;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 2.4em;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-right:2px solid black;
+}
+.flexd{
+    margin-top: 30px;
+}
+.glanceinside{
+    font-family: binx;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    width: 10%;
+  margin:0 auto;
+  right:0;
+  bottom:0px;
+    
+}
+.sellsol_main_para span{
+    color:#446beb;
+}
+@media only screen and (max-width: 992px) {
+    .flexd{
+        display:flex;
+        align-items:flex-start;
+    }
+    .svgText_main{
+        display: flex;
+        flex-direction: column;
+    }
+    .svgText_main div {
+        
+        flex-direction: row;
+        
+    }
+    .svgText_main div >*>img{
+       width:50px;
+    }
+    .svgText_main div{
+       
+        width:100px;
+        margin-right: 10px;
+       
+    }
+    .svgText_main > div{
+        margin-bottom: 80px;
+    }
+    .svgText_main div div h5{
+       
+        font-size: 15.0px;
+    }
+    
+    .svgText_main div i{
+        margin-left: 0px;
+        margin-right: 10px;
+        transform:rotate(90deg)
+    }
+    
+    .info_card{
+        background:white;
+        padding:10px 15px ;
+        border-radius: 15px;
+background-color: #ffffff;
+box-shadow: 0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25);
+padding-bottom: 30px;
+margin-right: 10px;
+
+
+    }
+    .info_card span{
+        font-size: 16px;
+        border:0;
+        display:block;
+        margin-bottom: -15px;
+        font-weight: 400;
+        
+      
+    }
+    .info_card span:last-child{
+        margin-bottom: 10px;
+    }
+    .glanceinside{
+       
+        width: 75%;
+        bottom:5px;
+      
+    }
+    .sellsol_main_head{
+        font-size: 32px;
+        
+    }
+    .sellsol_main_para{
+        font-size: 15.5px;
+        
+        margin-left: 0;
+
+    }
+}

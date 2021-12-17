@@ -1,0 +1,173 @@
+
+@font-face {
+    font-family: 'muliRegular';
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+@font-face {
+	font-family: 'gothic';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+@font-face {
+	font-family: 'gothic-sub';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+
+.eggLogo{
+    width:58px; height:86px;
+}
+.urvyegg{
+font-family: gothic;
+color: #446beb;
+font-size: 5.2em;
+font-weight: bold;
+
+
+}
+.subHeading{
+    font-family: gothic;
+    letter-spacing: 0.01em;
+font-weight: bold;
+color: #3c4658;
+font-size: 2.4em;
+margin:0px 0px 25px 0px;
+
+}
+.paragraph{
+    font-family:muliRegular;
+font-size: 1.25em;
+line-height: 26px;
+color: #6b7c93;
+width: 88%;
+font-weight: 400;
+text-align: justify;
+
+
+}
+
+.borders, .borders *{
+    border:1px solid black
+}
+.showcase_main{
+    display: grid;
+    grid-template-columns: 55% auto;
+    width:100%;
+    min-height:480px;
+   
+}
+.left_section{
+  
+  /* min-height: 480px; */
+  height: 410px;
+  padding:20px;
+    
+}
+.right_section{
+    
+    z-index: 3;
+    margin: auto;
+
+}
+.lady{
+    margin-top:65px;margin-left:20px;
+}
+.right_section:hover{
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+   
+}
+.showcase_bottom{
+    position:absolute;
+    bottom: 1px;
+    left:0px;
+}
+.mob_sprinkle{
+    display:none;
+}
+@media only screen and (max-width: 992px) {
+
+.showcase_main{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin:0 auto;
+    margin-top: 70px;
+    text-align: center;
+
+}
+.mob_sprinkle{
+    display:block;
+    width:140px;
+    position:absolute
+}
+.mob_sprinkle:first-child{
+    left:-75px;
+}
+.mob_sprinkle:nth-child(2){
+    right:-75px;
+    top:150px;
+}
+/* .urvyegg{
+    
+    font-size: 2.7em;
+    font-weight: 700;
+    
+    } */
+
+    .eggLogo{
+        width:48px; 
+        height: 80px;
+    }
+    .urvyegg{
+    font-family: gothic;
+    color: #446beb;
+    font-size: 4.2em;
+    font-weight: bold;
+    
+    
+    }
+    .subHeading{
+        
+    font-size: 1.57em;
+    font-family: gothic;
+    font-weight: bold;
+    margin:100px 0px 20px;
+    
+    }
+    .paragraph{
+        font-family: muliRegular;
+    width: 100%;
+    margin:0 auto;
+    font-size: 0.85em;
+    margin-bottom: 50px;
+    text-align: center;
+    
+    
+    
+    }
+.left_section{
+    width: 100%;
+    height:fit-content;
+    text-align: center;
+    
+    align-items:flex-start
+}
+.left_section div{
+    justify-content: center;
+}
+
+.lady{
+   
+    width: 100%;
+    margin: 0 auto;
+
+}
+.showcase_bottom{
+    margin-left: -480px;
+    width:250%;
+}
+}

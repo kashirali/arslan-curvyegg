@@ -1,0 +1,34 @@
+.blog_card_head{
+    font-family: muliRegular !important;
+    font-size: 17px !important;
+    color:#6b7c93;
+    font-weight: bold;
+    
+}
+.blog_card_para{
+    font-family: muliRegular !important;
+    font-size: 22px !important;
+    color:black !important;
+    font-weight: bold !important;
+}
+.blog_card_text{
+    font-family: muliRegular !important;
+    font-size: 17px !important;
+    color:black !important;
+
+}
+@media only screen and (max-width: 992px) {
+    .blog_card_head{
+        font-size: 12.18px !important;
+        font-weight: bold !important;
+    }
+    .blog_card_para{
+        font-size: 15.76px !important;
+        line-height: 1.3em !important;
+    }
+    .blog_card_text{
+        margin-top: 10px !important;
+        width: 180px;
+        font-size: 12px !important;
+    }
+}

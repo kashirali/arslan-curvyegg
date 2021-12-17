@@ -1,0 +1,145 @@
+
+@font-face {
+    font-family: muliRegular;
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+@font-face {
+	font-family: 'gothic';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+@font-face {
+	font-family: 'gothic-sub';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+
+.bg-gradients{
+    width: 100%;
+min-height: 385px;
+position: relative;
+/* background: url('../../assets/BG.png'); */
+
+
+background: rgb(10,2,29);
+background: linear-gradient(180deg, rgba(10,2,29,1) 41%, rgba(27,19,47,1) 91%);
+
+
+
+
+}
+.dropline{
+    position: absolute;
+    width: 330px;
+}
+.drop{
+    background:white;
+    padding:15px 25px;
+    border-radius: 5px;
+    width: fit-content;
+}
+.drop p{
+    font-family: Binx;
+color: #3c4658;
+font-size: 23px;
+font-weight: 400;
+margin:0;
+
+}
+.dropdiv1{
+    position: absolute;
+    top:125px;
+    right: 100px;
+}
+.dropdiv2{
+    position: absolute;
+    top:265px;
+    right: -10px;
+}
+.left_child{
+    height: 385px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.left_child_head{
+font-family: gothic;
+color: #ffffff;
+font-size: 48px;
+font-weight: 700;
+
+}
+.left_child_subhead{
+    /* font-family: 'Mulish', sans-serif; */
+    font-family: muliRegular;
+color: #ffffff;
+font-size: 17px;
+font-weight: 600;
+width: 80%;
+word-spacing: 0.2em;
+margin:20px 0px 65px 0px;
+
+}
+.left_child_para{
+    /* font-family: 'Mulish', sans-serif; */
+    font-family: muliRegular;
+font-size: 17px;
+font-weight: 600;
+color: #ffffff;
+
+}
+.left_child_para a{
+    text-decoration: none;
+    color:#446beb;
+}
+@media only screen and (max-width: 992px) {
+    .bg-gradients{
+        overflow:hidden;
+    }
+    .cont_mob{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .drop{
+        padding:7px 11px;
+    }
+    .drop p{
+       
+    font-size: 21px;
+    
+    
+    }
+    .dropline{
+        width: 265px;
+    }
+    .dropdiv1{
+        top:108px;
+        right:68px;
+    }
+    .dropdiv2{
+        top:226px;
+        right:20px;
+    }
+    .left_child{
+        margin-bottom: -40px;
+    }
+    .left_child_head{
+        margin-top: -10px;
+        font-size: 40px;
+    }
+    .left_child_para{
+        font-size: 15px;
+    }
+    .left_child_subhead{
+          font-size: 15px;
+    
+    width: 100%;
+    word-spacing: 0.1em;
+    margin:20px 0px 25px 0px;
+    
+    }
+}

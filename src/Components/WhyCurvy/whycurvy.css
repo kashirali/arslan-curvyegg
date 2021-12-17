@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+
+@font-face {
+    font-family: muliRegular;
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+@font-face {
+	font-family: 'gothic';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+@font-face {
+	font-family: 'gothic-sub';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+
+.whycurvy_top{
+    width: 100%;
+    min-height: 893px;
+    position: relative;
+    margin-top: 50px;
+    
+   
+  
+}
+.lady_back{
+    display:none;
+}
+.whycurvy_main_head{
+    font-family: muliRegular;
+font-size: 85.06px;
+font-weight: 700;
+color: #446beb;
+
+
+}
+.main_subhead{
+    font-family: muliRegular;
+color: #446beb;
+font-size: 28.35px;
+font-weight: 600;
+
+
+}
+.main_para{
+    font-family: muliRegular;
+color: #58595b;
+font-size: 16.07px;
+font-weight: bold;
+line-height: 25.517px;
+text-align: justify;
+
+}
+.top_clear{
+    margin-left:60px;margin-top:-90px;
+}
+
+.nopurpose >div{
+    font-family: muliRegular;
+    color: #446beb;
+    font-size: 22px;
+    font-weight: 600;
+    
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e5e5eb;
+    cursor: pointer;
+    
+}
+.nopurpose >p{
+    margin-top: 20px;
+   
+}
+.nopurpose p:last-child{
+    border:0;
+}
+.showtab{
+    
+height: 152px;
+    
+    transition:all 0.3s ease-in-out;
+
+ 
+}
+.hidetab{
+    height: 0;
+
+    transition: all 0.3s ease-in-out;
+    
+}
+
+@media only screen and (max-width: 992px) {
+    
+    .whycurvy_top{
+        width:100%;
+        margin:0 auto;
+       }
+    .lady_back{
+        display:block;
+        position: absolute;
+        bottom:0;
+        width: 100%;
+        z-index: -1;
+    }
+   
+    .whycurvy_top>img{
+        display:none;
+    }
+   
+    .top_clear{
+   
+        margin:80px auto;
+      
+    }
+    .dflex{
+        display:flex;
+
+    }
+    .whycurvy_main_head{
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .main_subhead{
+        font-size: 24px;
+    }
+    .main_para{
+        font-size: 14px;
+       
+    }
+    .tab_main > p{
+        font-size: 24px;
+        font-family: muliRegular;
+    }
+    .nopurpose .tab_main >div p{
+      
+        font-size: 14px;
+    }
+   
+}

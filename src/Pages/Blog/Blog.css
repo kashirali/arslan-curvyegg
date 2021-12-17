@@ -1,0 +1,456 @@
+@font-face {
+  font-family: muliRegular;
+  src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+  font-family: gothic700;
+  src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
+
+@font-face {
+font-family: 'gothic';
+src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
+}
+@font-face {
+font-family: 'gothic-sub';
+src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
+}
+
+
+.main_blog_heaed{
+  font-family: gothic;
+  font-size: 50px;
+  color:#446beb;
+  font-weight: bold;
+}
+#blog_hd{
+    text-align: center;
+      }
+  
+#med_inp{
+    display:flex;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding-right:40px;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-top:5px;
+    padding-bottom: 5px;
+  
+  }
+  .search_inp{
+      padding-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  .blog_search{
+    font-size: 18px;
+    color:#446beb;
+  }
+  #search-id:focus{
+    border:none;
+    box-shadow: none;
+  }
+  #search-id::placeholder{
+    font-size:1.5em;
+  }
+  #search-id{
+    box-shadow: none;
+    border:0px;
+ 
+  }
+
+  .dropdown #dropdown{
+      background: none;
+     
+  }
+  #dropdownMenuButton{
+ color:#6b7c93;
+      font-size: 25px;
+      font-family: muliRegular;
+  }
+  .blog_p{
+    width: 80%;
+    margin:30px auto 0px auto;
+    text-align: center;
+    color:black;
+    font-size: 17px;
+    font-family: muliRegular;
+    
+  }
+  .tester
+  {
+    width: 100%;
+    overflow:scroll;
+  }
+  .blogthreecards{
+    display: flex;
+      margin-top: 50px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid lightgray;
+  }
+  .blogthreecards > *:not(:last-child){
+    margin-right: 30px;
+  }
+  .blog_section_3{
+      margin-top: 10px;
+      margin-bottom: 50px;
+      min-height: 300px;
+  }
+  .blog_nav ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .blog_nav ul li a{
+        text-decoration: none;
+        font-size: 25px;
+        font-family: muliRegular;
+        font-weight: bold;
+        color:#6b7c93;
+  }
+  .blog_nav_active{
+    color: #446beb !important;
+    padding-bottom:10px;
+    border-bottom:2px solid #446beb;
+  }
+ 
+
+  .blog-left-1{
+      float: left;
+      width: 50%;
+      margin-bottom: 10px;
+     
+      
+  }
+  .blog-left-1 p{
+    font-size: 18px !important;
+    font-family: muliRegular;
+    font-weight: bold;
+    color:black;
+  }
+  .blog-right{
+      float:right;
+      width: 50%;
+      padding-left: 50px;
+     
+  }
+  .blog-right img{
+      width: 100% !important;
+    
+  }
+  .blog-left-2{
+      float:left;
+      width: 45%;
+  }
+  .blog-left-2 p{
+    font-size: 17px;
+    font-family: muliRegular;
+    color:black;
+  }
+  .avatar_div{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  #hd{
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: muliRegular;
+    font-weight: bold;
+    color:black;
+    
+   
+  }
+  .div_hd {
+    
+    border-left: 6px solid #446beb;
+    /* height: 50px; */
+    margin-bottom: 70px;
+    padding-left: 15px;
+    margin-top: 150px;
+  }
+
+  .div_hd_inner p:first-child{
+      font-size: 18px;
+      font-family: muliRegular;
+      font-weight: bold;
+      color:black;
+  }
+  .div_hd_inner p:last-child{
+    font-size: 17px;
+    font-family: muliRegular;
+    color:black;
+  }
+  .div_hd h1{
+    font-size: 50px;
+    font-family: gothic;
+    font-weight: bold;
+    color:#3c4658;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+  }
+  
+  
+  #hd2{
+    margin-left: 20px;
+    margin-top: 20px;
+   
+  }
+  .p_inp{
+    margin-top: 70px;
+    display:flex;
+   
+    background-color: #e0ecfc;
+    align-items: center;
+    min-height:130px ;
+  }
+ 
+  #email_inp{
+    margin-top: 20px;
+    border-radius: 25px;
+    width:270px;
+    padding:15px 20px;
+    border:1px solid lightgray;
+   
+    
+  }
+  #email_inp::placeholder{
+      color:darkgray;
+  }
+  #email_inp:focus{
+      border:1px solid darkgray !important;
+  }
+  #med_par{
+      margin-top: 10px;
+    width: 90%;
+    font-size: 18px;
+    font-family: muliRegular;
+    font-weight: bold;
+    color:#446beb;
+    line-height: 2em;
+  }
+
+  #submit_btn{
+    border-radius: 25px;
+    width:120px;
+        margin-left: 20px;
+        padding:15px 10px;
+        width: 150px;
+        color:white;
+        background:#446beb;
+        border:none;
+        font-size: 17px;
+        font-family: muliRegular;
+    
+  }
+  .blog_section_6{
+    margin: 50px 0px;
+  }
+  .blog_section_6 div h2{
+    font-size: 35px;
+    font-family: muliRegular;
+    font-weight: bold;
+    color:#3c4658;
+  }
+  .section_6_separator{
+        min-height: 400px;
+  }
+  .section_6_left{
+      width: 50%;
+      float:left;
+  }
+  .section_6_right{
+      width: 45%;
+      float:right;
+      margin-left: 30px;
+  }
+  .section_6_right p{
+    font-size: 17px;
+    font-family: muliRegular;
+    font-weight: 400;
+    color:black;
+  }
+  .blog_section_6 .avatar_div{
+    margin-top:20px 0px;
+  }
+  .bbadge{
+    border-radius: 2px;
+    border:1px solid #e0ecfc;
+    padding:3px 15px;
+    margin-left: 10px;
+    color:#6b7c93;
+
+  }
+   
+  @media (max-width: 992px) {
+    
+    .main_blog_heaed{
+      font-size: 35.82px;
+
+    }
+    .blogthreecards
+    {
+      width: 200%;
+    }
+    .blog_p{
+      width: 100%;
+      font-size: 15px;
+     
+    }
+    #med_inp{
+      padding-top: 2;
+      padding-bottom: 2;
+      padding-right:0;
+    }
+    .search_inp{
+    
+      padding-left: 10px;
+
+    }
+    #search-id{
+      font-size: 15px;
+      font-family: muliRegular;
+    }
+    #search-id::placeholder{
+      font-size: 15px;
+      font-family: muliRegular;
+    }
+    #dropdownMenuButton{
+      font-size: 15px;
+    }
+    .mobwidth{
+      width: 95% !important;
+      margin:0 auto;
+    }
+    .mobwidth:first-child{
+      margin-bottom: 40px;
+    }
+     .blog_nav ul{
+     
+       width: 90%;
+       margin: 0 auto;
+       padding-left: 0;
+
+     }
+     .blog_nav ul li a{
+       font-size: 20px;
+     }
+     .blog-left-1{
+       float:none;
+       width: 100%;
+       margin-top:35px;
+     }
+     .blog-left-1 p{
+       font-size: 12px !important;
+       line-height: 1.6em;
+     }
+     .blog-right{
+       float:none;
+       width: 100%;
+       padding-left: 0;
+       margin-top: 30px;
+     }
+     .blog-left-2{
+       float: none;
+       width: 100%;
+       margin-top:30px;
+     }
+     .blog-left-2 p{
+       font-size: 14px;
+     }
+     #hd{
+       font-size: 15px;
+     }
+     .div_hd{
+       margin-top: 80px;
+     }
+     .div_hd h1{
+
+       font-size: 40px;
+     }
+     .overflowimg img{
+       width: 100%;
+     }
+     .marginremove{
+       margin-top: 20px !important;
+     }
+     .div_hd_inner p:first-child{
+       font-size: 18px;
+       margin-top: 20px;
+       color:black;
+     
+     }
+     .div_hd_inner p:last-child{
+      font-size: 14px;
+      color:black;
+      text-align: justify;
+    
+    }
+    
+    #med_par{
+      margin-top: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+    }
+    .inp_btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      margin-left: -10px;
+    }
+    #email_inp{
+      margin-top: 0;
+      width: 180px;
+      padding:8px 15px
+    }
+    #submit_btn{
+      padding:7px 15px;
+      width:100px;
+    }
+    .supp_hd h2 {
+      font-size: 30px!important;
+      margin-bottom: 20px;
+      
+    }
+    .blog_section_6 .avatar_div{
+      margin-bottom: 20px;
+    }
+    .section_6_separator{
+      width: 100%;
+      height: 420px !important;
+      font-size: 15px;
+      padding:2px 8px;
+
+    }
+    .blog_section_6{
+     
+      margin-bottom: 50px;
+    }
+    .section_6_separator img{
+      width: 98%;
+      padding-right:3px;
+    }
+    
+    .section_6_right p{
+      font-size:15px;
+
+    }
+    .mobmargin{
+      margin-top: 170px;
+    }
+
+   }
+  
+  

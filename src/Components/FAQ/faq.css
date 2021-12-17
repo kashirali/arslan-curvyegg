@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+
+.FAQ_top{
+    width: 100%;
+    min-height:856px;
+    position:relative;
+    margin-top: 100px;
+ 
+
+}
+
+.FAQ_main_head{
+    
+color: #446beb;
+font-size: 50px;
+font-weight: 700;
+text-align: center;
+margin-bottom: 60px;
+
+}
+
+.FAQ_main_subhead{
+    font-family: 'Mulish', sans-serif;
+color: #446beb;
+font-size: 25px;
+font-weight: 600;
+
+
+}
+.FAQ_main_para{
+    font-family: 'Mulish', sans-serif;
+color: #58595b;
+font-size: 17px;
+font-weight: 400;
+line-height: 27px;
+text-align: justify;
+margin:15px 0px 20px 0px;
+
+}
+.img2{
+    position:absolute;top:400px;z-index:-2;right:0 ;width:294px ;height:326px;
+}
+
+@media only screen and (max-width: 992px) {
+    .FAQ_top{
+        margin-top: 80px;
+        overflow: hidden;
+        min-height: 856;
+    }
+    .FAQ_main_head{
+        font-size: 28px;
+    }
+    .FAQ_main_subhead{
+        font-size: 22px;
+    }
+    .FAQ_main_para{
+        font-size: 16px;
+    }
+    .nopurpose p{
+        font-size: 18.5px;
+        margin-bottom: 10px;
+
+    }
+   
+    .img1{
+        left:-90px;
+        width:200px;
+        height:240px;
+        
+    }
+    .img2{
+        width:200px;
+        height:240px;
+        top:300px;
+        right:   -100px;
+    }
+}
