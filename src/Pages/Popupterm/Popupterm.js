@@ -19,12 +19,12 @@ function PopupTerms() {
         <button className="btn btn-primary" onClick = {CloseButtoner}>X</button>
         </div>
         
-    <div className="container">
+    <div className="container mt-0">
           <div class="row" id="row-margin">
       <div class="col-sm-12 col-md-6" id="main1">
         <div style={{width:'75%',margin:'0 40px 0 0',paddingLeft:'90px'}}>
         <div class="main1">
-        <p id="par-top">A change in Our Terms</p>
+        <p id="par-top">A change in<br /> Our Terms</p>
     
         </div>
     
@@ -37,7 +37,7 @@ function PopupTerms() {
   <button type="button" class="btn btn-primary" id="btn1">Accept new terms</button>
   <button type="button" class="btn btn-light" id="btn2">Continue with old terms</button>
   </div>      
-        </div>
+    </div>
     
    
    </div>

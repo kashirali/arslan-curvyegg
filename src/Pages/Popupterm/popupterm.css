@@ -16,7 +16,8 @@
 	font-family: 'gothic-sub';
 	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
 }
-.popupterms{
+.popupterms
+  {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -26,11 +27,6 @@
     position: absolute;
     top:0;
     left: 0;
-  }
-
-  .imager
-  {
-  
   }
   .quote1
   {
@@ -58,14 +54,20 @@
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3em;
+    aspect-ratio: 1/1;
+    width: 4%;
+  }
+  .main2
+  {
+    margin-top: -8%;
+    background-image: url('../../assets/Terms\ -\ Down\ Arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 9%;
+    background-position: 40% 57%; 
   }
   .popuptermscenter{
     min-width: 80vw;
     min-height: 500px;
-    background-image: url('../../assets/Terms\ -\ Down\ Arrow.svg');
-    background-repeat: no-repeat;
-    background-position: 70% 57%; 
-    background-size: 4.5%;
     background-color: white;
     z-index: 2;
     position: absolute;
@@ -77,6 +79,7 @@
    font-size: 44px;
    font-weight: bold;
    color:#446beb;
+   margin: 0;
   }
   
   #row-margin{
@@ -205,7 +208,10 @@
        font-family: muliRegular;
        font-size: 20px;
     }
-  
+    .main1
+    {
+      margin-top: -29%;
+    }
     @media screen and (max-width: 992px) {
       
       .popupterms{
@@ -220,12 +226,10 @@
        
       
       }    
-      
       .popuptermscenter{
             min-width: 100vw;
             min-height: 90vh; 
-            margin-top: 310px; 
-            border:1px solid red;       
+            margin-top: 310px;  
           }
         
           #main1 >div{
@@ -282,7 +286,7 @@
       flex-direction: column;
       height:130px;
       width:290px;
-      margin-left:30px;
+      margin-left: 22%;
      }
      .q_link{
        margin-top:-20px; 
@@ -302,19 +306,27 @@
       bottom: 1.5rem;
     }
     blockquote{
-      font-size: 14px;
+      font-size: 2vw;
     }
-
-    .popuptermscenter
+    .popclosebut
     {
-      background-image: url('../../assets/Terms\ -\ Down\ Arrow.svg');
-    background-repeat: no-repeat;
-    background-position: 70% 50%; 
-    background-size: 5%;
-    background-color: white;
-
+      justify-content: flex-end;
     }
-     
+    .popclosebut button
+    {
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1.3em;
+      padding: 1%;
+      width: 5%;
+      aspect-ratio: 1/1;
+    }
+
+    .main2
+    {
+      background-size: 9%;
+      background-position: 45% 40%; 
+    }
     }
   
   

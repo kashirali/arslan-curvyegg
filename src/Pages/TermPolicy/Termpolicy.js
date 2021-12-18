@@ -10,8 +10,10 @@ import PopupTerms from '../Popupterm/Popupterm'
 
 export function vakanda()
 {
+    if(window.innerWidth > 992)
+    {
     const marfa = document.getElementsByTagName('body');
-    marfa[0].style = "overflow:hidden;"
+    marfa[0].style = "overflow:hidden;"}
 
 }
 function Termpolicy() {
