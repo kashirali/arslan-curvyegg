@@ -1,0 +1,64 @@
+.c-form{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background: #e8e8e8;
+    margin-top:10px;
+    margin-left: 100px;
+    padding: 20px  0;
+    position: relative;
+    min-height: 1px;
+    padding: 20px 0;
+    width:550px;
+}
+._form-part{
+    text-align: center;
+}
+.f1{
+    margin-top: 55px;
+}
+.btn-demo{
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #5087c7;
+    font-family: "segoe_light";
+    border:none;
+}
+
+
+@media screen and (max-width: 992px) {
+.c-form{
+    border:1px solid red;
+  margin-left:-30px;
+}
+
+.text-area{
+    width:330px;
+    margin-left:30px;
+}
+
+._form-part{
+ margin-left: -130px;;
+}
+.btn-demo{
+    margin-left: -130px;;
+}
+#recaptc{
+    margin-left: -130px;;
+}
+
+
+}
+
+@media screen and (min-width: 500px){
+    .text-area{
+        width:375px;
+        margin-left:30px;
+    }
+}
+

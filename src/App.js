@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Register from './Pages/Register/Register';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       
          <Routes>
          <Route path="/glance/:id" element={<Glance />}/>
+         <Route path="/signup" element={<Register/>}/>
          <Route path = "/blog" element={<Blog />}/>
          <Route path="/support" element={<Support />}/>
          <Route path="/term" element={<Termpolicy/>}/>
