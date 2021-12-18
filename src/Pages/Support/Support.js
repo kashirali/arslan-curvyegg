@@ -19,10 +19,12 @@ import liveicon from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SV
 import supp5 from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/Support-5.svg'
 
 import FAQ from '../../Components/FAQ/FAQ'
+import Subform from '../../Components/Subform/Subform'
 
+import {motion} from 'framer-motion'
 
 function Support() {
-
+    const [showsubform,setShowsubform] = useState(false);
     const [support_card_data,setSupport_card_data] = useState([
         {
             icon:supp1,
@@ -56,6 +58,18 @@ function Support() {
     return (
         <div style={{overflow:'hidden'}}>
             <Header color="white"/>
+            {showsubform? <motion.div className='subformonmob' style={{position:'absolute',top:'120px',left:0,width:'100%'}}
+                  animate={{
+                    opacity:1,
+                    scale:1
+                }}
+                initial = {{
+                    opacity:0,
+                    scale:0.5
+                }}
+                >
+                    <Subform/>
+                </motion.div>:null}
                 <div className="support_showcase">
                     <img src={sprinkles} width="195px" className="sprinkleLeft"/>
                     <div className="sprinkleRight"><img src={sprinkles} width="195px"/></div>
@@ -68,7 +82,7 @@ ontent text brand voice exac seven sample text is building solutions. pick some 
 templates, replace the content text brand voice exactly.</p>
                         <div className="follow_div">
                             <span>Follow</span>
-                            <button className="support_showcase_btn">me</button>  
+                            <button onClick={()=>setShowsubform(true)} className="support_showcase_btn">me</button>  
                             <img src={leftarrow} className="support_showcase_img"/>
                         </div>
                     </div>
@@ -89,7 +103,7 @@ templates, replace the content text brand voice exactly.</p>
                             </InputGroup>
                         </div>
                         <div className="row">
-                            <div className="sup port_grid">
+                            <div className="support_grid">
                                 {displayCard}
                             
                             </div>
