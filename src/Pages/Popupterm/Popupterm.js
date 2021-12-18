@@ -49,18 +49,18 @@ function PopupTerms() {
        <div class="quote1">
        <blockquote>Lorem ipsum dolor sit amet,  adipiscinii. elit, sed do eiusmod 
          tempor incididunt ut labore ...</blockquote>
-          <a href="" class="q_link">See more</a>
+          <div className="quotes"><a href="" class="q_link">See more</a></div>
        </div>
          </div>
       
   <div>
-    <div class="imager">
-      <img src={imager} /></div>
+    <div class="imager"></div>
        <p id="par2">New Terms</p>
        <div class="quote1">
        <blockquote>Lorem ipsum dolor sit amet,  adipiscing elit,sed do eiusmod 
          tempor incididunt ut labore ...</blockquote>
-          <a href="" class="q_link">See more</a>
+         <div className="quotes"><a href="" class="q_link">See more</a></div>
+          
        </div>
        <div class="button-design-mobile">
   <button type="button" class="btn btn-primary" id="btn1">Accept new terms</button>

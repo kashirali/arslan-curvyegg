@@ -26,33 +26,26 @@
     position: absolute;
     top:0;
     left: 0;
-  
-  }
-
-  .imager img
-
-  {
-    width: 10%;
-    height: auto;
   }
 
   .imager
   {
-    display: flex;
-    width: 100%;
-    align-items: flex-end;
-    padding-top: 10px;
-    justify-content: center;
+  
   }
   .quote1
   {
+    width: 100%;
     padding: 1%;
+    display: flex;
+    flex-direction: column;
   }
   blockquote
   {
     
     padding: 3% !important;
   }
+
+
   .popclosebut
   {
     display: flex;
@@ -69,8 +62,11 @@
   .popuptermscenter{
     min-width: 80vw;
     min-height: 500px;
-  
-    background: white;
+    background-image: url('../../assets/Terms\ -\ Down\ Arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 70% 57%; 
+    background-size: 4.5%;
+    background-color: white;
     z-index: 2;
     position: absolute;
   
@@ -138,9 +134,8 @@
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     height:120px;
     width:450px;
-    justify-content: center;
-    align-items: center;
-    }
+
+        }
   
     blockquote {
       font-weight: 100;
@@ -179,10 +174,20 @@
       left: -1rem;
       bottom: 1rem;
     }
+    .quotes
+    {
+      display: flex;
+      padding-right: 3%;
+      align-items: flex-start;
+      position: relative;
+      top: -10%;
+      margin-bottom: 2%;
+      justify-content: flex-end;
+    }
     .q_link{
-  float:right;
-  margin-right: 25px;
-  border-bottom: 2px dotted #446beb;
+      
+    padding: 0%; 
+    border-bottom: 2px dotted #446beb;
     }
   
     #par2{
@@ -298,6 +303,16 @@
     }
     blockquote{
       font-size: 14px;
+    }
+
+    .popuptermscenter
+    {
+      background-image: url('../../assets/Terms\ -\ Down\ Arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 70% 50%; 
+    background-size: 5%;
+    background-color: white;
+
     }
      
     }
