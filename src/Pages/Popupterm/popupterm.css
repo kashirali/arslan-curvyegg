@@ -16,7 +16,6 @@
 	font-family: 'gothic-sub';
 	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
 }
-
 .popupterms{
     width: 100%;
     min-height: 100vh;
@@ -28,6 +27,19 @@
     top:0;
     left: 0;
   
+  }
+  .popclosebut
+  {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+  }
+
+  .popclosebut button
+  {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
   }
   .popuptermscenter{
     min-width: 80vw;

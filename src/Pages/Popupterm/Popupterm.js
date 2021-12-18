@@ -1,12 +1,24 @@
 import React from 'react'
+import { CloseButton } from 'react-bootstrap';
 import './popupterm.css'
 
+const CloseButtoner = () => 
+{
+  document.getElementById('mainer_close').style = "display: none;";
+  const lmfa = document.getElementsByTagName('body');
+  lmfa[0].style = "overflow:scroll;"
+
+}
 function PopupTerms() {
 
+
     return (
-      <div className="popupterms">
+      <div className="popupterms" id="mainer_close" onClick = {CloseButtoner}>
         <div className='popuptermscenter'>
-  
+        <div className='popclosebut'>
+        <button className="btn btn-primary" onClick = {CloseButtoner}>X</button>
+        </div>
+        
     <div className="container">
           <div class="row" id="row-margin">
       <div class="col-sm-12 col-md-6" id="main1">

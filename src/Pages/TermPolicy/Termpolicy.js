@@ -7,6 +7,13 @@ import {motion} from 'framer-motion'
 
 import './termpolicy.css'
 import PopupTerms from '../Popupterm/Popupterm'
+
+export function vakanda()
+{
+    const marfa = document.getElementsByTagName('body');
+    marfa[0].style = "overflow:hidden;"
+
+}
 function Termpolicy() {
     let servicetext = (<motion.div className="para_text"
         initial={{opacity:0}}
@@ -76,9 +83,9 @@ function Termpolicy() {
             }
        
     }
-
+    vakanda();
     return (
-        <div>
+        <div className="termPage">
             <Header/>
             <div style={{border:'1px solid red',objectFit:'contain'}}>
 
