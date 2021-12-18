@@ -1,7 +1,7 @@
 import React from 'react'
 import { CloseButton } from 'react-bootstrap';
 import './popupterm.css'
-
+import imager from '../../assets/Terms - Down Arrow.svg'
 const CloseButtoner = () => 
 {
   document.getElementById('mainer_close').style = "display: none;";
@@ -54,7 +54,8 @@ function PopupTerms() {
          </div>
       
   <div>
-
+    <div class="imager">
+      <img src={imager} /></div>
        <p id="par2">New Terms</p>
        <div class="quote1">
        <blockquote>Lorem ipsum dolor sit amet,  adipiscing elit,sed do eiusmod 

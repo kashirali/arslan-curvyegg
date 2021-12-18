@@ -28,6 +28,22 @@
     left: 0;
   
   }
+
+  .imager img
+
+  {
+    width: 10%;
+    height: auto;
+  }
+
+  .imager
+  {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    padding-top: 10px;
+    justify-content: center;
+  }
   .quote1
   {
     padding: 1%;
