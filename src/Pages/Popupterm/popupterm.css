@@ -28,6 +28,15 @@
     left: 0;
   
   }
+  .quote1
+  {
+    padding: 1%;
+  }
+  blockquote
+  {
+    
+    padding: 3% !important;
+  }
   .popclosebut
   {
     display: flex;
