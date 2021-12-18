@@ -16,7 +16,7 @@ function PopupTerms() {
       <div className="popupterms" id="mainer_close" onClick = {CloseButtoner}>
         <div className='popuptermscenter'>
         <div className='popclosebut'>
-        <button className="btn btn-primary" onClick = {CloseButtoner}>X</button>
+        <button className="" onClick = {CloseButtoner}>X</button>
         </div>
         
     <div className="container mt-0">

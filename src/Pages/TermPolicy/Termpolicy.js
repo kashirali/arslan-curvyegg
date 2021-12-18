@@ -12,9 +12,24 @@ export function vakanda()
 {
     if(window.innerWidth > 992)
     {
-    const marfa = document.getElementsByTagName('body');
-    marfa[0].style = "overflow:hidden;"}
+        const marfa = document.getElementsByTagName('body');
+         marfa[0].style = "overflow:hidden;"
+    }
+}
 
+function varsa()
+{
+    if(window.innerWidth < 992)
+    {
+       const cake = document.getElementsByTagName('body');
+       const lake = document.getElementById('mainer_close');
+       cake[0].style = "overflow: hidden;"
+       lake.style = `max-height: ${lake.offsetHeight+130}px;`
+       lake.style = "margin: 0;"
+       lake.style = "overflow: scroll;";
+
+    }
+    
 }
 function Termpolicy() {
     let servicetext = (<motion.div className="para_text"
@@ -87,11 +102,13 @@ function Termpolicy() {
     }
     vakanda();
     return (
-        <div className="termPage">
+        <div>
+        <PopupTerms />
+        <div className="termpage" id="arslan_easter_egg" onLoad = {varsa}>
             <Header/>
             <div style={{border:'1px solid red',objectFit:'contain'}}>
 
-            <PopupTerms/>
+            
             </div>
             <div className="container" style={{marginTop:'80px'}}>
             <div className="text-center mx-auto">
@@ -118,6 +135,7 @@ function Termpolicy() {
                
             </div>
         <OnlyFooter/>
+        </div>
         </div>
     )
 }
