@@ -96,11 +96,11 @@
     margin-top: 30px;
 }
 .glanceinside{
-    font-family: binx;
+    font-family: binx !important;
     text-decoration: none;
     font-size: 20px;
     position: absolute;
-    width: 10%;
+    width: 10%!important;
   margin:0 auto;
   right:0;
   bottom:0px;
@@ -122,6 +122,10 @@
         
         flex-direction: row;
         
+    }
+    .leftarrowmobhide{
+        display:none;
+        margin-bottom: 0!important;
     }
     .svgText_main div >*>img{
        width:50px;
@@ -171,18 +175,9 @@ margin-right: 10px;
     }
     .glanceinside{
        
-        width: 75%;
+        width: 50% !important;
         bottom:5px;
       
     }
-    .sellsol_main_head{
-        font-size: 32px;
-        
-    }
-    .sellsol_main_para{
-        font-size: 15.5px;
-        
-        margin-left: 0;
-
-    }
+  
 }

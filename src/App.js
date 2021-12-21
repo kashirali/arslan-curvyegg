@@ -12,6 +12,9 @@ import {
   Link
 } from "react-router-dom";
 import Register from './Pages/Register/Register';
+import ThreeCards from './UI/ThreeCards/ThreeCards';
+import Whycards from './UI/whycards/Whycards';
+import Sixsvgcomb from './UI/sixsvgcomb/Sixsvgcomb';
 
 function App() {
   return (
@@ -24,8 +27,12 @@ function App() {
          <Route path="/signup" element={<Register/>}/>
          <Route path = "/blog" element={<Blog />}/>
          <Route path="/support" element={<Support />}/>
+         <Route path="/threecard" element={<ThreeCards/>}/>
          <Route path="/term" element={<Termpolicy/>}/>
+         <Route path="/whycards" element={<Whycards/>}/>
+         <Route path="/sixcard" element={<Sixsvgcomb/>}/>
          <Route exact path="/" element={<Index />}/>
+
          </Routes>
     </div>
     </Router>

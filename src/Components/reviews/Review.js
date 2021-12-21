@@ -1,7 +1,10 @@
 import React from 'react'
 import './review.css'
 
-import sampleimg from '../../assets/support.png'
+import sampleimg from '../../assets/svg/salvador.jpg'
+import stars from '../../assets/svg/Stars.svg'
+import downarrow from '../../assets/svg/Arrow Up.svg'
+import { Avatar,Pagination } from '@mui/material';
 class Review extends React.Component 
 {
     constructor(props) 
@@ -50,13 +53,16 @@ class Review extends React.Component
     {
         return(
 
-            <div>
+            <div style={{marginBottom:'80px'}}>
                 <div className="main_hold">
                     <div class="review_card">
                         <div className="review_data">
                             <div className = "picture">
                                 <div className = "container_img">
-                                <img src={sampleimg} alt="kick" className="main_img_card" />
+                                <div style={{borderRadius:'16px',width:'70px',height:'70px',padding:'5px',background:'lightgrey',marginRight:"10px"}}>
+  
+                                <Avatar alt="Remy Sharp" src={sampleimg} style={{width:'60px',height:'60px',borderRadius:'15px'}}/>
+    </div>
                                 </div>
                             </div>
                             <div className = "author">
@@ -74,20 +80,22 @@ class Review extends React.Component
                         
                         <div className = "image">
                             <div className = "container_img">
-                                <img src={sampleimg} alt="kick" className="main_img_card" />
-                            </div>
+                            <div style={{borderRadius:'16px',padding:'5px',background:'lightgrey'}}>
+  <Avatar alt="Remy Sharp" src={sampleimg} style={{borderRadius:'15px'}}/>
+    </div>
+</div>
                         </div>
                     <div>
                         <div className = "auth">
                             {this.state.author}<br />
                             {this.state.designation}
                         </div>
-                        <div className = "rats">*********</div>    
+                        <div className = "rats"><img src={stars} width="150px"/></div>    
                         </div>
                     </div>
                     <div className = "ratched">
-                    <button className="case" onClick={this.goPrev}>prev</button>
-                    <button className="case" onClick={this.goNext}>next</button>
+                    <button className="case" onClick={this.goPrev}><img src={downarrow} width="20px" height="10px"/></button>
+                    <button className="case" onClick={this.goNext}><img src={downarrow} width="20px" height="10px"/></button>
                     </div>
                     <div className = "sigh"><span className="sp">Read More Testomials</span></div>
                     </div>
@@ -101,8 +109,8 @@ class Review extends React.Component
 
 Review.defaultProps = {
     data: {
-        arsla: {author: 'Arslan', para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla<br />", designation: "owner"},
-        fake: {author: 'fake', para: "Lake take dolor sit kings, consectetur adipiscing elit per raka wakana fake lake the porla<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla<br />", designation: "slave"}
+        arsla: {author: 'CurvyEgg', para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla", designation: "owner"},
+        fake: {author: 'CurvyEgg', para: "Lake take dolor sit kings, consectetur adipiscing elit per raka wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla", designation: "slave"}
     },
     total: 2
 }

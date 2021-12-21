@@ -20,6 +20,7 @@ import supp5 from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/S
 
 import FAQ from '../../Components/FAQ/FAQ'
 import Subform from '../../Components/Subform/Subform'
+import supportsearch from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/SupportSearch.svg'
 
 import {motion} from 'framer-motion'
 
@@ -98,7 +99,7 @@ templates, replace the content text brand voice exactly.</p>
                                 aria-describedby="basic-addon2"
                                 />
                                 <Button variant="primary" id="button-addon2">
-                                <i class="fas fa-search"></i>
+                                <img src={supportsearch} width="20px"/>
                                 </Button>
                             </InputGroup>
                         </div>

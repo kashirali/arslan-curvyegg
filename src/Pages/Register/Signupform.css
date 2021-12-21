@@ -1,17 +1,39 @@
 .c-form{
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+    font-family: muliRegular;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background: #e8e8e8;
+    background: #fff;
     margin-top:10px;
     margin-left: 100px;
     padding: 20px  0;
     position: relative;
-    min-height: 1px;
+    min-height: 800px;
     padding: 20px 0;
     width:550px;
+    border-radius: 25px;
+box-shadow: 0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25);
+   
 }
+
+.signup_p_special {
+    width: 100%; 
+    text-align: center; 
+    /* border-bottom: 1px solid rgb(75, 75, 255);  */
+    border-bottom: 1px solid #446beb; 
+    line-height: 0.1em;
+    margin: 50px auto 50px; 
+    font-family: muliRegular!important;
+ } 
+ 
+ .signup_p_special span { 
+    background:white;
+    color:#446beb;
+     padding:0 10px; 
+     font-family: muliRegular!important;
+     font-size: 18px;
+ }
 ._form-part{
     text-align: center;
 }
@@ -33,24 +55,25 @@
 
 @media screen and (max-width: 992px) {
 .c-form{
-    border:1px solid red;
-  margin-left:-30px;
+    width: 99%;
+    margin:50px auto;
+  
+    margin-left: -10px;
+
 }
 
 .text-area{
-    width:330px;
-    margin-left:30px;
+   width: 94%;
+    margin-left:15px;
 }
 
 ._form-part{
  margin-left: -130px;;
 }
 .btn-demo{
-    margin-left: -130px;;
+    
 }
-#recaptc{
-    margin-left: -130px;;
-}
+
 
 
 }

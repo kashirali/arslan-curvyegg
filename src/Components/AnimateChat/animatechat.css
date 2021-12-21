@@ -129,7 +129,7 @@ background-color: #ffffff; */
 
   @media only screen and (max-width: 992px) {
     .chat {
-      width: 82%;
+      width: 74%;
       margin:0px 10px 40px 5px;
     display: flex;
     flex-direction: column-reverse;
@@ -150,7 +150,6 @@ background-color: #ffffff; */
     top: -2px !important;
     height: 9% !important;
     width: 306px !important;
-    background: linear-gradient(to bottom, black 36%, rgba(255, 255, 255, 0.1) ) !important;
     border-radius: 37px 23px 5px 12px !important;
     -webkit-border-radius: 37px 23px 5px 12px !important;
     -moz-border-radius: 37px 23px 5px 12px !important;

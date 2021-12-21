@@ -1,28 +1,68 @@
+@font-face {
+    font-family: muliRegular;
+    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: gothic700;
+    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+}
 
+@font-face {
+	font-family: 'gothic';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
+@font-face {
+	font-family: 'gothic-sub';
+	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+}
 .home-h{
     margin-top: 90px !important;
     text-align: center;
-    font-family: "segoe_bold";
-    color: #646464;
+    font-family: gothic;
+    color: #446beb;
       margin-bottom: 25px !important;
       padding: 0 !important;
-      font-weight: 500;
-      text-transform: uppercase;
+      font-weight: bold;
+      
+      font-size: 62px;
+    
+  }
+  .home-s{
+    margin-top: 50px !important;
+    text-align: center;
+    font-family: gothic;
+    color: #446beb;
+      margin-bottom: 25px !important;
+      padding: 0 !important;
+      font-weight: bold;
+      
+      font-size: 52px;
     
   }
   .margin-top{
-    margin-top: 50px!important;
+    margin-top: 10px!important;
   }
   .home-p{
     min-height: 1px;
     padding-right: 25px;
-    font-family: "segoe_light";
+    font-family: muliRegular;
       color: #4d4d4f;
       font-size: 20px;
   }
   
   @media screen and (max-width: 992px) {
   
-    
+    .home-h{
+      margin-top: 90px !important;
+      text-align: center;
+      font-family: gothic;
+      color: #446beb;
+        margin-bottom: 5px !important;
+        padding: 0 !important;
+        font-weight: bold;
+        
+        font-size: 40px;
+      
+    }
   
   }

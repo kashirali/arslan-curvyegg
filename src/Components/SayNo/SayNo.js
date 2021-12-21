@@ -136,9 +136,9 @@ function SayNo() {
                             <p className="main_say_para">{currData.text}</p>
                             </motion.div> :null}
                             <div className="main_btn_grp">
-                                <button  onClick={()=>saleBtnworking()}>Sales Staff</button>
-                                <button onClick={()=>researchBtnworking()}>Research</button>
-                                <button onClick={()=>dataBtnworking()}>Data</button>
+                                <button className={currData.head === 'Say No to More Sales Staff'?"button_focus":null}  onClick={()=>saleBtnworking()}>Sales Staff</button>
+                                <button className={currData.head === 'This is the second heading ENJOY'?"button_focus":null}  onClick={()=>researchBtnworking()}>Research</button>
+                                <button className={currData.head === 'This is the third heading'?"button_focus":null}  onClick={()=>dataBtnworking()}>Data</button>
                             </div>
                         </div>
                     </div>

@@ -25,21 +25,24 @@ export default function MediaCard(props) {
   if(props.threecard){
     blogcartstyle={
       width:'550px !important',
-      boxShadow:'none'
+      boxShadow:'none',
+     
+     
     }
   }
   else if(props.leftImg){
     blogcartstyle={
       maxWidth: 550,
       display:'flex',
-      boxShadow:'4px 4px 21px 3px rgba(94,89,89,0.5)',
+      boxShadow: "0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25)",
+
       alignItems:'stretch'
     }
   }
   else {
     blogcartstyle = {
       maxWidth: 550 ,
-      boxShadow:'4px 4px 21px 3px rgba(94,89,89,0.5)'
+      boxShadow: "0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25)"
     }
   }
   console.log(blogcartstyle)
@@ -56,7 +59,7 @@ export default function MediaCard(props) {
       />
       </div>
       
-      <CardContent>
+      <CardContent style={props.threecard?{padding:'10px 0 0 0'}:null}>
         <Typography className='blog_card_head' gutterBottom variant="h5" component="div">
          {props.head}
         </Typography>

@@ -17,6 +17,7 @@ import Card from '../../UI/Card/Card'
 import downarrow from '../../assets/svg/downarrow.svg'
 import Aos from 'aos'
 import { motion } from 'framer-motion'
+import ThreeCards from '../../UI/ThreeCards/ThreeCards';
 function AboutCurvy() {
     useEffect(
         ()=>Aos.init({
@@ -26,6 +27,23 @@ function AboutCurvy() {
     )
     const [cardClass,setcardClass] = useState('default')
     const [cardMobData] = useState({
+        one:{
+            imgsrc:icon1,
+            head:'Communicate',
+            para:'Effectively & respond to your customers’ queries, by reaching their comfort zone. We will give them personalized customer experience, they will never forget, while choosing anyone over you.'
+        },
+        two:{
+            imgsrc:icon2,
+            head:'Collect',
+            para:'Information by interacting with your customers and engaging them with your product. We will keep all conversations safe and maintain a systematic record of the data gathered.'
+        },
+        three:{
+            imgsrc:icon3,
+            head:'Contribute',
+            para:'Productively towards improvising and improving your product, by making best use of the important feedback we collected for you, also get better insights about your customers, all in one place.'
+        }
+    })
+    const [cardData] = useState({
         one:{
             imgsrc:comm_mob,
             head:'Communicate',
@@ -38,23 +56,6 @@ function AboutCurvy() {
         },
         three:{
             imgsrc:cont_mob,
-            head:'Contribute',
-            para:'Productively towards improvising and improving your product, by making best use of the important feedback we collected for you, also get better insights about your customers, all in one place.'
-        }
-    })
-    const [cardData] = useState({
-        one:{
-            imgsrc:icon1,
-            head:'Communicate',
-            para:'Effectively & respond to your customers’ queries, by reaching their comfort zone. We will give them personalized customer experience, they will never forget, while choosing anyone over you.'
-        },
-        two:{
-            imgsrc:icon3,
-            head:'Collect',
-            para:'Information by interacting with your customers and engaging them with your product. We will keep all conversations safe and maintain a systematic record of the data gathered.'
-        },
-        three:{
-            imgsrc:icon2,
             head:'Contribute',
             para:'Productively towards improvising and improving your product, by making best use of the important feedback we collected for you, also get better insights about your customers, all in one place.'
         }
@@ -160,7 +161,10 @@ function AboutCurvy() {
                     <Button className="button" onClick={()=>movCard('cont')} variant={contvariant?'primary':'light'}>Contribute</Button>
                     </ButtonGroup>
              </div>
-            
+             <div className='aboutthreecardhideonmob'>
+             
+            <ThreeCards/>
+             </div>
              <div className="card_main" style={{marginTop:'50px'}}>
                
                      {cardbtnclick ?<motion.div style={{width:"100%"}}

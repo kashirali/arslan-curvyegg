@@ -16,6 +16,8 @@ import Aos from 'aos'
 import {motion} from 'framer-motion'
 
 import {Link} from 'react-router-dom'
+import leftarrow from "../../assets/svg/left-arrow.svg"
+
 
 function Ataglance() {
     useEffect(
@@ -28,7 +30,7 @@ function Ataglance() {
     )
 
     const [showData,setShowData] = useState({
-        showlivechat:true,
+        showlivechat:false,
         showdashboard:false,
         showvisitor:false
     })
@@ -37,14 +39,14 @@ function Ataglance() {
         if(id === 'dashboard'){
             setShowData({
                 showlivechat:false,
-        showdashboard:true,
+        showdashboard:!showData.showdashboard,
         showvisitor:false
                 
             })
         }
         if(id === 'livechat'){
             setShowData({
-                showlivechat:true,
+                showlivechat:!showData.showlivechat,
         showdashboard:false,
         showvisitor:false
                 
@@ -54,7 +56,7 @@ function Ataglance() {
             setShowData({
                 showlivechat:false,
         showdashboard:false,
-        showvisitor:true
+        showvisitor:!showData.showvisitor
                 
             })
         }
@@ -134,6 +136,9 @@ function Ataglance() {
                 </div>
                 <div className="flexd" >
                     <div className="svgText_main">
+                        <div className='leftarrowmobhide' style={{width:'10px',marginLeft:'-200px'}}> 
+                            <img src={leftarrow} style={{marginLeft:'250px'}}width="170px"/>
+                        </div>
                         <div>
                             {/* svg */}
                             <div>

@@ -106,7 +106,7 @@ function Termpolicy() {
         <PopupTerms />
         <div className="termpage" id="arslan_easter_egg" onLoad = {varsa}>
             <Header/>
-            <div style={{border:'1px solid red',objectFit:'contain'}}>
+            <div style={{objectFit:'contain'}}>
 
             
             </div>

@@ -42,7 +42,7 @@ const SignupSchema = Yup.object().shape({
                  ({ 
                     field, 
                     meta: { touched, error } 
-                }) => <input id="inp" className={ touched && error ? "invalid" : "" } { ...field } placeholder="Name"/>
+                }) => <input  id="inp" className={ touched && error ? "invalid" : "" } { ...field } placeholder="Name"/>
            }
                 </Field>
         
@@ -75,24 +75,12 @@ const SignupSchema = Yup.object().shape({
             </Field>  <br/>    
 
             <textarea className="text-area" name="message"  placeholder='Message' rows="5" columns="10"/><br/>
-            <p class="home-p _form-part">Please verify your request*</p>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-              
-            <ReCAPTCHA
-                    sitekey="6LdY9J0dAAAAAPp9OEAtThE8NSbpSwgDUCkJDd6W"
-                    onChange={onChange}
-                    onloadCallback={() => { console.log("done loading!"); }}
- 
-                />
-                 {errors.recaptcha 
-                  && touched.recaptcha && (
-                  <p>{errors.recaptcha}</p>
-                )}
-            </div>   
+             
 
             <div class="d-flex justify-content-center btn-mob">
                 <button class="btn-demo mt-3" type="submit">Register</button>
             </div>
+            <div style={{marginBottom:"40px"}}></div>
           </Form>
         )}
       </Formik>

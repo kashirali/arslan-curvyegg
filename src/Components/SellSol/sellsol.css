@@ -22,6 +22,7 @@ color: #446beb;
 font-size: 50px;
 font-weight: 700;
 
+
 }
 .sellsol_main_para{
     
@@ -135,15 +136,16 @@ background-color: #0a021d;
     }
     .sellsol_main_head{
        
-        font-size: 42px;
+        font-size: 50px!important;
         text-align: left;
         width:92%;
-        margin:0px auto 20px auto;
+        margin:50px auto 20px auto;
+        
         
     }
     .sellsol_main_para{
     
-        font-size: 18px;
+        font-size: 20px!important;
         font-weight: 700;
         line-height: 1.4em;
         color: #58595b;

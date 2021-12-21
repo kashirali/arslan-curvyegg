@@ -177,7 +177,7 @@ input:-webkit-autofill:active {
     top: -2px !important;
     height: 9% !important;
     width: 437px !important;
-    background: linear-gradient(to bottom, black 36%, rgba(255, 255, 255, 0.1) ) !important;
+    background: linear-gradient(to bottom, black 36%, rgb(255 255 255 / 0%) ) !important;
     border-radius: 39px 27px 3px 5px !important;
    
 }
@@ -262,3 +262,14 @@ padding:5px 10px;
         border:0;
    }
   }
+
+  @media only screen and (max-width: 992px) {
+    .navbar{
+     display: none !important;
+    }
+    }
+    @media only screen and (min-width: 992px) {
+     .navbar_menu{
+      display: none !important;
+     }
+     }

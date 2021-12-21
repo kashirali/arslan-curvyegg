@@ -75,11 +75,7 @@ text-align: justify;
 .lady{
     margin-top:65px;margin-left:20px;
 }
-.right_section:hover{
-    transform: scale(1.02);
-    transition: transform 0.2s ease-in-out;
-   
-}
+
 .showcase_bottom{
     position:absolute;
     bottom: 1px;

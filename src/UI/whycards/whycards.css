@@ -1,0 +1,42 @@
+.whycards_main{
+    height: 270px;
+    max-width: 220px;
+    background:#446beb;
+    border-radius: 30px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.whycards_main p:first-child{
+    font-size: 76px;
+    font-family: muliRegular;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    margin-bottom:0 ;
+}
+.whycards_main p:first-child span{
+    font-size: 36px;
+    margin-left: 0px;
+    text-transform: uppercase;
+}
+.whycards_main img{
+    margin-top:-15px;
+}
+.whycards_main p:last-child{
+    color:white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: muliRegular;
+    text-align: center;
+
+}
+@media only screen and (max-width: 992px) {
+
+    .whycards_main{
+        height: 230px;
+        max-width: 180px;
+       
+    }
+}

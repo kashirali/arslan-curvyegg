@@ -19,7 +19,7 @@ function SellSol() {
         )
         const [sellText,setSellText] = useState({
                 id:'live',
-                text:'Businesses offering live chat support to their customers are likely to have higher sales and that is factually proven. YES, every conversation counts so make money, while you are asleep. Let us provide you the enormous volume of conversions, you had been waiting for. Learn about your customers’ expectations from you and your product, when we try to explore your customers and engage them on your website.'
+                text:'Businesses offering live chat support to their customers are likely to have higher sales and that is factually proven. YES, every conversation counts so make money, while you are asleep. Let us provide you the enormous volume of conversions, you had been waiting for. Learn about your customers expectations from you and your product, when we try to explore your customers and engage them on your website.'
         })
         
         const sellingText = (ids)=>{
@@ -34,7 +34,7 @@ function SellSol() {
     return (
         <div data-aos="fade-up" className="sellsol_top">
                 <h3  className="sellsol_main_head center fontsforweb_fontid_9785">Selling Solutions, Not Promises</h3>
-                < p className="sellsol_main_para center fontsforweb_fontid_9785">We <span>understand</span> your needs and here you get the best solutions, <span>all in one place.</span></p>
+                < p className="sellsol_main_para center fontsforweb_fontid_9785">We<span>understand</span> your needs and here you get the best solutions,<span>all in one place.</span></p>
                 <div className="container">
                         <div className="hideMobile">
                         <div className="row" style={{marginTop:'50px'}}>

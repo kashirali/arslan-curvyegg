@@ -33,9 +33,10 @@
 }
 .whycurvy_main_head{
     font-family: muliRegular;
-font-size: 85.06px;
+font-size: 90.06px;
 font-weight: 700;
 color: #446beb;
+letter-spacing: 0.11em!important;
 
 
 }
@@ -48,6 +49,7 @@ font-weight: 600;
 
 }
 .main_para{
+  
     font-family: muliRegular;
 color: #58595b;
 font-size: 16.07px;
@@ -65,7 +67,7 @@ text-align: justify;
     color: #446beb;
     font-size: 22px;
     font-weight: 600;
-    
+    height: fit-content;
     margin-bottom: 10px;
     border-bottom: 1px solid #e5e5eb;
     cursor: pointer;
@@ -80,19 +82,52 @@ text-align: justify;
 }
 .showtab{
     
-height: 152px;
-    
+    max-height: 150px;
+
     transition:all 0.3s ease-in-out;
 
  
 }
 .hidetab{
-    height: 0;
-
+  
+    max-height: 0;
     transition: all 0.3s ease-in-out;
     
 }
 
+.index_whycurvy_cards_main{
+    
+    width: 100%!important;
+    position: relative;
+    margin-left: 30px;
+}
+.index_whycurvy_cards_main >div{
+    position: absolute;
+    left:50px;
+    top:50px;
+}
+.index_whycurvy_cards_main>div:nth-child(1){
+
+}
+.index_whycurvy_cards_main>div:nth-child(2){
+    top:335px;
+}
+.index_whycurvy_cards_main>div:nth-child(3){
+    left:285px;
+    top:-80px;
+    width: 100%;
+
+}
+.index_whycurvy_cards_main>div:nth-child(4){
+
+    left:285px;
+    top:205px;
+    width: 100%;
+}
+
+.index_whycurvy_cards_main>div:nth-child(4) >div>p:first-child{
+    font-size: 36px;
+}
 @media only screen and (max-width: 992px) {
     
     .whycurvy_top{
@@ -138,6 +173,37 @@ height: 152px;
     .nopurpose .tab_main >div p{
       
         font-size: 14px;
+    }
+    .index_whycurvy_cards_main{
+        width: 100%;
+      margin-top: 30px;
+        margin-left: -50px;
+        height: 600px;
+        margin-bottom: 10px;
+    }
+    .index_whycurvy_cards_main>div:nth-child(1){
+            top:130px;
+            left:40px;
+    }
+    .index_whycurvy_cards_main>div:nth-child(2){
+        top:375px;
+        left:40px;
+    }
+    .index_whycurvy_cards_main>div:nth-child(3){
+        left:235px;
+        top:0px;
+        width: 100%;
+    
+    }
+    .index_whycurvy_cards_main>div:nth-child(4){
+    
+        left:235px;
+        top:245px;
+        width: 100%;
+    }
+    
+    .index_whycurvy_cards_main>div:nth-child(4) >div>p:first-child{
+        font-size: 36px;
     }
    
 }

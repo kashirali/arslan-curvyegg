@@ -66,20 +66,23 @@ animation-name:opacity;
 border-width: 2px;
 border:0;
 border-style: solid;
-background-color: #ffffff;
-box-shadow: 0px 0px 13.05px 1.95px rgba(167, 167, 167, 0.7);
+background-color: #f3f4f4;
+font-weight: bold;
 text-decoration: none;
 padding:5px 0;
 text-align: center;
 width: 160px;
 cursor: pointer;
+font-family: muliRegular;
 
 }
 .main_btn_grp a:active, 
- .main_btn_grp button:focus 
+ .main_btn_grp .button_focus 
  {
     box-shadow: inset 0px 0px 0px 1.8px rgb(85, 85, 255);
-    color:rgb(85, 85, 255)
+    color:rgb(85, 85, 255);
+    background:white;
+    box-shadow: inset 0px 0px 0px 1.8px rgb(85, 85, 255),0px 0px 10.05px 1.55px rgba(167, 167, 167, 0.2);
   }
 .main_left_img{
     background-color: #483a9c;

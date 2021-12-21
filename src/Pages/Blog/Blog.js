@@ -11,6 +11,8 @@ import Footer from '../../Components/Footer/Footer'
 import MediaCard from '../../UI/MaterialCard/MaterialCard';
 import Review from '../../Components/reviews/Review'
 import sampleimg from '../../assets/sampleimg.png'
+import sampleicon from '../../assets/svg/salvador.jpg'
+import blogsearch from '../../assets/svg/Blogsearch.svg'
 function Blog() {
 
   return (
@@ -26,13 +28,13 @@ function Blog() {
    <div id="med_inp">
   <div class="search_inp">
   
-<i class="fas fa-search blog_search"></i>
+    <img src={blogsearch} width="20px"/>
   <input type="text" class="form-control" placeholder="Search" id="search-id"/>
 
   </div>
   <div class="dropdown">
   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    All Categories <span> </span>
+    All Categories <span></span>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#">Action</a>
@@ -81,11 +83,15 @@ function Blog() {
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod </p>
   </div>
   <div className="blog-right"> 
-<img src={sampleimg} id="img-flex2"/>
+  <div style={{borderRadius:"10px",overflow:'hidden',width:'fit-content'}}>
+          <img src={sampleimg} />
+          </div>
 </div >
 <div className="blog-left-2">
   <div class="avatar_div">
-  <Avatar alt="Remy Sharp" src={sampleimg} />
+    <div style={{borderRadius:'16px',padding:'5px',background:'lightgrey'}}>
+  <Avatar alt="Remy Sharp" src={sampleicon} style={{borderRadius:'15px'}}/>
+    </div>
 <h6 id="hd">consectetur adipiscing elit</h6>
   </div>
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut <span style={{display:'block',color:'#446beb',fontWeight:'bold',marginTop:'20px'}}>More...</span></p>
@@ -110,12 +116,17 @@ function Blog() {
 
 <div class="row">
 <div class="col-md-6 col-sm-12 overflowimg"> 
-<img src={sampleimg} />
+<div style={{borderRadius:"10px",overflow:'hidden',width:'fit-content'}}>
+          <img src={sampleimg} />
+          </div>
 <div className='div_hd_inner'>
 <p style={{marginTop:'20px'}}><b>Lorem ipsum dolor sit amet, consectetur adipiscing</b></p>
 <div class="avatar_div">
-  <Avatar alt="Remy Sharp" src={sampleimg} /><span style={{marginRight:'8px'}}></span>
-  <Avatar alt="Remy Sharp" src={sampleimg} />
+<div style={{borderRadius:'16px',padding:'5px',background:'lightgrey',marginRight:'10px'}}>
+  <Avatar alt="Remy Sharp" src={sampleicon} style={{borderRadius:'15px'}}/>
+    </div><div style={{borderRadius:'16px',padding:'5px',background:'lightgrey'}}>
+  <Avatar alt="Remy Sharp" src={sampleicon} style={{borderRadius:'15px'}}/>
+    </div>
 <h6 id="hd">consectetur adipiscing elit</h6>
   </div>
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -127,7 +138,9 @@ function Blog() {
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 <div class="avatar_div">
   
-  <Avatar alt="Remy Sharp" src={sampleimg} />
+<div style={{borderRadius:'16px',padding:'5px',background:'lightgrey'}}>
+  <Avatar alt="Remy Sharp" src={sampleicon} style={{borderRadius:'15px'}}/>
+    </div>
   
 <h6 id="hd">consectetur adipiscing elit</h6>
   </div>
@@ -138,7 +151,9 @@ function Blog() {
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   
 <div class="avatar_div">
-  <Avatar alt="Remy Sharp" src={sampleimg} />
+<div style={{borderRadius:'16px',padding:'5px',background:'lightgrey'}}>
+  <Avatar alt="Remy Sharp" src={sampleicon} style={{borderRadius:'15px'}}/>
+    </div>
 <h6 id="hd">consectetur adipiscing elit</h6>
   </div>
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.dolore magna aliqua.sed do eiusmod tempor</p>
@@ -177,12 +192,16 @@ function Blog() {
       <div class="supp_hd">
       <h2>Lorem ipsum dolor sit amet sit amet</h2>
       <div class="avatar_div">
-  <Avatar alt="Remy Sharp" src={sampleimg} />
+      <div style={{borderRadius:'16px',padding:'5px',background:'lightgrey'}}>
+  <Avatar alt="Remy Sharp" src={sampleicon} style={{borderRadius:'15px'}}/>
+    </div>
 <h6 id="hd">Curvy Egg</h6> <span className='bbadge'>Support</span>
   </div>
       <div className="section_6_separator">
         <div className="section_6_left">
-          <img src={sampleimg} style={{boxShadow:'4px 4px 21px 3px rgba(138,138,138,0.5);'}}/>
+          <div style={{borderRadius:"10px",overflow:'hidden',width:'fit-content'}}>
+          <img src={sampleimg} />
+          </div>
         </div>
       
           
@@ -199,7 +218,7 @@ function Blog() {
       <Review total = {2}/>
 
       <div>
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'40px',clear:'both',}}>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'80px',clear:'both',}}>
 
       <Pagination count={5} variant="outlined" shape="rounded" />
       </div>

@@ -53,7 +53,7 @@
     color:#446beb;
     font-size:50px;
     background:#fff;
-    padding: 0 !important;
+    padding: 0 20px !important;
     outline:none;
     border:none;
     border-radius: 25px;
@@ -236,13 +236,18 @@
     }
     .support_grid{
         grid-template-columns: auto auto;
-        grid-row-gap: 10px;
+        grid-row-gap: 23px;
     }
     .support_grid_two{
         grid-template-columns: auto;
     
        
     }
+    .support_grid div img{
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
     .suport_card_mob{
         width: 160px!important;
         height: 160px!important;
