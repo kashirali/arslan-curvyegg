@@ -57,7 +57,7 @@ function Support() {
 
     </div>))
     return (
-        <div style={{overflow:'hidden'}}>
+        <div style={{overflow:'hidden'}} id="nts_tester">
             <Header color="white"/>
             {showsubform? <motion.div className='subformonmob' style={{position:'absolute',top:'120px',left:0,width:'100%'}}
                   animate={{
@@ -69,7 +69,7 @@ function Support() {
                     scale:0.5
                 }}
                 >
-                    <Subform/>
+                    <Subform kiara = {setShowsubform}/>
                 </motion.div>:null}
                 <div className="support_showcase">
                     <img src={sprinkles} width="195px" className="sprinkleLeft"/>
