@@ -7,15 +7,23 @@ import halfc from '../../assets/half.png'
 
 import Aos from 'aos'
 
-function Subform() {
+const closingInAction = (here) =>
+{
+    here(false);
+}
+function Subform(props) {
     useEffect(()=>(
         Aos.init({
             duration:2000
         })
     ))
     return (
+        <div className="kala">
         <div className="subform_top" style={{position:'absolute'}}>
             <div className="div_center">
+            <div className='popclosebut'>
+        <button className="" onClick={()=>closingInAction(props.kiara)}>X</button>
+        </div>
                 <img data-aos="fade-right" src={halfc} style={{position:'absolute',top:'-5px' ,right:'0px',zIndex:'-1'}} width="377px" height="120px"/>
                 <div className="contain">
                     <h3 className="subform_main_head fontsforweb_fontid_9785">Lorem Solioum Design to example one ipsum</h3>
@@ -29,7 +37,7 @@ function Subform() {
                      <p className="need">Need <span>agents</span> now?<span>Launch in 1 week.</span></p>   
                 </div>
             </div>
-        </div>
+        </div></div>
       
     )
 }
