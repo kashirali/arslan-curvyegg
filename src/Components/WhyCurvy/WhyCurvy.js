@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react'
 
 import './whycurvy.css'
-import ellipse_1 from '../../assets/Ellipse_1.png'
-import ellipse from '../../assets/Ellipse.png'
+import ellipse_1 from '../../assets/faqell1.png'
+import ellipse from '../../assets/faqell2.png'
 import charts from '../../assets/Scripts_for_carts.png'
 import '../../assets/fonts/font.css'
 import curverec from '../../assets/curverec.png'
@@ -113,8 +113,8 @@ function WhyCurvy() {
     }
     return (
         <div className="whycurvy_top" style={{position:'relative'}} >
-             <img style={{position:'absolute',zIndex:-1,top:'50px'}} src={ellipse_1} width="346px" height="346px"/>
-             <img style={{position:'absolute' ,right:'0',top:'350px',opacity:'1',zIndex:-1}} src={ellipse} width="346px" height="346px"/> 
+             <img style={{position:'absolute',zIndex:-1,top:'-10px',left:'-60px'}} src={ellipse_1} width="346px" height="346px"/>
+             <img style={{position:'absolute' ,right:'0',top:'380px',opacity:'1',zIndex:-1}} src={ellipse} width="346px" height="346px"/> 
              <div><img src={curverec} className="lady_back"/></div>
             <div className="container">
                   <h3 data-aos="fade-down" className="whycurvy_main_head fontsforweb_fontid_9785">Why<span style={{color:'black'}}>CurvyEgg<span style={{fontFamily:'sans-serif'}}>&#x3F;</span></span></h3>

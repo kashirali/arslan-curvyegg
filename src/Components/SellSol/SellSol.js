@@ -33,8 +33,8 @@ function SellSol() {
         }
     return (
         <div data-aos="fade-up" className="sellsol_top">
-                <h3  className="sellsol_main_head center fontsforweb_fontid_9785">Selling Solutions, Not Promises</h3>
-                < p className="sellsol_main_para center fontsforweb_fontid_9785">We<span>understand</span> your needs and here you get the best solutions,<span>all in one place.</span></p>
+                <h3  className="sellsol_main_head center ">Selling Solutions, Not Promises</h3>
+                < p className="sellsol_main_para center ">We <span>understand</span> your needs and here you get the best solutions,<span> all in one place.</span></p>
                 <div className="container">
                         <div className="hideMobile">
                         <div className="row" style={{marginTop:'50px'}}>
@@ -71,7 +71,7 @@ function SellSol() {
                             </div>
                             <div data-aos="fade-left" className="col-md-7 col-sm-12 gridd" style={{marginTop:'20px'}}>
                                     {/* <img src={round} width="90%" style={{marginLeft:'20px'}}/> */}
-                                    <div className="" style={{marginLeft:'20px'}}>
+                                    <div className="" style={{marginLeft:'30px'}}>
                                             <img src={link} width= '232px'height = '278px'/>
                                     </div>
                                     <div className="iconBtn">

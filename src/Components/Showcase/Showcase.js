@@ -43,7 +43,7 @@ function Showcase() {
                 
             </div>
             <div className="right_section" >
-                <motion.img className="lady" src={Lady} width="100%"  
+                <motion.img className="lady" src={Lady} width="98%"  
                      animate={{
                         x:0
                     }}

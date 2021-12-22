@@ -10,7 +10,9 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
-
+import hidepass from '../../assets/svg/Passwords Icon/Passwords Icon Hide.svg';
+import showpass from '../../assets/svg/Passwords Icon/Passwords Icon Show.svg';
+import crossicon from '../../assets/svg/Cross icon/Cross icon.svg'
 import {Link} from 'react-router-dom'
 import '../../assets/fonts/font.css'
 import './headerStyle.css'
@@ -29,7 +31,8 @@ function Header(props) {
     cssClass.push('top_nav_click')
   }
   console.log(checkSmile,cssClass)
-
+ 
+  const [imgtodisplay,setImgtodisplay] = useState(hidepass);
   
     return (
         <div className="borderss">
@@ -41,7 +44,7 @@ function Header(props) {
                   <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',color:'white',marginTop:'30px'}}>
                   {/* <h3 className="hide_main_head" >curvyegg</h3> */}
                   <img src={curvy} width="100px"/>
-                  <i onClick={clickSmile} className="fas fa-times timesicon" style={{cursor:'pointer',fontSize:'22px',transition:'transform 0.15s linear'}}></i>
+                  <img onClick={clickSmile} src={crossicon} className="timesicon" style={{cursor:'pointer',width:'30px',transition:'transform 0.15s linear'}}/>
                   </div>
                   <div className="form_container">
                       <form autocomplete="off">
@@ -50,14 +53,16 @@ function Header(props) {
 
                           <div className="inputGrp">
                               <input type="text" placeholder="Email" className="inputBox" style = {{color: 'white'}}/>
-                              <i class="fas fa-eye-slash eyeIcon" onClick={() => {
+                              <img src={imgtodisplay} className="eyeIcon" onClick={() => {
                                 const ele = document.getElementById('might');
                                 if (ele.type === "password") {
                                   ele.type = "text";
+                                  setImgtodisplay(showpass)
                                 } else {
                                   ele.type = "password";
+                                  setImgtodisplay(hidepass)
                                 }
-                              }}></i>
+                              }}/>
                               <input type="password" placeholder="Password" className="inputBox" style = {{color: 'white'}} id="might"/>
                           </div>
                          
@@ -96,7 +101,7 @@ function Header(props) {
       <Nav className="mr-0 mob_view">
     <Link to="#" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} href="#about">Try it out</Link>
     <Link to="#" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} href="#whycurvy"style={{marginRight:'15px'}}>Sign in</Link>
-    <Button variant={!props.color? 'primary':'light'} style={{width:'fit-content',margin:'0 auto',padding:'0 20px'}} >Contact</Button>
+    <Button className='fontfamilyheaderbtn' variant={!props.color? 'primary':'light'} style={{width:'fit-content',margin:'0 auto',padding:'0 25px', background: !props.color?'#446beb':null,color:!props.color?null:'#446beb'}} >Contact</Button>
     
 
   </Nav>

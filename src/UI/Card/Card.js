@@ -8,7 +8,7 @@ function Card(props) {
             <div className="card">
             <div style={{width:'80px',margin: '30px 0 0 auto',cursor:'pointer',overflow:'hidden'}}>{props.btnClicked?<i onClick={props.handleclose} className="fas fa-times fa-2x"></i>:null}</div>
                                 
-                            <div style={{width:'80%',margin:'0 auto',marginTop:'20px'}}>
+                            <div style={{width:'80%',margin:'0 auto',marginTop:'10px'}}>
                                 
                                 <div className="cardimg">
                                     <img src={props.cardDetail.imgsrc} width="65px" />

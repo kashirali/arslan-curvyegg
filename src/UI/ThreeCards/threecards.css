@@ -1,56 +1,14 @@
+.threecardsmain{
+    display: flex;
+    width: 100%;
+}
 .threecardsmain > div{
-        width:33%;
-        display:inline-block;
+        width:33.3%;
         opacity: 1;
-        transition: width 0.3s linear ,opacity .3s linear .5s;
+        transition: width 0.3s linear ,opacity .3s linear .3s;
+
         margin-bottom: 40px;
-        
-        
-    
+      
+           
     
 }  
-/* .threecardsmain{
-    overflow: hidden!important;
-}
-
-
-.tca1:hover{
-    width: 100%!important;
-}
-.tca2:hover{
-    width: 33%!important;
-    order:1;
-}
-.tca3:hover{
-    width: 100%!important;
-}
-.tca2:hover ~div:not(:last-child){
-  
-    border:1px solid red!important;
-   
-    opacity: 0;
-    font-size: 0;
-    transition:width 0s linear;
-
-
-}
-.tca1:hover ~ div:not(:first-child)>div{
-    border:1px solid red;
-} */
-
-
-/* .threecardsmain:hover > div:not(:hover){
-   width: 0;
-   opacity: 0;
-   transition: width 0.3s linear ,opacity .1s linear;
-  } */
-  .tca1{
-    width: 100%!important;
-}
-.tca2{
-    width: 33%!important;
-  
-}
-.tca3{
-    width: 100%!important;
-}

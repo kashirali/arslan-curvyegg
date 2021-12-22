@@ -1,21 +1,27 @@
 
 @font-face {
-    font-family: muliRegular;
-    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+  font-family: 'muliregular';
+  src: url(../../assets/fonts/Muli_Font/Muli-Regular.ttf);
 }
 @font-face {
-    font-family: gothic700;
-    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+  font-family: 'mulisemibold';
+  src: url(../../assets/fonts/Muli_Font/Muli-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'mulibold';
+  src: url(../../assets/fonts/Muli_Font/Muli-Bold.ttf);
 }
 
 @font-face {
-	font-family: 'gothic';
-	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+  font-family: 'Centurygothic';
+  src: url('../../assets/fonts/Century_Gothic_Font/GOTHICB.TTF')
 }
+
 @font-face {
-	font-family: 'gothic-sub';
-	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+font-family: 'binx';
+src: url('../../assets/fonts/Binx.ttf')
 }
+
 .popupterms
   {
     width: 100%;
@@ -45,6 +51,7 @@
   {
     
     padding: 3% !important;
+    font-family: muliregular !important;
   }
 
 
@@ -77,11 +84,15 @@
 }
   .main2
   {
-    margin-top: -8%;
+    margin-top: -13%;
     background-image: url('../../assets/Terms\ -\ Down\ Arrow.svg');
     background-repeat: no-repeat;
     background-size: 9%;
     background-position: 40% 57%; 
+  }
+
+  .main2 p{
+    font-family: Centurygothic !important;
   }
   .popuptermscenter{
     min-width: 80vw;
@@ -93,8 +104,8 @@
   }
   
   #par-top{
-   font-family:gothic;
-   font-size: 44px;
+   font-family:Centurygothic !important;
+   font-size: 35px;
    font-weight: bold;
    color:#446beb;
    margin: 0;
@@ -111,8 +122,8 @@
   font-family:   'Muli';
   } */
   .line-break {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
       border: 0;
       border-top: 2px solid #446beb;
       width:23%;
@@ -132,7 +143,7 @@
       background-color: #446beb;
       margin-top: 45px;
       font-size: 18px;
-      font-family: muliRegular;
+      font-family: mulibold !important;
       font-weight: bold;
     }
     #btn2{
@@ -140,7 +151,7 @@
       margin-top: 15px;
       color:#c5c5c5;
       font-size: 18px;
-      font-family: muliRegular;
+      font-family: mulibold !important;
       font-weight: bold;
     
     }
@@ -209,6 +220,7 @@
       
     padding: 0%; 
     border-bottom: 2px dotted #446beb;
+    font-family: mulibold !important;
     }
   
     #par2{
@@ -222,9 +234,12 @@
          
     }
     .par p{
-       color:#58595b;
-       font-family: muliRegular;
+       color:black;
+       font-family: muliregular;
        font-size: 20px;
+    }
+    .par a{
+      font-family: muliregular !important;
     }
     .main1
     {

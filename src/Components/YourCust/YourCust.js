@@ -34,10 +34,10 @@ function YourCust() {
                         </div>
                         <div  className="col-md-5 col-sm-12">
                             {/* <img src={unmatch} width="377px" height="385px"/> */}
-                            <div data-aos="fade-left" style={{width:'100%',minHeight:'385px',position:'relative'}}>
+                            <div data-aos="fade-left" style={{width:'100%',minHeight:'385px',position:'relative',marginLeft:'-30px'}}>
                             <img className="dropline" src={dropline} />
                             <div className="drop dropdiv1"><p>Uninterruptable Service</p></div>
-                            <div className="drop dropdiv2"><p>Unmatchable Team</p></div>
+                            <div style={{padding:'15px 50px'}} className="drop dropdiv2"><p>Unmatchable Team</p></div>
                             <div className="aboutCircle"><p>About Curvy</p></div>
                             </div>
                          </div>

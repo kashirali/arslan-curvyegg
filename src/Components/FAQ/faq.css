@@ -1,11 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
 
 
+@font-face {
+    font-family: 'muliregular';
+    src: url(../../assets/fonts/Muli_Font/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: 'mulisemibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'mulibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Centurygothic';
+    src: url('../../assets/fonts/Century_Gothic_Font/GOTHICB.TTF')
+}
+
+
+
+@font-face {
+    font-family: binx;
+    src: url(../WeHave/Binx.ttf);
+}
 .FAQ_top{
     width: 100%;
     min-height:856px;
     position:relative;
-    margin-top: 100px;
+    margin-top: 140px;
  
 
 }
@@ -17,6 +40,7 @@ font-size: 50px;
 font-weight: 700;
 text-align: center;
 margin-bottom: 60px;
+font-family: Centurygothic !important;
 
 }
 

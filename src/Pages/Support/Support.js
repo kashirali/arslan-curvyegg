@@ -51,7 +51,7 @@ function Support() {
     const [showFaq,setshowFaq] = useState(false)
     let displayCard = '';
 
-    displayCard = support_card_data.map((curr,index)=>(<div className="suport_card_mob" key={index} style={{width:'200px',height:'200px',background:'white',boxShadow:' 0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',borderRadius:'25px'}}>
+    displayCard = support_card_data.map((curr,index)=>(<div className="suport_card_mob" key={index} style={{width:'200px',height:'200px',background:'white',boxShadow:' 0px 0px 12.2px 1.8px rgba(167, 167, 167, 0.25',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',borderRadius:'25px'}}>
             <img src={curr.icon} width="100px" height="100px"/>
             <p className="support_card_text">{curr.text}</p>
 
@@ -92,7 +92,7 @@ templates, replace the content text brand voice exactly.</p>
                     <div className="container">
                         <div className="support_help_top">
                             <h3 className="support_help_head">Hi! How can we help you?</h3>
-                            <InputGroup style={{width:'350px',margin:'0 auto'}}>
+                            <InputGroup className='supportinputstyle' style={{width:'350px',margin:'0 auto',}}>
                                 <FormControl style={{padding:'9px'}}
                                 placeholder="Ask a question..."
                                 aria-label="ask a question"
@@ -134,7 +134,7 @@ templates, replace the content text brand voice exactly.</p>
                         </div>
                     </div>
                 </div>
-                {showFaq? <div className="support_faq_margin_remove_mob" style={{marginTop:'-100px'}}><FAQ/></div>:null}
+                {showFaq? <div className="support_faq_margin_remove_mob" style={{marginTop:'-130px'}}><FAQ/></div>:null}
             <Footer/>
         </div>
     )

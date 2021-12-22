@@ -17,3 +17,4 @@
 .btn-group>.btn-group:not(:first-child), .btn-group>.btn:not(:first-child):focus {
     box-shadow: none!important;
 }
+

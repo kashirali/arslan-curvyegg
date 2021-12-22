@@ -87,13 +87,19 @@ const ThreeCards = (props) =>{
             head:'Contribute',
             para:'Productively towards improvising and improving your product, by making best use of the important feedback we collected for you, also get better insights about your customers, all in one place.'
         }
-    });  const showMoreDetail = (id)=>{
+    });
+    const [Commcardbtnclick,setCommCardbtnclick] = useState(false);
+    const [Collcardbtnclick,setCollCardbtnclick] = useState(false);
+    const [Contcardbtnclick,setContCardbtnclick] = useState(false)
+    const showMoreDetail = (id)=>{
         if(id === 'communicate'){
             setCardId({
                 collect:false,
                 contribute:false,
                 communicate:!cardId.communicate
             })
+            setCommCardbtnclick(!Commcardbtnclick);
+
         }    
         else if(id === 'collect'){
             setCardId({
@@ -101,6 +107,8 @@ const ThreeCards = (props) =>{
                 contribute:false,
                 communicate:false
             })
+            setCollCardbtnclick(!Collcardbtnclick);
+
         } 
         else if(id === 'contribute'){
             setCardId({
@@ -108,8 +116,9 @@ const ThreeCards = (props) =>{
                 contribute:!cardId.contribute,
                 communicate:false
             })
+
+            setContCardbtnclick(!Contcardbtnclick);
         } 
-        setCardbtnclick(!cardbtnclick);
         console.log('clicked')
       
         
@@ -118,20 +127,20 @@ const ThreeCards = (props) =>{
 
          
     return(
-        <div className='threecardsmain' style={{width:'100%',margin:'50px auto',paddingBottom:'20px'}}>
+        <div className='threecardsmain' style={{width:'100%',margin:'50px 0px !important',paddingBottom:'20px'}}>
             
             <div style={comm_style} >
-            <Card cardDetail={cardData.one} cardReadMore={()=>showMoreDetail('communicate')} btnClicked ={cardbtnclick} handleclose={()=>showMoreDetail('communicate')}/>
+            <Card cardDetail={cardData.one} cardReadMore={()=>showMoreDetail('communicate')} btnClicked ={Commcardbtnclick} handleclose={()=>showMoreDetail('communicate')}/>
 
             </div>
            
            <div style={coll_style}>
-                <Card cardDetail={cardData.two} cardReadMore={()=>showMoreDetail('collect')} btnClicked ={cardbtnclick} handleclose={()=>showMoreDetail('collect')}/>
+                <Card cardDetail={cardData.two} cardReadMore={()=>showMoreDetail('collect')} btnClicked ={Collcardbtnclick}  handleclose={()=>showMoreDetail('collect')}/>
     
                 </div> 
            
           <div style={cont_style}>
-                <Card cardDetail={cardData.three} cardReadMore={()=>showMoreDetail('contribute')} btnClicked ={cardbtnclick} handleclose={()=>showMoreDetail('contribute')}/>
+                <Card cardDetail={cardData.three} cardReadMore={()=>showMoreDetail('contribute')} btnClicked ={Contcardbtnclick}  handleclose={()=>showMoreDetail('contribute')}/>
     
                 </div>
         </div>

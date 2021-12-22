@@ -14,9 +14,9 @@ function OnlyFooter() {
                         <img src={logo}  width="88px" height="128px"/>
                     </div>
             <div className="container">
-                <div className="flex">
+                <div className="flex" >
                    
-                   <div className="logo footer_img_show">
+                   <div className="logo footer_img_show" >
                         <img src={logo}  width="108px"/>
                     </div>
                  

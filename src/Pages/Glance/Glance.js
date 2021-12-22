@@ -7,6 +7,7 @@ import CardGlance from '../../UI/CardGlance/CardGlance'
 import {useParams} from 'react-router-dom'
 
 import {Container} from 'react-bootstrap'
+import downarrow from '../../assets/svg/Cross icon/Arrow upblue.svg'
 
 import livelogo from '../../assets/svg/New_features/LiveChat.svg'
 import dashboard from '../../assets/svg/New_features/Dashboard.svg'
@@ -85,19 +86,19 @@ function Glance() {
                     <h3 className="glance_head">All Features at a Glance</h3>
                     <span></span>
                     <p className="glance_subhead">
-                        Close more deals efficiently with countless features of <span>CurvyEgg</span> without a <span>price tag</span>
+                        Close more deals efficiently with countless features of<span> CurvyEgg</span> without a <span>price tag</span>
                     </p>
                 </div>
                 <div className="flexCard">
 
                 <div><div onClick={()=>selectCard('live')}><CardGlance imgsrc={livelogo} text="Live Chat" actClass={customClass.live}/></div>
-                    {showcard === 'live'?<i class="fa fa-angle-up" aria-hidden="true"></i>:null }
+                    {showcard === 'live'?<img  className='glancearrowicon' src={downarrow} width="20px"/>:null }
                 </div>
                 <div><div onClick={()=>selectCard('dashboard')}><CardGlance imgsrc={dashboard} text="Dashboard" actClass={customClass.dashboard}/></div>
-                {showcard === 'dashboard'?<i class="fa fa-angle-up" aria-hidden="true"></i>:null }
+                {showcard === 'dashboard'?<img className='glancearrowicon' src={downarrow} width="20px"/>:null }
                 </div>
-                <div><div  onClick={()=>selectCard('visitor')}><CardGlance imgsrc={visitors} text="Visitors & Team" actClass={customClass.visitors}/></div>
-                {showcard === 'visitor'?<i class="fa fa-angle-up" aria-hidden="true"></i>:null }
+                <div><div  onClick={()=>selectCard('visitor')}><CardGlance visible imgsrc={visitors} text="Visitors & Team" actClass={customClass.visitors}/></div>
+                {showcard === 'visitor'?<img className='glancearrowicon' src={downarrow} width="20px"/>:null }
                 </div>
                 </div>
 
@@ -114,7 +115,7 @@ function Glance() {
             >
                <div className="list">
                    <ul>
-                       <li>24/7 live agents</li>
+                       <li><span style={{color:'#446beb',marginLeft:'0'}}>24/7</span> live agents</li>
                        <li>Free chat application </li>
                        <li>Media and text file sharing</li>
                        <li> Custom greetings</li>

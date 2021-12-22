@@ -5,49 +5,61 @@
     src: url(./Binx.ttf);
 }
 
+
 @font-face {
-    font-family: muliRegular;
-    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+    font-family: 'muliregular';
+    src: url(../../assets/fonts/Muli_Font/Muli-Regular.ttf);
 }
 @font-face {
-    font-family: gothic700;
-    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+    font-family: 'mulisemibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'mulibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-Bold.ttf);
 }
 
 @font-face {
-	font-family: 'gothic';
-	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+    font-family: 'Centurygothic';
+    src: url('../../assets/fonts/Century_Gothic_Font/GOTHICB.TTF')
 }
+
 @font-face {
-	font-family: 'gothic-sub';
-	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+	font-family: 'binx';
+	src: url('../../assets/fonts/Binx.ttf')
 }
+
+
+
 .left_first{
     width: 50%;
-    float:left
+    float:left;
+    margin-top:20px;
 }
 .left_first_head{
-font-family: gothic;
+font-family: Centurygothic !important;
 color: #446beb;
-font-size: 50px;
-font-weight: 700;
+font-size: 52px;
+font-weight: 600;
 
 }
 .left_first_para{
-    font-family: muliRegular;
+    font-family: mulisemibold !important;
 color: #6b7c93;
-font-size: 18px;
+font-size: 19px;
 font-weight: 600;
-margin:30px 0px 70px 0px;
+margin:40px 0px 70px 0px;
+text-align: justify;
 
 }
 .right{
-    width: 40%;
+    width: 39%;
     float:right;
     background-image: url('../../assets/rect.png');
     background-repeat: no-repeat;
     height: 690px;
     overflow:hidden;
+   
    
 }
  /* .shadow{
@@ -75,7 +87,7 @@ font-size: 26px;
 font-weight: 400;
 text-align: center;
 position: absolute;
-bottom:0;
+bottom:-15px;
 left:30%;
 }
  
@@ -85,14 +97,14 @@ left:30%;
 height: 109px;
 border-radius: 10px;
 background-color: #ffffff;
-box-shadow: 0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25);
-font-family: muliRegular;
+box-shadow: 0px 0px 12.2px 1px rgba(167, 167, 167, 0.15);
+font-family: mulisemibold !important;
 color: #446beb;
 font-size: 18px;
 font-weight: 600;
 text-decoration: none;
-padding:30px 45px;
-margin-right: 20px;
+padding:40px 40px;
+margin-right: 50px;
 
 
 }

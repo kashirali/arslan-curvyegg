@@ -1,4 +1,4 @@
-
+/* 
 @font-face {
     font-family: muliRegular;
     src: url(../../assets/fonts/muli/Muli-Regular.ttf);
@@ -15,8 +15,25 @@
 @font-face {
 	font-family: 'gothic-sub';
 	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
+} */
+
+@font-face {
+    font-family: 'muliregular';
+    src: url(../../assets/fonts/Muli_Font/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: 'mulisemibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'mulibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Centurygothic';
+    src: url('../../assets/fonts/Century_Gothic_Font/GOTHICB.TTF')
+}
 .bg-gradients{
     width: 100%;
 min-height: 385px;
@@ -33,7 +50,9 @@ background: linear-gradient(180deg, rgba(10,2,29,1) 41%, rgba(27,19,47,1) 91%);
 }
 .dropline{
     position: absolute;
-    width: 330px;
+    width: 370px;
+    height: 410px;
+  
 }
 .drop{
     background:white;
@@ -41,6 +60,7 @@ background: linear-gradient(180deg, rgba(10,2,29,1) 41%, rgba(27,19,47,1) 91%);
     border-radius: 5px;
     width: fit-content;
 }
+
 .drop p{
     font-family: Binx;
 color: #3c4658;
@@ -51,13 +71,13 @@ margin:0;
 }
 .dropdiv1{
     position: absolute;
-    top:125px;
-    right: 100px;
+    top:110px;
+    right: 70px;
 }
 .dropdiv2{
     position: absolute;
-    top:265px;
-    right: -10px;
+    top:240px;
+    right: 0px;
 }
 .left_child{
     height: 385px;
@@ -67,34 +87,37 @@ margin:0;
     width: 100%;
 }
 .left_child_head{
-font-family: gothic;
+font-family: Centurygothic;
 color: #ffffff;
-font-size: 48px;
-font-weight: 700;
+font-size: 47px;
+font-weight: 600;
 
 }
 .left_child_subhead{
     /* font-family: 'Mulish', sans-serif; */
-    font-family: muliRegular;
+    font-family:mulisemibold ;
 color: #ffffff;
 font-size: 17px;
-font-weight: 600;
-width: 80%;
-word-spacing: 0.2em;
+font-weight: 400;
+width: 70%;
+
 margin:20px 0px 65px 0px;
 
 }
 .left_child_para{
     /* font-family: 'Mulish', sans-serif; */
-    font-family: muliRegular;
+    font-family: mulisemibold;
 font-size: 17px;
-font-weight: 600;
+font-weight: 400;
 color: #ffffff;
 
 }
 .left_child_para a{
     text-decoration: none;
     color:#446beb;
+    font-family: mulisemibold!important;
+    font-weight: 700 !important;
+    font-size: 17px!important;
 }
 @media only screen and (max-width: 992px) {
     .bg-gradients{

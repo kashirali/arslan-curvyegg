@@ -1,41 +1,46 @@
 
 
 @font-face {
-    font-family: muliRegular;
-    src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+    font-family: 'muliregular';
+    src: url(../../assets/fonts/Muli_Font/Muli-Regular.ttf);
 }
 @font-face {
-    font-family: gothic700;
-    src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+    font-family: 'mulisemibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'mulibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-Bold.ttf);
 }
 
 @font-face {
-	font-family: 'gothic';
-	src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
+    font-family: 'Centurygothic';
+    src: url('../../assets/fonts/Century_Gothic_Font/GOTHICB.TTF')
 }
-@font-face {
-	font-family: 'gothic-sub';
-	src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
-}
+
+
+
 @font-face {
     font-family: binx;
     src: url(../WeHave/Binx.ttf);
 }
 
 .glancetext{
-    font-family: gothic;
+    font-family: Centurygothic !important;
 }
 .glancesubtext{
-    font-family: gothic;
+    font-family: Centurygothic !important;
 }
 .icon-container {
     padding: 10px;
     float: left;
     cursor: pointer;
+   
+    margin-bottom: 30px;
 }
 .glance_top{
       
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 50px;
  
 }
@@ -54,10 +59,14 @@
 
 .svgText_main{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 20px;
     padding:10px;
 
+
+}
+.glancyicon{
+    margin-top: 25px;
 }
 .svgText_main >div{
     display:flex;
@@ -85,12 +94,13 @@
 .info_card span{
     
     color: #1b1b1b;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 2.4em;
     padding-right: 20px;
     padding-left: 10px;
     border-right:2px solid black;
+    font-family: Centurygothic !important;
 }
 .flexd{
     margin-top: 30px;
@@ -98,12 +108,13 @@
 .glanceinside{
     font-family: binx !important;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     position: absolute;
-    width: 10%!important;
+    width: 15%!important;
+    text-transform: lowercase;
   margin:0 auto;
-  right:0;
-  bottom:0px;
+  right:-70px;
+  bottom:-40px;
     
 }
 .sellsol_main_para span{

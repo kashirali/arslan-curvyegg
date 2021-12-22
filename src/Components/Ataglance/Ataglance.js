@@ -18,6 +18,8 @@ import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 import leftarrow from "../../assets/svg/left-arrow.svg"
 
+import downarrow from '../../assets/svg/Arrow Up.svg'
+
 
 function Ataglance() {
     useEffect(
@@ -131,13 +133,13 @@ function Ataglance() {
         <div data-aos = "fade-up" className="glance_top">
             <div className="container">
                 <div className="row">
-                <h3 className="sellsol_main_head center glancetext">All Features at a Glance</h3>
-                < p className="sellsol_main_para center glancetext">Close more deals efficiently with countless features of <span>CurvyEgg</span> without a <span>price tag</span></p>
+                <h3 className="sellsol_main_head center ">All Features at a Glance</h3>
+                < p className="sellsol_main_para center ">Close more deals efficiently with countless features of <span>CurvyEgg</span> without a <span>price tag</span></p>
                 </div>
                 <div className="flexd" >
                     <div className="svgText_main">
                         <div className='leftarrowmobhide' style={{width:'10px',marginLeft:'-200px'}}> 
-                            <img src={leftarrow} style={{marginLeft:'250px'}}width="170px"/>
+                            <img src={leftarrow} style={{marginLeft:'150px',marginTop:'30px'}}width="170px"/>
                         </div>
                         <div>
                             {/* svg */}
@@ -148,7 +150,7 @@ function Ataglance() {
                             {/* text */}
                             <h5 className="glancesubtext">Live Chat</h5>
                             </div>
-                            {showData.showlivechat?<i class="fas fa-chevron-down" ></i>:null}
+                            {showData.showlivechat?<img src={downarrow} className='glancyicon' width="20px" />:null}
                         </div>
                         <div>
        
@@ -159,7 +161,7 @@ function Ataglance() {
                             {/* text */}
                             <h5 className="glancesubtext">Dashboard</h5>
                             </div>
-                            {showData.showdashboard?<i class="fas fa-chevron-down"></i>:null}
+                            {showData.showdashboard?<img src={downarrow} className='glancyicon' width="20px" />:null}
                         </div>
                         <div>
                             {/* svg */}
@@ -170,7 +172,7 @@ function Ataglance() {
                             {/* text */}
                             <h5 className="glancesubtext">Visitors &#38; Team</h5>
                             </div>
-                            {showData.showvisitor?<i class="fas fa-chevron-down"></i>:null}
+                            {showData.showvisitor?<img src={downarrow} className='glancyicon' width="20px" />:null}
                         </div>
                         
                     </div>
@@ -184,7 +186,7 @@ function Ataglance() {
                         }}
                     >
                         {glanceData}
-                        <Link to="/glance/live" className="glanceinside">Read more</Link>
+                        <Link to="/glance/live" className="glanceinside">read more...</Link>
                     </motion.div>:null}
                     {showData.showdashboard? <motion.div className="info_card" style={{width:'90%'}}
                      animate={{

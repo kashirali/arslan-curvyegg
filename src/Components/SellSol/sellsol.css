@@ -1,4 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+
+@font-face {
+    font-family: 'muliregular';
+    src: url(../../assets/fonts/Muli_Font/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: 'mulisemibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'mulibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Centurygothic';
+    src: url('../../assets/fonts/Century_Gothic_Font/GOTHICB.TTF')
+}
+
+@font-face {
+	font-family: 'binx';
+	src: url('../../assets/fonts/Binx.ttf')
+}
 
 
 .hideDesktop{
@@ -21,6 +44,8 @@
 color: #446beb;
 font-size: 50px;
 font-weight: 700;
+font-family: Centurygothic !important;
+margin-bottom:30px;
 
 
 }
@@ -30,15 +55,19 @@ font-size: 20px;
 font-weight: 700;
 line-height: 46px;
 color: #58595b;
+font-family: Centurygothic !important;
+
 
 }
+.sellsol_main_para span{
+    margin-left: 0;
+}
 .sellsol_main_des{
-    font-family: 'Mulish', sans-serif;
+    font-family: muliregular !important;
 color: #58595b;
 font-size: 17px;
 font-weight: 400;
 line-height: 27px;
-text-align: justify;
 margin-top: 20px;
 
 }
@@ -56,7 +85,9 @@ margin-top: 20px;
     
 }
 .iconBtn div button{
-    border:1px solid red;
+    font-family: muliRegular!important;
+    font-weight: bold;
+    padding:15px 30px !important;
 }
 .iconBtn div button:hover{
     transform:translate(3px,0px);
@@ -66,10 +97,10 @@ margin-top: 20px;
 .iconBtn .first{
     margin-left: -20px;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 .iconBtn .sec{
-    margin-left: 20px;
+    margin-left: 40px;
     margin-bottom: 30px;
 }
 .iconBtn .three{
@@ -90,7 +121,7 @@ background-color: #0a021d;
 
 }
 .btnactive{
-    box-shadow: 0px 0px 31.68px 0.12px #a7a7a7;
+    box-shadow: 0px 0px 12.2px 1px #a7a7a7;
 }
 .hideMobile{
     display: block;

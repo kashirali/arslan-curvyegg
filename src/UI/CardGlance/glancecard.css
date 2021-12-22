@@ -23,10 +23,10 @@
 
 
 .glanceCard{
-    width: 218px;
+    width: 200px;
     max-width: 218px;
     padding:20px;
-    height: 300px;
+    height: 285px;
     border-radius: 25px;
 
 
@@ -48,13 +48,13 @@ cursor:pointer;
 .glanceCard_active{
     background-color: #446beb;
     transition: background-color 0.1s linear;
-    box-shadow: 0px 0px 25.2px 4.8px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 0px 12.2px 1.8px rgba(0, 0, 0, 0.57);
 
 
 }
 .glancecardtext{
     text-align: center;
-    font-family: gothic;
+    font-family: Centurygothic !important;
 color: #ffffff;
 font-size: 30px;
 font-weight: 700;
