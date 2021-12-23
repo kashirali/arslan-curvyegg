@@ -51,7 +51,7 @@ function Blog() {
   </div>
   <div class="col-md-6 col-sm-12 mobwidth">
   <MediaCard leftImg={true} img={sampleimg} head="first card" text="Lorem Ipsum is that it has a more-or-less " secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters normal distribution of letters"/>
-  <div style={{marginBottom:'40px'}}></div>
+  <div style={{marginBottom:'35px'}}></div>
   <MediaCard leftImg={true} img={sampleimg} head="first card" text="Lorem Ipsum is that it has a more-or-less" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters normal distribution of letters"/>
 </div> 
   
@@ -94,7 +94,7 @@ function Blog() {
     </div>
 <h6 id="hd">consectetur adipiscing elit</h6>
   </div>
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut <span style={{display:'block',color:'#446beb',fontWeight:'bold',marginTop:'20px'}}>More...</span></p>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut <span style={{display:'block',color:'#446beb',fontWeight:'bold',marginTop:'20px',marginLeft:0}}>More...</span></p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ function Blog() {
         </div>
       
           
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,  Various versions have evolved over the years,  Various versions have evolved over the years,  Various versions have evolved over the years,  Various versions have evolved over the years,  Various versions have evolved over the years, 
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,  Various versions have evolved over the years,  Various versions have evolved over the years,  Various versions have evolved over the years
         
 
       </div>

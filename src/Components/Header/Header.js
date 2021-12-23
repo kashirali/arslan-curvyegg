@@ -44,7 +44,7 @@ function Header(props) {
                   <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',color:'white',marginTop:'30px'}}>
                   {/* <h3 className="hide_main_head" >curvyegg</h3> */}
                   <img src={curvy} width="100px"/>
-                  <img onClick={clickSmile} src={crossicon} className="timesicon" style={{cursor:'pointer',width:'30px',transition:'transform 0.15s linear'}}/>
+                  <img onClick={clickSmile} src={crossicon} className="globalcrossicon" style={{cursor:'pointer',width:'30px',transition:'transform 0.15s linear'}}/>
                   </div>
                   <div className="form_container">
                       <form autocomplete="off">

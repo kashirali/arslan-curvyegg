@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
-
+import crossicon from '../../assets/svg/Cross icon/Cross icon.svg'
 
 
 function Card(props) {
     return (
         <div>
             <div className="card">
-            <div style={{width:'80px',margin: '30px 0 0 auto',cursor:'pointer',overflow:'hidden'}}>{props.btnClicked?<i onClick={props.handleclose} className="fas fa-times fa-2x"></i>:null}</div>
+            <div style={{width:'80px',margin: '30px 0 0 auto',cursor:'pointer',overflow:'hidden'}}>{props.btnClicked?<img src={crossicon} onClick={props.handleclose} width="30px" className='globalcrossicon' />:null}</div>
                                 
                             <div style={{width:'80%',margin:'0 auto',marginTop:'10px'}}>
                                 

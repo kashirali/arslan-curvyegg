@@ -15,7 +15,7 @@ export default function MediaCard(props) {
   }
   
   else if(props.leftImg){
-    blogcardheight = '210'
+    blogcardheight = '215'
   }
   else {
     blogcardheight = '327'
@@ -43,6 +43,7 @@ export default function MediaCard(props) {
     blogcartstyle = {
       maxWidth: 550 ,
       boxShadow: "0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25)"
+
     }
   }
   console.log(blogcartstyle)

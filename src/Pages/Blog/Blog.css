@@ -1,24 +1,26 @@
-@font-face {
-  font-family: muliRegular;
-  src: url(../../assets/fonts/muli/Muli-Regular.ttf);
+
+  @font-face {
+    font-family: 'muliregular';
+    src: url(../../assets/fonts/Muli_Font/Muli-Regular.ttf);
 }
 @font-face {
-  font-family: gothic700;
-  src: url(../../assets/fonts/centurygothic/GOTHICB0.TTF);
+    font-family: 'mulisemibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'mulibold';
+    src: url(../../assets/fonts/Muli_Font/Muli-Bold.ttf);
 }
 
 @font-face {
-font-family: 'gothic';
-src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
+    font-family: 'Centurygothic';
+    src: url('../../assets/fonts/Century_Gothic_Font/GOTHICB.TTF')
 }
-@font-face {
-font-family: 'gothic-sub';
-src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
-}
+
 
 
 .main_blog_heaed{
-  font-family: gothic;
+  font-family: Centurygothic !important;
   font-size: 50px;
   color:#446beb;
   font-weight: bold;
@@ -52,17 +54,25 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
       align-items: center;
      
   }
+  .search_inp img{
+    transform: rotate(-90deg);
+    width: 28px;
+    margin-right: 10px;
+  }
   .blog_search{
     font-size: 18px;
     color:#446beb;
+  }
+  #search-id{
+    font-family: mulisemibold !important;
+    font-size: 25px;
+    color:c5c5c5 !important
   }
   #search-id:focus{
     border:none;
     box-shadow: none;
   }
-  #search-id::placeholder{
-    font-size:1.5em;
-  }
+ 
   #search-id{
     box-shadow: none;
     border:0px;
@@ -84,7 +94,7 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
     text-align: center;
     color:black;
     font-size: 17px;
-    font-family: muliRegular;
+    font-family: muliregular !important;
     
   }
   .tester
@@ -106,7 +116,7 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
     display: flex;
       margin-top: 50px;
       padding-bottom: 50px;
-      border-bottom: 1px solid lightgray;
+      border-bottom: 1px solid black;
   }
   .blogthreecards > *:not(:last-child){
     margin-right: 30px;
@@ -123,18 +133,24 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
     width: 40%;
     justify-content: space-between;
     margin-bottom: 40px;
+
+  }
+  .blog_nav ul li:first-child{
+ 
+    margin-left: -20px !important;
+
   }
   .blog_nav ul li a{
         text-decoration: none;
         font-size: 25px;
-        font-family: muliRegular;
+        font-family: mulisemibold !important;
         font-weight: bold;
         color:#6b7c93;
   }
   .blog_nav_active{
     color: #446beb !important;
     padding-bottom:10px;
-    border-bottom:2px solid #446beb;
+    border-bottom:1px solid #446beb;
   }
  
 
@@ -147,7 +163,7 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
   }
   .blog-left-1 p{
     font-size: 18px !important;
-    font-family: muliRegular;
+    font-family: mulibold !important;
     font-weight: bold;
     color:black;
   }
@@ -167,7 +183,7 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
   }
   .blog-left-2 p{
     font-size: 17px;
-    font-family: muliRegular;
+    font-family: muliregular !important;
     color:black;
   }
   .avatar_div{
@@ -178,9 +194,9 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
   }
   
   #hd{
-    margin-left: 10px;
+    margin-left: 17px;
     font-size: 17px;
-    font-family: muliRegular;
+    font-family: mulibold !important;
     font-weight: bold;
     color:black;
     
@@ -198,22 +214,22 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
 
   .div_hd_inner p:first-child{
       font-size: 18px;
-      font-family: muliRegular;
+      font-family: mulibold !important;
       font-weight: bold;
       color:black;
   }
   .div_hd_inner p:last-child{
     font-size: 17px;
-    font-family: muliRegular;
+    font-family: muliregular !important;
     color:black;
   }
   .div_hd h1{
-    font-size: 60px;
-    font-family: gothic;
+    font-size: 54px;
+    font-family: Centurygothic !important;
     font-weight: bold;
     color:#3c4658;
     text-transform: capitalize;
-    letter-spacing: 0.02em;
+    /* letter-spacing: 0.02em; */
     /* boxShadow:'4px 4px 21px 3px rgba(138,138,138,0.5)!important; */
   }
   
@@ -229,14 +245,14 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
    
     background-color: #e0ecfc;
     align-items: center;
-    min-height:130px ;
+    min-height:170px ;
   }
  
   #email_inp{
     margin-top: 20px;
-    border-radius: 25px;
-    width:270px;
-    padding:15px 20px;
+    border-radius: 35px;
+    width:310px;
+    padding:20px 20px;
     border:1px solid lightgray;
    
     
@@ -249,19 +265,19 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
   }
   #med_par{
       margin-top: 10px;
-    width: 90%;
+    width: 100%;
     font-size: 18px;
-    font-family: muliRegular;
+    font-family: mulibold !important;
     font-weight: bold;
     color:#446beb;
     line-height: 2em;
   }
 
   #submit_btn{
-    border-radius: 25px;
+    border-radius: 35px;
     width:120px;
         margin-left: 20px;
-        padding:15px 10px;
+        padding:20px 10px;
         width: 150px;
         color:white;
         background:#446beb;
@@ -282,11 +298,12 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
   .section_6_separator{
         min-height: 400px;
         font-size: 17px;
-        font-family: muliRegular;
+        font-family: muliregular !important;
   }
   .section_6_left{
       width: 50%;
       float:left;
+      margin-right: 80px !important;
   }
   .section_6_left>div{
     box-shadow:4px 4px 21px 3px rgba(138,138,138,0.2)!important; 
@@ -314,7 +331,14 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
     color: #6b7c93;
 
   }
-   
+   .inp_btn{
+     margin-left:60px;
+   }
+   .supp_hd h2{
+    font-family: mulibold !important;
+    font-size: 35px !important;
+    margin-bottom: 15px;
+   }
   @media (max-width: 992px) {
     .div_hd {
     
@@ -350,7 +374,7 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
     }
     #search-id{
       font-size: 15px;
-      font-family: muliRegular;
+      font-family: muli;
     }
     #search-id::placeholder{
       font-size: 15px;
@@ -454,6 +478,7 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
     .supp_hd h2 {
       font-size: 30px!important;
       margin-bottom: 20px;
+     
       
     }
     .blog_section_6 .avatar_div{
@@ -463,7 +488,12 @@ src: url(../../assets/fonts/SansSerifFLF-Demibold.otf)
       width: 100%;
       height: 420px !important;
       font-size: 15px;
+<<<<<<< HEAD
       padding:2px 0px;
+=======
+      padding:2px 8px;
+     
+>>>>>>> 13d3c5402cad3acfc22e803376a6c682ecabd779
 
     }
     .blog_section_6{
