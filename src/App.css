@@ -18,3 +18,10 @@
     box-shadow: none!important;
 }
 
+.globalcrossicon{
+    width: 30px !important;
+    opacity: 0.4 !important;
+}
+.globalcrossicon:hover{
+    opacity: 1 !important;
+}
