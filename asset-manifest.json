@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/arslan-curvyegg/static/css/main.7d7199ac.chunk.css",
-    "main.js": "/arslan-curvyegg/static/js/main.7aa68348.chunk.js",
-    "main.js.map": "/arslan-curvyegg/static/js/main.7aa68348.chunk.js.map",
+    "main.js": "/arslan-curvyegg/static/js/main.849a7561.chunk.js",
+    "main.js.map": "/arslan-curvyegg/static/js/main.849a7561.chunk.js.map",
     "runtime-main.js": "/arslan-curvyegg/static/js/runtime-main.af480a6e.js",
     "runtime-main.js.map": "/arslan-curvyegg/static/js/runtime-main.af480a6e.js.map",
     "static/css/2.6f90d145.chunk.css": "/arslan-curvyegg/static/css/2.6f90d145.chunk.css",
@@ -87,6 +87,6 @@
     "static/css/2.6f90d145.chunk.css",
     "static/js/2.6c19397c.chunk.js",
     "static/css/main.7d7199ac.chunk.css",
-    "static/js/main.7aa68348.chunk.js"
+    "static/js/main.849a7561.chunk.js"
   ]
 }
