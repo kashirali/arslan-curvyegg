@@ -87,8 +87,8 @@ class Review extends React.Component
                         </div>
                     <div>
                         <div className = "auth">
-                            {this.state.author}<br />
-                            {this.state.designation}
+                            <span style={{fontFamily: 'muli', fontSize: '20px'}}>{this.state.author}</span><br />
+                            <span style={{fontFamily: 'muli', fontSize: '17px'}}>{this.state.designation}</span>
                         </div>
                         <div className = "rats"><img src={stars} width="150px"/></div>    
                         </div>
