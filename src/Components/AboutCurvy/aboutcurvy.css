@@ -201,6 +201,7 @@ border: none !important;
    }
     .about_firstSec_head{
         font-family:gothic ;
+        margin-top: -8px;
         font-size: 40px;
         font-weight: bold;
 
@@ -268,8 +269,9 @@ border: none !important;
         display:block
     }
     .downimg{
-        width:190px;
-        margin-left:120px;
+        width: 171px;
+        margin-left: 154px;
+        margin-top: -5px;
     }
     .mobilebtn{
         display:block;

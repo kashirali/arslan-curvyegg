@@ -19,6 +19,7 @@ import {Link} from 'react-router-dom'
 import leftarrow from "../../assets/svg/left-arrow.svg"
 
 import downarrow from '../../assets/svg/Arrow Up.svg'
+import lefticon from '../../assets/svg/is-less-than.png'
 
 
 function Ataglance() {
@@ -78,11 +79,7 @@ function Ataglance() {
                         <span className="glancetext">24/7 live agents</span>
                         <span className="glancetext">24/7 live agents</span>
                         <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>           <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
+                        
     </div>)
 
     let DashboardData = (<div>
@@ -100,11 +97,7 @@ function Ataglance() {
                         <span className="glancetext">24/7 live agents</span>
                         <span className="glancetext">24/7 live agents</span>
                         <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">this is change text</span>
-                        <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>           <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
+                      
     </div>)
     let visitorData = (
         <div>
@@ -123,10 +116,7 @@ function Ataglance() {
                         <span className="glancetext">24/7 live agents</span>
                         <span className="glancetext">hello change text</span>
                         <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">hello change text</span>           <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
-                        <span className="glancetext">24/7 live agents</span>
+                        
         </div>
     )
     return (
@@ -150,7 +140,7 @@ function Ataglance() {
                             {/* text */}
                             <h5 className="glancesubtext">Live Chat</h5>
                             </div>
-                            {showData.showlivechat?<img src={downarrow} className='glancyicon' width="20px" />:null}
+                            {showData.showlivechat?<img src={lefticon} className='glancyicon' width="20px" />:null}
                         </div>
                         <div>
        
@@ -161,7 +151,7 @@ function Ataglance() {
                             {/* text */}
                             <h5 className="glancesubtext">Dashboard</h5>
                             </div>
-                            {showData.showdashboard?<img src={downarrow} className='glancyicon' width="20px" />:null}
+                            {showData.showdashboard?<img src={lefticon} className='glancyicon' width="20px" />:null}
                         </div>
                         <div>
                             {/* svg */}
@@ -172,7 +162,7 @@ function Ataglance() {
                             {/* text */}
                             <h5 className="glancesubtext">Visitors &#38; Team</h5>
                             </div>
-                            {showData.showvisitor?<img src={downarrow} className='glancyicon' width="20px" />:null}
+                            {showData.showvisitor?<img src={lefticon} className='glancyicon' width="20px" />:null}
                         </div>
                         
                     </div>

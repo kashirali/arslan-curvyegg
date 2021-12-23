@@ -206,8 +206,14 @@
        height: 800px;
    }
    .row{
-       margin-left:calc(0.3 * var(--bs-gutter-x))!important;
+       margin-left:calc(1.0 * var(--bs-gutter-x))!important;
    }
+   .subform_top>img {
+    position: absolute;
+    right: 6px;
+    top: 87px;
+    z-index: 10;
+}
     .support_showcase_text{
         width: 85%;
         margin: 170px auto 50px auto; 
@@ -250,7 +256,9 @@
         border-radius: 10px;
     }
     .support_showcase_img{
-        width: 60px;
+        width: 90px;
+        margin-top: -47px;
+        margin-left: -12px;
     }
     .follow_div{
         margin-top: 70px;
