@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/arslan-curvyegg/static/css/main.ea4f532f.chunk.css",
-    "main.js": "/arslan-curvyegg/static/js/main.e26d113b.chunk.js",
-    "main.js.map": "/arslan-curvyegg/static/js/main.e26d113b.chunk.js.map",
+    "main.css": "/arslan-curvyegg/static/css/main.ef5c92aa.chunk.css",
+    "main.js": "/arslan-curvyegg/static/js/main.def8d99d.chunk.js",
+    "main.js.map": "/arslan-curvyegg/static/js/main.def8d99d.chunk.js.map",
     "runtime-main.js": "/arslan-curvyegg/static/js/runtime-main.af480a6e.js",
     "runtime-main.js.map": "/arslan-curvyegg/static/js/runtime-main.af480a6e.js.map",
     "static/css/2.6f90d145.chunk.css": "/arslan-curvyegg/static/css/2.6f90d145.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.7a1d1826.chunk.js.map": "/arslan-curvyegg/static/js/2.7a1d1826.chunk.js.map",
     "index.html": "/arslan-curvyegg/index.html",
     "static/css/2.6f90d145.chunk.css.map": "/arslan-curvyegg/static/css/2.6f90d145.chunk.css.map",
-    "static/css/main.ea4f532f.chunk.css.map": "/arslan-curvyegg/static/css/main.ea4f532f.chunk.css.map",
+    "static/css/main.ef5c92aa.chunk.css.map": "/arslan-curvyegg/static/css/main.ef5c92aa.chunk.css.map",
     "static/js/2.7a1d1826.chunk.js.LICENSE.txt": "/arslan-curvyegg/static/js/2.7a1d1826.chunk.js.LICENSE.txt",
     "static/media/Arrow Up.8be48c67.svg": "/arslan-curvyegg/static/media/Arrow Up.8be48c67.svg",
     "static/media/Arrow upblue.c9973117.svg": "/arslan-curvyegg/static/media/Arrow upblue.c9973117.svg",
@@ -69,6 +69,7 @@
     "static/media/dashboard.6d3666ce.jpg": "/arslan-curvyegg/static/media/dashboard.6d3666ce.jpg",
     "static/media/downarrow.9590a36a.svg": "/arslan-curvyegg/static/media/downarrow.9590a36a.svg",
     "static/media/drupal.34aba400.svg": "/arslan-curvyegg/static/media/drupal.34aba400.svg",
+    "static/media/is-less-than.a83e4bf0.png": "/arslan-curvyegg/static/media/is-less-than.a83e4bf0.png",
     "static/media/joomla-seeklogo.com.22897673.svg": "/arslan-curvyegg/static/media/joomla-seeklogo.com.22897673.svg",
     "static/media/left-arrow.72bb8157.svg": "/arslan-curvyegg/static/media/left-arrow.72bb8157.svg",
     "static/media/magento-seeklogo.com.57466765.svg": "/arslan-curvyegg/static/media/magento-seeklogo.com.57466765.svg",
@@ -86,7 +87,7 @@
     "static/js/runtime-main.af480a6e.js",
     "static/css/2.6f90d145.chunk.css",
     "static/js/2.7a1d1826.chunk.js",
-    "static/css/main.ea4f532f.chunk.css",
-    "static/js/main.e26d113b.chunk.js"
+    "static/css/main.ef5c92aa.chunk.css",
+    "static/js/main.def8d99d.chunk.js"
   ]
 }
