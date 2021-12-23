@@ -138,14 +138,16 @@ color: #ffffff;
     }
     .dropline{
         width: 265px;
+        left: 63px;
+        top: -38px;
     }
     .dropdiv1{
-        top:108px;
-        right:68px;
+        top:91px;
+        right:19px;
     }
     .dropdiv2{
-        top:226px;
-        right:20px;
+        top:203px;
+        right:-9px;
     }
     .left_child{
         margin-bottom: -40px;

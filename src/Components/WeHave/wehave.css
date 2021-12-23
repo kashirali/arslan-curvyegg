@@ -132,13 +132,13 @@ margin-right: 50px;
         transition: padding 0.05s ease-in-out
         
     }
-    .right{
+    .right {
         float: none;
         width: 100%;
-        margin:0 50px 0px 44px;
-       background-size: contain;
+        margin: 0 41px 0px 28px;
+        background-size: contain;
         margin-bottom: 50px;
-        height: 530px;
+        /* height: 530px; */
     }
     .left_sec{
         float: none;

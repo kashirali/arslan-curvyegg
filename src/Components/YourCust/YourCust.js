@@ -29,7 +29,9 @@ function YourCust() {
                             <div data-aos="fade-right" className="left_child">
                                 <h3  className="left_child_head ">Your Customers, Our Family!</h3>
                                 <h5 className="left_child_subhead">CurvyEgg, working for your customer satisfaction,we know perfection is the key.</h5>
-                                <p className="left_child_para">Ready to boost your sale, with a friendly human touch?<a href="#"> Subscribe today!</a></p>
+                                <p className="left_child_para">Ready to boost your sale, with a friendly human touch?</p>
+                                <p> <a href="#"> Subscribe today!</a></p>
+                               
                             </div>
                         </div>
                         <div  className="col-md-5 col-sm-12">
@@ -37,7 +39,7 @@ function YourCust() {
                             <div data-aos="fade-left" style={{width:'100%',minHeight:'385px',position:'relative',marginLeft:'-30px'}}>
                             <img className="dropline" src={dropline} />
                             <div className="drop dropdiv1"><p>Uninterruptable Service</p></div>
-                            <div style={{padding:'15px 50px'}} className="drop dropdiv2"><p>Unmatchable Team</p></div>
+                            <div  className="drop dropdiv2"><p>Unmatchable Team</p></div>
                             <div className="aboutCircle"><p>About Curvy</p></div>
                             </div>
                          </div>

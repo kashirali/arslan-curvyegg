@@ -11,7 +11,8 @@
 }
 .review_card
 {
-    padding: 2%;
+    padding-left: 0px;
+    padding-right: 8px;
 }
 
 .review_data
@@ -117,7 +118,7 @@ box-shadow: 0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25);
 }
 .sigh
 {
-    width: 100%;
+    width: 83%;
     text-align: right;
 }
 
@@ -140,5 +141,9 @@ box-shadow: 0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25);
     .sigh
     {
         text-align: center;
+    }
+    .sigh {
+        width: 100%;
+        
     }
 }

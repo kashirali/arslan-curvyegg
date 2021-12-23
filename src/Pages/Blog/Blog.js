@@ -199,7 +199,7 @@ function Blog() {
   </div>
       <div className="section_6_separator">
         <div className="section_6_left">
-          <div style={{borderRadius:"10px",overflow:'hidden',width:'fit-content'}}>
+          <div style={{borderRadius:"4px",overflow:'hidden',width:'fit-content'}}>
           <img src={sampleimg} />
           </div>
         </div>
