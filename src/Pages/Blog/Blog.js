@@ -1,8 +1,8 @@
 
 import './Blog.css';
-import React from 'react';
+import React,{useEffect} from 'react';
 import Dropdown from 'react-bootstrap/Dropdown'
-
+import downarrow from '../../assets/svg/Cross icon/Arrow upblue.svg'
 import { Avatar,Pagination } from '@mui/material';
 // import Pagination from "react-js-pagination";
 import Header from '../../Components/Header/Header';
@@ -13,9 +13,15 @@ import Review from '../../Components/reviews/Review'
 import sampleimg from '../../assets/sampleimg.png'
 import sampleicon from '../../assets/svg/salvador.jpg'
 import blogsearch from '../../assets/svg/Blogsearch.svg'
-
+import Aos from 'aos';
 function Blog() {
-
+  useEffect(
+    ()=>Aos.init({
+        duration:2000,
+        once:true
+    }),[]
+)
+  
   return (
     <div>
       <Header/>
@@ -35,7 +41,7 @@ function Blog() {
   </div>
   <Dropdown>
   <Dropdown.Toggle variant="white" id="dropdown-basic">
-    <span style = {{color: "#446BEB", fontSize: "20px"}}>All Categories</span> 
+    <span>All Category <img style={{transform:'rotate(-180deg)',marginLeft:'20px'}} src={downarrow} width="20px"/></span> 
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
@@ -46,7 +52,7 @@ function Blog() {
 </Dropdown>
   </div>
    
-  <div class="row" >
+  <div  data-aos="fade-up" class="row" >
   <div class="col-md-6 col-sm-12 mobwidth">
 
   <MediaCard img={sampleimg} head="first card" text=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
@@ -60,7 +66,7 @@ function Blog() {
 
 </div>
 
-  <div className="tester">
+  <div  data-aos="fade-up" className="tester">
   <div className="blogthreecards">
   <MediaCard threecard={true} img={sampleimg} head="first card" text="this is a text of first card" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
   <MediaCard threecard={true} img={sampleimg} head="first card" text="this is a text of first card" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
@@ -68,7 +74,7 @@ function Blog() {
 
   </div>
 </div>
- <section className="blog_section_3">
+ <section  data-aos="fade-up" className="blog_section_3">
     <div className="blog_nav">
     <ul>
   <li><a className='blog_nav_active' href="#home">Home</a></li>
@@ -111,12 +117,12 @@ function Blog() {
 
 
 
-<div class="div_hd">
+<div  data-aos="fade-up" class="div_hd">
 <h1>Lorem ipsum dollar</h1>
 </div>
 
 
-<div class="row">
+<div  data-aos="fade-up" class="row">
 <div class="col-md-6 col-sm-12 overflowimg"> 
 <div style={{borderRadius:"10px",overflow:'hidden',width:'fit-content'}}>
           <img src={sampleimg} />
@@ -150,7 +156,7 @@ function Blog() {
 
 </div>
 <div className='div_hd_inner marginremove' style={{marginTop:'45px'}}>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaassjk</p>
   
 <div class="avatar_div">
 <div style={{borderRadius:'16px',padding:'5px',background:'lightgrey'}}>
@@ -168,7 +174,7 @@ function Blog() {
 </div>
 
 
-<div class="p_inp">
+<div  data-aos="fade-up" class="p_inp">
   <div className="container">
       <div className="row">
           <div className="col-md-6 col-sm-12">
@@ -190,7 +196,7 @@ function Blog() {
 
 </div>
 <div className="container">
-  <section className="blog_section_6">
+  <section  data-aos="fade-up" className="blog_section_6">
       <div class="supp_hd">
       <h2>Lorem ipsum dolor sit amet sit amet</h2>
       <div class="avatar_div">
@@ -220,7 +226,7 @@ function Blog() {
       <Review total = {2}/>
 
       <div>
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'80px',clear:'both',}}>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'120px',clear:'both',}}>
 
       <Pagination count={5} variant="outlined" shape="rounded" />
       </div>

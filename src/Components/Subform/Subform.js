@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import {Button} from 'react-bootstrap'
-
+import crossicon from '../../assets/svg/Cross icon/Cross icon.svg'
 import './subform.css'
 import '../../assets/fonts/font.css'
 import halfc from '../../assets/half.png'
@@ -20,10 +20,12 @@ function Subform(props) {
     return (
         <div className="kala">
         <div className="subform_top" style={{position:'absolute'}}>
+        {props.crossicon? <img  className='globalcrossicon' onClick={()=>closingInAction(props.setShowsubform)} src={crossicon} width="30px"/>:null} 
             <div className="div_center">
             {/* <div className='popclosebut'>
         <button className="" onClick={()=>closingInAction(props.kiara)}>X</button>
         </div> */}
+       
                 <img data-aos="fade-right" src={halfc} style={{position:'absolute',top:'-5px' ,right:'0px',zIndex:'-1'}} width="377px" height="120px"/>
                 <div className="contain">
                     <h3 className="subform_main_head fontsforweb_fontid_9785">Lorem Solioum Design to example one ipsum</h3>
@@ -31,7 +33,7 @@ function Subform(props) {
                         <div className="form_div">
                             <form style={{display:'flex'}} className = "forms_bottom">
                                 <input type="email" placeholder="Your work email" required className="inputbox" />
-                                <button className="inputBtn" type="submit"  >Get a quote</button>
+                                <button className="inputBtn" type="submit"  >{props.subscribe? "Subscribe us":"Get a quote"}</button>
                             </form>
                         </div>
                      <p className="need">Need <span>agents</span> now?<span>Launch in 1 week.</span></p>   

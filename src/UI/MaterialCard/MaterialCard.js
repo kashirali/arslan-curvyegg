@@ -34,7 +34,7 @@ export default function MediaCard(props) {
     blogcartstyle={
       maxWidth: 550,
       display:'flex',
-      boxShadow: "0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25)",
+      boxShadow: " 0px 0px 12.2px 1px rgba(167, 167, 167, 0.15)",
 
       alignItems:'stretch'
     }
@@ -42,7 +42,7 @@ export default function MediaCard(props) {
   else {
     blogcartstyle = {
       maxWidth: 550 ,
-      boxShadow: "0px 0px 25.2px 4.8px rgba(167, 167, 167, 0.25)"
+      boxShadow: "0px 0px 12.2px 1px rgba(167, 167, 167, 0.15)"
 
     }
   }

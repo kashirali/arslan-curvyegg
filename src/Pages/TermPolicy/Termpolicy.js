@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 
 import Header from '../../Components/Header/Header'
 import OnlyFooter from '../../Components/OnlyFooter/OnlyFooter'
@@ -32,6 +32,7 @@ function varsa()
     
 }
 function Termpolicy() {
+
     let servicetext = (<motion.div className="para_text"
         initial={{opacity:0}}
         animate={{opacity:1}}
@@ -67,6 +68,10 @@ function Termpolicy() {
     <br/>
     </motion.div>
     )
+    const [popupshow,setPopupshow] = useState(false);
+    useEffect(()=>{
+        setTimeout(()=>setPopupshow(true),1000);
+    },[])
     const [termData,setTermData] = useState({
         service:{
             head:'Terms of Services',
@@ -103,7 +108,8 @@ function Termpolicy() {
     vakanda();
     return (
         <div>
-        <PopupTerms />
+            {popupshow?  <PopupTerms />:null}
+       
         <div className="termpage" id="arslan_easter_egg" onLoad = {varsa}>
             <Header/>
             <div style={{objectFit:'contain'}}>

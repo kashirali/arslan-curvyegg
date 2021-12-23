@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/OnlyFooter/OnlyFooter'
@@ -23,8 +23,15 @@ import Subform from '../../Components/Subform/Subform'
 import supportsearch from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/SupportSearch.svg'
 
 import {motion} from 'framer-motion'
-
+import Aos from 'aos';
 function Support() {
+
+    useEffect(
+        ()=>Aos.init({
+            duration:2000,
+            once:true
+        }),[])
+
     const [showsubform,setShowsubform] = useState(false);
     const [support_card_data,setSupport_card_data] = useState([
         {
@@ -59,7 +66,7 @@ function Support() {
     return (
         <div style={{overflow:'hidden'}} id="nts_tester">
             <Header color="white"/>
-            {showsubform? <motion.div className='subformonmob' style={{position:'absolute',top:'120px',left:0,width:'100%'}}
+            {/* {showsubform? <motion.div className='subformonmob' style={{position:'absolute',top:'120px',left:0,width:'100%'}}
                   animate={{
                     opacity:1,
                     scale:1
@@ -70,7 +77,23 @@ function Support() {
                 }}
                 >
                     <Subform kiara = {setShowsubform}/>
+                </motion.div>:null} */}
+
+                {showsubform?<motion.div className='subscribeblur'
+                       animate={{
+                        opacity:1,
+                       
+                    }}
+                    initial = {{
+                        opacity:0,
+                      
+                    }}
+                >
+                    <div className='subscribeblurinner'>
+                            <Subform crossicon subscribe setShowsubform={setShowsubform}/>
+                    </div>
                 </motion.div>:null}
+                
                 <div className="support_showcase">
                     <img src={sprinkles} width="195px" className="sprinkleLeft"/>
                     <div className="sprinkleRight"><img src={sprinkles} width="195px"/></div>
@@ -90,7 +113,7 @@ templates, replace the content text brand voice exactly.</p>
                 </div>
                 <div className="support_help">
                     <div className="container">
-                        <div className="support_help_top">
+                        <div  data-aos="fade-up"  className="support_help_top">
                             <h3 className="support_help_head">Hi! How can we help you?</h3>
                             <InputGroup className='supportinputstyle' style={{width:'350px',margin:'0 auto',}}>
                                 <FormControl style={{padding:'9px'}}
@@ -103,14 +126,14 @@ templates, replace the content text brand voice exactly.</p>
                                 </Button>
                             </InputGroup>
                         </div>
-                        <div className="row">
+                        <div  data-aos="fade-up"  className="row">
                             <div className="support_grid">
                                 {displayCard}
                             
                             </div>
                          
                         </div>
-                        <div className="row">
+                        <div  data-aos="fade-up"  className="row">
                             <div className="support_grid_two">
                                     <div style={{cursor:'pointer'}} onClick={()=>setshowFaq(!showFaq)}>
                                         <img src={faqicon} style={{width:'100px',height:'100px',borderRadius:'50%',}}/>

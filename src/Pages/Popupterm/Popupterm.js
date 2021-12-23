@@ -3,6 +3,7 @@ import { CloseButton } from 'react-bootstrap';
 import './popupterm.css'
 import imager from '../../assets/Terms - Down Arrow.svg'
 import crossIcon from '../../assets/svg/Cross icon/Cross icon.svg'
+import {motion } from 'framer-motion'
 const CloseButtoner = () => 
 {
   document.getElementById('mainer_close').style = "display: none;";
@@ -14,7 +15,16 @@ function PopupTerms() {
 
 
     return (
-      <div className="popupterms" id="mainer_close" onClick = {CloseButtoner}>
+      <motion.div className="popupterms" id="mainer_close" onClick = {CloseButtoner}
+        animate={{
+          opacity:1
+        }}
+
+        initial={{
+          opacity:0
+        }}
+
+      >
         <div className='popuptermscenter'>
         <div className='popclosebut'>
         <button className="" onClick = {CloseButtoner}><img src={crossIcon} style={{marginRight:'50px'}} width="30px"/></button>
@@ -74,7 +84,7 @@ function PopupTerms() {
   
   </div>
         </div>
-      </div>
+      </motion.div>
     
      
     );

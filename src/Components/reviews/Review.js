@@ -5,6 +5,7 @@ import sampleimg from '../../assets/svg/salvador.jpg'
 import stars from '../../assets/svg/Stars.svg'
 import downarrow from '../../assets/svg/Arrow Up.svg'
 import { Avatar,Pagination } from '@mui/material';
+import Aos from 'aos'
 class Review extends React.Component 
 {
     constructor(props) 
@@ -49,11 +50,17 @@ class Review extends React.Component
                 designation: datas[keys[pointer]].designation,
                 idx: pointer }));
     }
+    componentDidMount(){
+        Aos.init({
+            duration:2000,
+            once:true
+        })
+    }
     render()
     {
         return(
 
-            <div style={{marginBottom:'80px'}}>
+            <div  data-aos="fade-up" style={{marginBottom:'120px'}}>
                 <div className="main_hold">
                     <div class="review_card">
                         <div className="review_data">
@@ -76,7 +83,7 @@ class Review extends React.Component
                         </div>
                     </div>
                     <div>
-                    <div class="card_data">
+                    <div class="card_data" >
                         
                         <div className = "image">
                             <div className = "container_img">
@@ -87,8 +94,8 @@ class Review extends React.Component
                         </div>
                     <div>
                         <div className = "auth">
-                            <span style={{fontFamily: 'muli', fontSize: '20px'}}>{this.state.author}</span><br />
-                            <span style={{fontFamily: 'muli', fontSize: '17px'}}>{this.state.designation}</span>
+                            <span >{this.state.author}</span><br />
+                            <span >{this.state.designation}</span>
                         </div>
                         <div className = "rats"><img src={stars} width="150px"/></div>    
                         </div>
@@ -109,7 +116,7 @@ class Review extends React.Component
 
 Review.defaultProps = {
     data: {
-        arsla: {author: 'CurvyEgg', para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla", designation: "owner"},
+        arsla: {author: 'CurvyEgg', para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla", designation: "owner - Small Business"},
         fake: {author: 'CurvyEgg', para: "Lake take dolor sit kings, consectetur adipiscing elit per raka wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla Lorem ipsum dolor sit amet, consectetur adipiscing elit per amet wakana fake lake the porla", designation: "slave"}
     },
     total: 2

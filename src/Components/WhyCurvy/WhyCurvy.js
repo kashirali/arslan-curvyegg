@@ -171,7 +171,7 @@ function WhyCurvy() {
                             
                             {/* <img data-aos="fade-up-left" className="top_clear" src={charts} width="88%" />   */}
 
-                            <div className='index_whycurvy_cards_main' >
+                            <div data-aos="fade-down-right" className='index_whycurvy_cards_main' >
                                 <div>
                                 <Whycards color="#446beb" number="79%" text="Reduced Customer Support Costs"/>
                                 </div>
