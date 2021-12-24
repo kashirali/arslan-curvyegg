@@ -52,7 +52,7 @@ function Blog() {
 </Dropdown>
   </div>
    
-  <div  data-aos="fade-up" class="row" >
+  <div  data-aos="fade-up" class="row blog_row" >
   <div class="col-md-6 col-sm-12 mobwidth">
 
   <MediaCard img={sampleimg} head="first card" text=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>

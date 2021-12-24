@@ -126,14 +126,14 @@ templates, replace the content text brand voice exactly.</p>
                                 </Button>
                             </InputGroup>
                         </div>
-                        <div  data-aos="fade-up"  className="row">
+                        <div  data-aos="fade-up"  className="row support_row">
                             <div className="support_grid">
                                 {displayCard}
                             
                             </div>
                          
                         </div>
-                        <div  data-aos="fade-up"  className="row">
+                        <div  data-aos="fade-up"  className="row support_row">
                             <div className="support_grid_two">
                                     <div style={{cursor:'pointer'}} onClick={()=>setshowFaq(!showFaq)}>
                                         <img src={faqicon} style={{width:'100px',height:'100px',borderRadius:'50%',}}/>

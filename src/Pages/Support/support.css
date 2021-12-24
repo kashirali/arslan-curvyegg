@@ -205,8 +205,11 @@
    .support_showcase{
        height: 800px;
    }
-   .row{
+   .support_row{
        margin-left:calc(1.0 * var(--bs-gutter-x))!important;
+   }
+   .support_grid_two >div{
+       width: 96%;
    }
    .subform_top>img {
     position: absolute;
