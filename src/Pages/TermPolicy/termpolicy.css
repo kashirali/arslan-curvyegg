@@ -19,7 +19,9 @@
 	font-family: 'gothic-sub';
 	src: url('../../assets/fonts/SansSerifFLF-Demibold.otf')
 }
-
+.body{
+    overflow-y: scroll !important;
+  }
 .btngroup{
     background:white;
     padding:15px 35px 20px 35px;

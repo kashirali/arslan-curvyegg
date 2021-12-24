@@ -27,7 +27,7 @@ function PopupTerms() {
       >
         <div className='popuptermscenter'>
         <div className='popclosebut'>
-        <button className="" onClick = {CloseButtoner}><img src={crossIcon} style={{marginRight:'50px'}} width="30px"/></button>
+        <button className="" onClick = {CloseButtoner}><img className="cross_icon" src={crossIcon}  width="30px"/></button>
         </div>
         
     <div className="container mt-0">
