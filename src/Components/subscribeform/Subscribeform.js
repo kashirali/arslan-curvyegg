@@ -31,7 +31,7 @@ function Subscribeform(props) {
         <button className="" onClick={()=>closingInAction(props.kiara)}>X</button>
         </div> */}
        
-                <img data-aos="fade-right" src={halfc} style={{position:'absolute',top:'-5px' ,right:'0px',zIndex:'-1'}} width="377px" height="120px"/>
+                {/* <img data-aos="fade-right" src={halfc} style={{position:'absolute',top:'-5px' ,right:'0px',zIndex:'-1'}} width="377px" height="120px"/> */}
                 <div className="contain">
                     <h3 className="subform_main_head fontsforweb_fontid_9785">Lorem Solioum Design to example one ipsum</h3>
                     <p className="subform__main_para">Penami ofic is to #Code seven sample text is building solutions. pick some contenttemplates, replace the content text brand voice exactly.</p>
@@ -64,7 +64,7 @@ function Subscribeform(props) {
         <button className="" onClick={()=>closingInAction(props.kiara)}>X</button>
         </div> */}
        
-                <img data-aos="fade-right" src={halfc} style={{position:'absolute',top:'-5px' ,right:'0px',zIndex:'-1'}} width="377px" height="120px"/>
+                {/* <img data-aos="fade-right" src={halfc} style={{position:'absolute',top:'-5px' ,right:'0px',zIndex:'-1'}} width="377px" height="120px"/> */}
                 <div className="contain">
                     <h3 className="subform_main_head fontsforweb_fontid_9785">Lorem Solioum Design to example one ipsum</h3>
                     <p className="subform__main_para">Penami ofic is to #Code seven sample text is building solutions. pick some contenttemplates, replace the content text brand voice exactly.</p>

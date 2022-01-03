@@ -213,9 +213,18 @@
        height: 800px;
        /* margin-top: 10px; */
    }
-   .row{
-       margin-left:calc(0.3 * var(--bs-gutter-x))!important;
+   .support_row{
+       margin-left:calc(1.0 * var(--bs-gutter-x))!important;
    }
+   .support_grid_two >div{
+       width: 96%;
+   }
+   .subform_top>img {
+    position: absolute;
+    right: 6px;
+    top: 87px;
+    z-index: 10;
+}
     .support_showcase_text{
         width: 85%;
         margin: 220px auto 50px auto; 

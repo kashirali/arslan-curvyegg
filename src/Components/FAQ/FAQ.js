@@ -115,7 +115,7 @@ function FAQ() {
                 <h3 className="FAQ_main_head fontsforweb_fontid_9785">Frequently Asked Questions</h3>
                 <div className="row">
                     <div className="col-md-12 col-sm-12">
-                        <div style={{width:'80%',margin:'0 auto'}}>
+                        <div style={{width:'100%',margin:'0 auto'}}>
                         <div className="nopurpose">
                         <div className="tab_main" style={{overflow:'hidden',border:showeight && 0}}>
                                 

@@ -352,9 +352,9 @@ src: url('../../assets/fonts/Binx.ttf')
       padding-right: 2.9em !important;
     }
     .main2 >div{
-
+     
   
-      margin-left:20px;
+      margin-left:0px;
     }
     .main2>div:first-child{
       margin-top: 50px;

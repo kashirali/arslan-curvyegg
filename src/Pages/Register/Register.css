@@ -49,6 +49,9 @@
       color: #4d4d4f;
       font-size: 20px;
   }
+  .kalahideonmob{
+
+  }
   
   @media screen and (max-width: 992px) {
   
@@ -67,6 +70,9 @@
     /* .signupmobleft{
       margin-left: 10px !important;
     } */
+    .signupmobleft{
+      margin-left: 8px !important;
+    }
   
   }
 

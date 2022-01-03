@@ -201,6 +201,7 @@ border: none !important;
    }
     .about_firstSec_head{
         font-family:gothic ;
+        margin-top: -8px;
         font-size: 40px;
         font-weight: bold;
 

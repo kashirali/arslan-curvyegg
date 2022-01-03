@@ -123,7 +123,7 @@ function Termpolicy() {
 
             
             </div>
-            <div className="container" style={{marginTop:'80px'}}>
+            <div className="container termtop" style={{marginTop:'80px'}}>
             <div className="text-center mx-auto">
                 <div className="btn-group" role="group">
                     <div onClick={()=>setTermactive('service')} className={activeterm.service?"btngroup btn1 btn_clicked":"btngroup btn1" }>Terms of Services</div>

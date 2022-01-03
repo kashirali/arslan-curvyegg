@@ -181,6 +181,9 @@ padding:7px 15px;
 margin-right: 10px;
 width: 170px;
 }
+.inputbox:focus{
+    outline:none !important;
+}
 
 .inputBtn{
     border-radius: 2px;
