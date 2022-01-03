@@ -18,7 +18,7 @@ function WeHave() {
         )
     )
     return (
-        <div data-aos="fade-up" className="container we_main" style={{minheight:'768px',overflow:'hidden',paddingRight:'0' }}>
+        <div id="wehave" data-aos="fade-up" className="container we_main" style={{minheight:'768px',overflow:'hidden',paddingRight:'0' }}>
             <div className="left_first">
                 <h3 className="left_first_head fontsforweb_fontid_9785">We Have Only One Boss, Your Customer!</h3>
                 <p className="left_first_para">Get involved in more conversations, for more conversions! Listen to your customers and help them choose the best product they are looking for. Let them share images or attachments, directly from the chat box, while we do the same to facilitate them and your business. We provide all information they need and collect all that you need.</p>

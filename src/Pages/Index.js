@@ -15,7 +15,7 @@ import Ataglance from '../Components/Ataglance/Ataglance';
 export default function Index() {
     return (
         <div>
-             <Header/>
+             <Header headerlogo/>
      <Showcase/>
        <YourCust/>
      <AboutCurvy/> 

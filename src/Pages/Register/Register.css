@@ -18,7 +18,7 @@
 .home-h{
     margin-top: 90px !important;
     text-align: center;
-    font-family: gothic;
+    font-family: Centurygothic !important;
     color: #446beb;
       margin-bottom: 25px !important;
       padding: 0 !important;
@@ -30,7 +30,7 @@
   .home-s{
     margin-top: 50px !important;
     text-align: center;
-    font-family: gothic;
+    font-family: Centurygothic !important;
     color: #446beb;
       margin-bottom: 25px !important;
       padding: 0 !important;
@@ -45,7 +45,7 @@
   .home-p{
     min-height: 1px;
     padding-right: 25px;
-    font-family: muliRegular;
+    font-family: muliregular !important;
       color: #4d4d4f;
       font-size: 20px;
   }
@@ -55,14 +55,49 @@
     .home-h{
       margin-top: 90px !important;
       text-align: center;
-      font-family: gothic;
+      font-family: Centurygothic !important;
       color: #446beb;
         margin-bottom: 5px !important;
         padding: 0 !important;
         font-weight: bold;
         
-        font-size: 40px;
+        font-size: 34px !important;
       
     }
+    /* .signupmobleft{
+      margin-left: 10px !important;
+    } */
   
   }
+
+  
+@media only screen and (max-width: 360px) {
+  .home-h {
+ 
+    font-size: 30px !important;
+}
+.home-p {
+  
+  font-size: 17px !important;
+}
+.heading_3 {
+
+  font-size: 34px !important;
+  
+
+}
+.signuplist li {
+  font-size: 12px !important;
+}
+.c-form {
+ 
+ 
+  padding: 10px 0px 15px 0px!important;
+  min-height: 600px !important;
+ 
+}
+.home-s {
+  
+  font-size: 36px !important;
+}
+}

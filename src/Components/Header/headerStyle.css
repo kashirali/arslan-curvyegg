@@ -284,3 +284,13 @@ padding:5px 10px;
       display: none !important;
      }
      }
+
+     @media only screen and (max-width: 360px) {
+
+        .nav-menu {
+            background-color: #446beb;
+            width: 300px !important;
+         
+          }
+          
+    }

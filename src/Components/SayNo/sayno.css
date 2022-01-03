@@ -71,7 +71,7 @@ animation-name:opacity;
 .main_btn_grp *{
     border-radius: 5px;
 border-width: 2px;
-border:0;
+border: 1px solid lightgrey;
 border-style: solid;
 background-color: #f3f4f4;
 font-weight: bold;
@@ -130,18 +130,24 @@ font-family: mulibold !important;
     }
 }
 @media only screen and (max-width: 992px) {
+    #sayno{
+        margin-top: 0 !important;
+    }
     .main_left_img{
         background-color: #483a9c;
         width:110%;
         height:270px;
         position:relative;
+        margin:0 !important;
+        padding: 0 !important;
+        margin-left:-10px !important;
      
     }
     .main_left_img_inner_1{
         position:absolute;
         width:88%;
         height:270px;
-        left:0px;
+        left: 0px;
         top:50px;
         border-radius:10px;background-color: #0a021d;
     }
@@ -174,6 +180,10 @@ font-family: mulibold !important;
         font-weight: bold;
         margin:30px auto 30px auto;
     }
+    .main_say_para span{
+        color:#446beb;
+        
+    }
     .main_btn_grp{
         width:100%;
        
@@ -181,5 +191,16 @@ font-family: mulibold !important;
     .main_btn_grp >*{
       
         width:140px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .main_left_img_inner_2{
+        position:absolute;
+        width:88% !important;
+        height:270px;
+        left:18px !important;
+        top:70px;
+        border-radius:10px;background-color:grey;
     }
 }

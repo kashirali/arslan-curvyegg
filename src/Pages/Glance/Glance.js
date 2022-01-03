@@ -24,7 +24,7 @@ function Glance() {
         }))
     )
     let { id } = useParams();
-    const [showcard,setShowcard] = useState(id)
+    const [showcard,setShowcard] = useState('live')
     let color = '';
     if(id === 'live'){
         color = {
@@ -47,7 +47,11 @@ function Glance() {
             visitors:true
         }
     }
-    const [customClass,setCustomClass] = useState(color);
+    const [customClass,setCustomClass] = useState({
+        live:true,
+        dashboard:false,
+        visitors:false
+    });
 
  
     const selectCard = (ids) =>{
@@ -145,6 +149,7 @@ We remain online all day long, but even if a chat is missed due to any technical
                </div>
             </motion.section>
             </Container>    
+            
             <FAQ/>
             <Subform/>
             <Footer/>

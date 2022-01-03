@@ -201,16 +201,24 @@
 .supportinputstyle >.supportformcontrol::placeholder{
     color: lightgrey !important;;
 }
+.kalahideonmob{
+    display:block;
+}
+.kalahideonweb{
+    display: none;
+}
 @media only screen and (max-width: 992px) {
    .support_showcase{
+       
        height: 800px;
+       /* margin-top: 10px; */
    }
    .row{
        margin-left:calc(0.3 * var(--bs-gutter-x))!important;
    }
     .support_showcase_text{
         width: 85%;
-        margin: 170px auto 50px auto; 
+        margin: 220px auto 50px auto; 
         text-align: center;
         color:#fff;
     }
@@ -229,13 +237,14 @@
         margin-bottom: 10px;  
     }
     .sprinkleLeft{
-        top:67%;
+        top:75%;
       
     }
     .sprinkleLeft{
        width: 170px;
     }
     .sprinkleRight img{
+        top:190px;
         width: 170px;
     }
     .support_showcase_text span{
@@ -248,12 +257,15 @@
         font-family: binx;
         margin: 0px 20px;
         border-radius: 10px;
+        padding:0 15px !important;
     }
-    .support_showcase_img{
-        width: 60px;
+    .support_showcase_img {
+        width: 90px;
+        margin-top: -48px;
     }
     .follow_div{
         margin-top: 70px;
+        margin-left: 60px;
     }
     .support_help_top{
         width: 100%;
@@ -267,15 +279,23 @@
     .support_grid{
         grid-template-columns: auto auto;
         grid-row-gap: 23px;
+        margin: 0px auto 73px auto;
+        margin-left: 14px;
     }
     .support_grid_two{
         grid-template-columns: auto;
+        margin-left: 11px;
     
        
     }
-    .support_grid div img{
+    .support_grid_two >div {
+
+        height: 118px;
+     
+    }
+    .support_grid div img {
         width: 80px;
-        margin-bottom: 10px;
+        margin-bottom: 3px;
     }
     
     .suport_card_mob{
@@ -285,9 +305,31 @@
     .support_grid_two >div{
         margin:20px 0px;
     }
-    .support_grid_two > div img{
-        width: 62px !important;
-        height:62px !important
+    .support_grid_two > div img {
+        width: 83px !important;
+        height: 90px !important;
+    }
+    
+    .support_grid_two>div img {
+        margin-right: 17px;
+
+
+    }
+   
+    
+    .support_grid_two>div:first-child>div {
+        margin-right: 0px;
+        /* border:1px solid red; */
+        margin-top: 15px;
+
+
+    }
+    .support_grid_two>div:last-child>div {
+        margin-right: 0px;
+        /* border:1px solid red; */
+        margin-top: 17px;
+
+
     }
     .support_faq_margin_remove_mob{
        margin-top: -50px!important;
@@ -295,5 +337,70 @@
     }
     .subformonmob{
         top: 300px !important;
+    }
+    .subscribeblurinner{
+        margin-top: 350px;
+    }
+    .supportmobheadstyle{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        background: none !important;
+
+    }
+    .kalahideonmob{
+        display:none;
+    }
+    .kalahideonweb{
+        display: block;
+    }
+    
+}
+
+
+@media only screen and (max-width: 360px) {
+    .support_showcase_text h1 {
+        font-size: 27px !important;
+      
+    }
+    .kalahideonweb{
+        display: block;
+        margin-top: 18px;
+    }
+  .support_showcase {
+        height: 730px !important;
+       
+    }
+     
+     .support_showcase_text p {
+       
+        font-size: 14px !important;
+      
+    }
+    .support_help_head {
+        font-size: 24px !important;
+    }
+    .suport_card_mob {
+        width: 135px!important;
+        height: 135px!important;
+    }
+    .support_grid_two>div>img {
+        width: 69px !important;
+    height: 72px !important;
+
+    }
+    .support_grid_two>div img {
+        margin-right: 10px !important;
+    }
+    .support_grid div img {
+        width: 60px !important;
+       
+    }
+    .support_card_text {
+      
+        font-size: 16px !important;
+       
     }
 }

@@ -39,4 +39,31 @@
         max-width: 180px;
        
     }
+    .whycards_main p:first-child{
+        font-size: 60px;
+        font-family: muliRegular;
+        font-weight: bold;
+        text-align: center;
+        color:white;
+        margin-bottom:0 ;
+    }
+    .whycards_main p:first-child span{
+        font-size: 28px;
+        margin-left: 0px;
+        text-transform: uppercase;
+    }
+    .whycards_main img{
+        margin-top:-15px;
+    }
+    .whycards_main p:last-child{
+        color:white;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: muliRegular;
+        text-align: center;
+    
+    }
+    .index_whycurvy_cards_main>div:nth-child(4) >div>p:first-child {
+        font-size: 28px;
+    }
 }

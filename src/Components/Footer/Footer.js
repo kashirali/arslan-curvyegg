@@ -27,30 +27,30 @@ function Footer() {
                     <div>
                         <h4>Services</h4>
                             <ul>
-                                <li><Link className="link" to="#">Agents</Link></li>
-                                <li><Link className="link"  to="#">Live Chat support</Link></li>
-                                <li><Link className="link" to="#">Technical Support</Link></li>
-                                <li><Link className="link" to="#">E-Commerce Support</Link></li>
-                                <li><Link className="link" to="#">Features</Link></li>
-                                <li><Link className="link" to="#">Benefits</Link></li>
+                                <li><a href="#sayno" className="link">Agents</a></li>
+                                <li><a href="#solution" className="link">Live Chat support</a></li>
+                                <li><a href="#solution" className="link">Technical Support</a></li>
+                                <li><a href="#solution" className="link">E-Commerce Support</a></li>
+                                <li><a className="link" href="glance">Features</a></li>
+                                <li><a href="#sayno" className="link" >Benefits</a></li>
                             </ul>
                     </div>
                     <div>
                         <h4>Business</h4>
                         <ul>
-                            <li><Link className="link" to="#">Why CurvyEgg?</Link></li>
-                            <li><Link className="link" to="#">Performance</Link></li>
-                            <li><Link className="link" to="#">Curvy on Linkedin</Link></li>
-                            <li><Link className="link" to="#">Curvy on Facebook</Link></li>
-                            <li><Link className="link" to="#">Curvy on Twitter</Link></li>
+                            <li><a className="link" href="#whycurvy">Why CurvyEgg?</a></li>
+                            <li><a className="link" href="wehave">Performance</a></li>
+                            <li><a className="link" href="#">Curvy on Linkedin</a></li>
+                            <li><a className="link" href="#">Curvy on Facebook</a></li>
+                            <li><a className="link" href="#">Curvy on Twitter</a></li>
                         </ul>
                     </div>
                     <div>
                         <h4>Company</h4>
                         <ul>
-                            <li><Link className="link" to="#">About</Link></li>
-                            <li><Link className="link" to="#">Our Values</Link></li>
-                            <li><Link className="link" to="#">Blog</Link></li>
+                            <li><a className="link" href="aboutcurvy">About</a></li>
+                            <li><a className="link" href="#whycurvy">Our Values</a></li>
+                            <li><a className="link" href="/blog">Blog</a></li>
                             <li><Link className="link" to="#">Become a Partner</Link></li>
                             <li><Link className="link" to="#">Contact</Link></li>
                             <li><Link className="link" to="#">Careers</Link></li>
@@ -59,9 +59,10 @@ function Footer() {
                     <div>
                         <h4>Support</h4>
                         <ul>
-                            <li><Link className="link" to="#">FAQ</Link></li>
+                            <li><a className="link" href="#FAQ">FAQ</a></li>
                             <li><Link className="link" to="#">Help Center</Link></li>
-                            <li><Link className="link" to="#">Getting Started</Link></li>
+                            <li><a className="link" href="/support">Getting Started</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -71,10 +72,10 @@ function Footer() {
                 <div className="two-grid">
                     <div>
                         <ul>
-                            <li><Link className="link" to="#">Terms of Services</Link></li>
-                            <li><Link className="link" to="#">Privacy Policy</Link></li>
-                            <li><Link className="link" to="#">Accessiblilty</Link></li>
-                            <li><Link className="link" to="#">Sitemap</Link></li>
+                            <li><a className="link" href="/term/service">Terms of Services</a></li>
+                            <li><a className="link" href="/term/privacy">Privacy Policy</a></li>
+                            <li><a className="link" href="/term/accessibility">Accessiblilty</a></li>
+                            <li><a className="link" to="#">Sitemap</a></li>
                         </ul>
                     </div>
                     <div>

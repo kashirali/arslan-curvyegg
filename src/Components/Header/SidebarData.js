@@ -6,12 +6,12 @@ import * as IoIcons from 'react-icons/io';
 export const SidebarData = [
   {
     title: 'About',
-    path: '/',
+    path: '/about',
     cName: 'nav-text'
   },
   {
     title: 'Why Curvy',
-    path: '/',
+    path: '/whycurvy',
     cName: 'nav-text'
   },
   {
@@ -21,7 +21,7 @@ export const SidebarData = [
   },
   {
     title: 'Features',
-    path: '/',
+    path: '/glance/live',
     cName: 'nav-text'
   },
   {
@@ -36,7 +36,7 @@ export const SidebarData = [
   },
   {
     title: 'Contact',
-    path: '/',
+    path: '/signup',
     cName: 'nav-text'
   }
 ];

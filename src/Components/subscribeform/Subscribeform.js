@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import {Button} from 'react-bootstrap'
 import crossicon from '../../assets/svg/Cross icon/Cross icon.svg'
-import './subform.css'
+import '../Subform/subform.css'
 import '../../assets/fonts/font.css'
 import halfc from '../../assets/half.png'
 
@@ -15,7 +15,7 @@ const closingInAction = (here) =>
 {
     here(false);
 }
-function Subform(props) {
+function Subscribeform(props) {
     useEffect(()=>(
         Aos.init({
             duration:2000
@@ -23,7 +23,7 @@ function Subform(props) {
     ))
     return (
         <>
-       <div id="tryitout" className="kala">
+       <div id="tryitout" className="kala kalahideonmob">
         <div className="subform_top" style={{position:'absolute'}}>
         {props.crossicon? <img  className='globalcrossicon' onClick={()=>closingInAction(props.setShowsubform)} src={crossicon} width="30px"/>:null} 
             <div className="div_center">
@@ -48,8 +48,7 @@ function Subform(props) {
         </div>
     </div>
   <div>
-      {props.supportsubform &&
-         <div id="tryitout" className="kala kalahideonweb">
+      {<div id="tryitout" className="kala kalahideonweb">
         <div className="subform_top" style={{position:'absolute',height:'100vh',marginTop:'-327px',zIndex:10}}>
        
      
@@ -90,4 +89,4 @@ function Subform(props) {
     
 }
 
-export default Subform
+export default Subscribeform

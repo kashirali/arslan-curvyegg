@@ -31,9 +31,8 @@ src: url('../../assets/fonts/Binx.ttf')
     justify-content: center;
     align-items: center;
     background: rgba( 0,0,0,0.8 );
-    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
+
+  
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     position: absolute;
@@ -253,14 +252,19 @@ src: url('../../assets/fonts/Binx.ttf')
       }
       .popupterms{
 
-       background: transparent;
-       backdrop-filter: blur( 0px );
+      margin-bottom: 30px;
+  
+       /* min-height:fit-content ; */
+       margin-top: 270px;
+     
       
       }    
       .popuptermscenter{
             min-width: 100vw;
-            min-height: 90vh; 
-            margin-top: 310px;  
+            height: 110%; 
+            padding-bottom: 100px;
+         
+            margin-bottom: 50px !important;
           }
         
           #main1 >div{
@@ -319,6 +323,7 @@ src: url('../../assets/fonts/Binx.ttf')
       height:130px;
       width:290px;
       margin-left: 10%;
+      margin-bottom: 50px !important;
      }
      .main2 p {
       margin-left:30px;
@@ -340,30 +345,42 @@ src: url('../../assets/fonts/Binx.ttf')
     }
     blockquote{
       font-size: 3vw;
+      margin-right: 0em !important;
+   
     }
+    blockquote{
+      padding-right: 2.9em !important;
+    }
+    .main2 >div{
 
+  
+      margin-left:20px;
+    }
+    .main2>div:first-child{
+      margin-top: 50px;
+    }
     .popclosebut
     {
-      justify-content: flex-end;
+      display: none;
     }
-    .popclosebut button
-    {
-      font-weight: bold;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 1.3em;
-      padding: 1%;
-      width: 5%;
-      aspect-ratio: 1/1;
-    }
-
-    .main2
-    {
-      background-size: 9%;
-      background-position: 45% 40%; 
-    }
+ .popclosebut button img{
+   margin-right: 0 !important;
+ }
+ .main2 {
+  background-size: 12%;
+  background-position: 47% 40%;
+}
     }
   
   
   
   
-  
+    @media only screen and (max-width: 360px) {
+      .button-design-mobile {
+       
+        margin-left: 4% !important;
+     
+    }
+    
+    
+    }

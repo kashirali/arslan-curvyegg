@@ -113,18 +113,19 @@ function AboutCurvy() {
         <Card cardDetail = {cardData.three} cardReadMore={()=>showMoreDetail('contribute')} btnClicked ={cardbtnclick} handleclose={()=>setCardbtnclick(!cardbtnclick)}/>
        )
     }
-    const [commvariant,setcommvariant] = useState(false)
-    const [collvariant,setcollvariant] = useState(true)
+    const [commvariant,setcommvariant] = useState(true)
+    const [collvariant,setcollvariant] = useState(false)
     const [contvariant,setcontvariant] = useState(false)
     const movCard = (id)=>{
             if(id === 'comm'){
-                setcardClass('comMove')
+                setcardClass('default');
                 setcommvariant(true)
                 setcollvariant(false)
                 setcontvariant(false)
             }
             else if(id === 'coll'){
-                setcardClass('default');
+                setcardClass('collMove')
+              
                 setcommvariant(false)
                 setcollvariant(true)
                 setcontvariant(false)
@@ -138,7 +139,7 @@ function AboutCurvy() {
     }
  
     return (
-        <div  data-aos="fade-up" style={{width:"100%",minheight:"820px" ,marginBottom:'30px',position:'relative'}}>
+        <div id="aboutcurvy"  data-aos="fade-up" style={{width:"100%",minheight:"820px" ,marginBottom:'30px',position:'relative'}}>
            
                         
             <div className="container">

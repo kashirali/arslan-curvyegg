@@ -18,7 +18,8 @@ import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 import leftarrow from "../../assets/svg/left-arrow.svg"
 
-import downarrow from '../../assets/svg/Arrow Up.svg'
+// import downarrow from '../../assets/svg/Arrow Up.svg'
+import downarrow from '../../assets/svg/Cross icon/Arrow upblue.svg'
 
 
 function Ataglance() {
@@ -133,8 +134,9 @@ function Ataglance() {
         <div data-aos = "fade-up" className="glance_top">
             <div className="container">
                 <div className="row">
-                <h3 className="sellsol_main_head center ">All Features at a Glance</h3>
-                < p className="sellsol_main_para center ">Close more deals efficiently with countless features of <span>CurvyEgg</span> without a <span>price tag</span></p>
+                <h3 className="glance_main_head">All Features at a Glance</h3>
+                < p className="glance_main_para">Close more deals efficiently with countless features of <span>CurvyEgg</span> without a <span>price tag</span></p>
+                    <div className='dividernoneonweb' style={{width:'90px',height:'2px',background:'lightgrey',marginLeft:'35%',marginTop:'20px'}}></div>
                 </div>
                 <div className="flexd" >
                     <div className="svgText_main">
@@ -198,7 +200,7 @@ function Ataglance() {
                         }}
                     >
                         {DashboardData}
-                        <Link to="/glance/dashboard" className="glanceinside">Read more</Link>
+                        <Link to="/glance/dashboard" className="glanceinside">read more...</Link>
                     </motion.div>:null}
                     {showData.showvisitor? <motion.div className="info_card" style={{width:'90%'}}
                      animate={{
@@ -210,7 +212,7 @@ function Ataglance() {
                         }}
                     >
                         {visitorData}
-                        <Link to="/glance/visitor" className="glanceinside">Read more</Link>
+                        <Link to="/glance/visitor" className="glanceinside">read more...</Link>
                     </motion.div>:null}
 
                    

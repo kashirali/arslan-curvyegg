@@ -4,18 +4,12 @@ import './popupterm.css'
 import imager from '../../assets/Terms - Down Arrow.svg'
 import crossIcon from '../../assets/svg/Cross icon/Cross icon.svg'
 import {motion } from 'framer-motion'
-const CloseButtoner = () => 
-{
-  document.getElementById('mainer_close').style = "display: none;";
-  const lmfa = document.getElementsByTagName('body');
-  lmfa[0].style = "overflow:scroll;"
-
-}
-function PopupTerms() {
-
+function PopupTerms(props) {
+  
+  
 
     return (
-      <motion.div className="popupterms" id="mainer_close" onClick = {CloseButtoner}
+      <motion.div className="popupterms" 
         animate={{
           opacity:1
         }}
@@ -27,7 +21,7 @@ function PopupTerms() {
       >
         <div className='popuptermscenter'>
         <div className='popclosebut'>
-        <button className="" onClick = {CloseButtoner}><img src={crossIcon} style={{marginRight:'50px'}} width="30px"/></button>
+        <button className="" onClick = {()=>props.setPopupshow(false)}><img src={crossIcon} style={{marginRight:'50px'}} width="30px"/></button>
         </div>
         
     <div className="container mt-0">
@@ -74,8 +68,8 @@ function PopupTerms() {
           
        </div>
        <div class="button-design-mobile">
-  <button type="button" class="btn btn-primary" id="btn1">Accept new terms</button>
-  <button type="button" class="btn btn-light" id="btn2">Continue with old terms</button>
+  <button type="button" onClick = {()=>props.setPopupshow(false)} class="btn btn-primary" id="btn1">Accept new terms</button>
+  <button type="button" onClick = {()=>props.setPopupshow(false)} class="btn btn-light" id="btn2">Continue with old terms</button>
   </div>  
   </div>
      </div>

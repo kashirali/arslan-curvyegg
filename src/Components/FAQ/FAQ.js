@@ -109,7 +109,7 @@ function FAQ() {
         }
     }
     return (
-        <div data-aos = "fade-up" className="FAQ_top">
+        <div id="FAQ" data-aos = "fade-up" className="FAQ_top">
           
             <div className="container">
                 <h3 className="FAQ_main_head fontsforweb_fontid_9785">Frequently Asked Questions</h3>
@@ -117,44 +117,44 @@ function FAQ() {
                     <div className="col-md-12 col-sm-12">
                         <div style={{width:'80%',margin:'0 auto'}}>
                         <div className="nopurpose">
-                        <div className="tab_main" style={{overflow:'hidden'}}>
+                        <div className="tab_main" style={{overflow:'hidden',border:showeight && 0}}>
                                 
                                 <p onClick={()=>showTab('eight')}>Donec Congue Felis. </p>
                                 <div style={{overflow:'hidden'}} className={showeight? 'showtab':'hidetab'}><p className="main_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices vestibulum tristique. Fusce ac lacus nisi. Sed nisl mi, sollicitudin rhoncus pulvinar a, eleifend eu sapien. Sed maximus gravida sapien id luctus. Suspendisse dignissim nisl id sollicitudin ultricies. Aenean bibendum tellus nisi.</p></div>
                                 </div>
-                        <div className="tab_main" style={{overflow:'hidden'}}>
+                        <div className="tab_main"style={{overflow:'hidden',border:showone && 0}}>
                                 
                                 <p onClick={()=>showTab('one')}>Connect to Different Platforms </p>
                                 <div style={{overflow:'hidden'}} className={showone? 'showtab':'hidetab'}><p className="main_para">you the platform that eliminates the distance between you and your customers, as if you are in front of them to make them feel more valued. 24/7 availability of chat agents will   provide personalized customer service to every individual.</p></div>
                                 </div>
-                                 <div className="tab_main">
+                                 <div className="tab_main" style={{overflow:'hidden',border:showtwo && 0}}>
                                  
                                  <p onClick={()=>showTab('two')}>Customer Relationship</p>
                                   <div style={{overflow:'hidden'}} className={showtwo? 'showtab':'hidetab'}><p className="main_para">you the platform that eliminates the distance between you and your customers, as if you are in front of them to make them feel more valued. 24/7 availability of chat agents will   provide personalized customer service to every individual.</p></div>
                                 
                                  </div>
-                                 <div className="tab_main">
+                                 <div className="tab_main" style={{overflow:'hidden',border:showthree && 0}}>
                                  <p onClick={()=>showTab('three')}>Re-Marketing</p>
                                   <div style={{overflow:'hidden'}} className={showthree? 'showtab':'hidetab'}><p className="main_para">you the platform that eliminates the distance between you and your customers, as if you are in front of them to make them feel more valued. 24/7 availability of chat agents will   provide personalized customer service to every individual.</p></div>
                                 
                                  </div>
-                                 <div className="tab_main">
+                                 <div className="tab_main" style={{overflow:'hidden',border:showfour && 0}}>
                                  <p onClick={()=>showTab('four')}>Shortened Sales Cycle</p>
                                   <div style={{overflow:'hidden'}} className={showfour? 'showtab':'hidetab'}><p className="main_para">you the platform that eliminates the distance between you and your customers, as if you are in front of them to make them feel more valued. 24/7 availability of chat agents will   provide personalized customer service to every individual.</p></div>
                                 
                                  </div>
-                                 <div className="tab_main">
+                                 <div className="tab_main" style={{overflow:'hidden',border:showfive && 0}}>
                                  <p onClick={()=>showTab('five')}>Powerful Dashboard </p>
                                   <div style={{overflow:'hidden'}} className={showfive? 'showtab':'hidetab'}><p className="main_para">you the platform that eliminates the distance between you and your customers, as if you are in front of them to make them feel more valued. 24/7 availability of chat agents will   provide personalized customer service to every individual.</p></div>
                                 
                                  </div>
-                                 <div className="tab_main">
+                                 <div className="tab_main" style={{overflow:'hidden',border:showsix && 0}}>
                                      
                                  <p onClick={()=>showTab('six')}>Higher Team Efficiency </p>
                                   <div style={{overflow:'hidden'}} className={showsix? 'showtab':'hidetab'}><p className="main_para">you the platform that eliminates the distance between you and your customers, as if you are in front of them to make them feel more valued. 24/7 availability of chat agents will   provide personalized customer service to every individual.</p></div>
                                 
                                  </div>
-                                 <div className="tab_main">
+                                 <div className="tab_main" style={{overflow:'hidden',border:showseven && 0}}>
                                  <p onClick={()=>showTab('seven')}>Don’t Lose Customers</p>
                                   <div style={{overflow:'hidden'}} className={showseven? 'showtab':'hidetab'}><p className="main_para">you the platform that eliminates the distance between you and your customers, as if you are in front of them to make them feel more valued. 24/7 availability of chat agents will   provide personalized customer service to every individual.</p></div>
                                 

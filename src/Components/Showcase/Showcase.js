@@ -9,6 +9,7 @@ import egg from '../../assets/EggLogo.png'
 import './showcase.css'
 import '../../assets/fonts/font.css'
 import mobSprinkle from '../../assets/sprinkles_blue.svg'
+import mainbar from '../../assets/svg/mainbar.svg'
 
 import {motion} from 'framer-motion';
 
@@ -43,6 +44,9 @@ function Showcase() {
                 
             </div>
             <div className="right_section" >
+                <div className='triangle'>
+                    <img src={mainbar}/>
+                </div>
                 <motion.img className="lady" src={Lady} width="98%"  
                      animate={{
                         x:0

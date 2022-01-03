@@ -14,14 +14,35 @@ import hidepass from '../../assets/svg/Passwords Icon/Passwords Icon Hide.svg';
 import showpass from '../../assets/svg/Passwords Icon/Passwords Icon Show.svg';
 import crossicon from '../../assets/svg/Cross icon/Cross icon.svg'
 import {Link} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+import curvyegg from '../../assets/svg/curvyegg1.svg'
+import curvyeggwhite from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/curvyeggwhite.svg'
 import '../../assets/fonts/font.css'
 import './headerStyle.css'
 function Header(props) {
   const [checkSmile,setCheckSmile] = useState(false);
+
+  const list = document.querySelectorAll('.nav-text');
+  function activeLink(){
+    list.forEach((item)=>
+      item.classList.remove('active'))
+      this.classList.add('active')
+  }
+  list.forEach((item)=>
+  item.addEventListener('click',activeLink));
+
+  const history = useNavigate();
+
+  const routeChange = () =>{ 
+    let path = `/support`; 
+    history(path);
+  }
+
+  console.log(props)
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-
+  const baseURL = window.location.origin;
   const clickSmile = ()=>{
     console.log('clicked')
     setCheckSmile(!checkSmile);
@@ -30,9 +51,10 @@ function Header(props) {
   if(checkSmile){
     cssClass.push('top_nav_click')
   }
-  console.log(checkSmile,cssClass)
+ console.log(window.location.origin,'orog')
  
   const [imgtodisplay,setImgtodisplay] = useState(hidepass);
+  console.log(props,'headerprops')
   
     return (
         <div className="borderss">
@@ -82,7 +104,7 @@ function Header(props) {
                 </div>
             </div>
             <Navbar className="kiryana"  expand="lg" >
-  <div className="sec_right">
+  <div className="sec_right" >
      <div style={{width:'100px',margin:'0 0 0 auto'}}>
      <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav" style={{border:'0',}}>
         <img src={!props.color?toggleicon:togglewhite} style={{marginLeft:'0'}} width="32px" height="15px" />
@@ -92,16 +114,16 @@ function Header(props) {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto mob_view">
     
-        <Link to="#" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} href="#about" style={{marginLeft:'-5px'}}>About</Link>
-        <Link to="#" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} href="#whycurvy">Why Curvy</Link>
-        <Link to="#" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} href="#solutions">Solutions</Link>
-        <Link to="#" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} href="#features">Features</Link>
+        <a href={`${baseURL}/#aboutcurvy`} className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"}  style={{marginLeft:'-5px'}}>About</a>
+        <a href="http://localhost:3000/#whycurvy" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Why Curvy</a>
+        <a href="http://localhost:3000/#solution" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Solutions</a>
+        <Link to="/glance" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Features</Link>
     
       </Nav>
       <Nav className="mr-0 mob_view">
-    <Link to="#" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} href="#about">Try it out</Link>
-    <Link to="#" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} href="#whycurvy"style={{marginRight:'15px'}}>Sign in</Link>
-    <Button className='fontfamilyheaderbtn' variant={!props.color? 'primary':'light'} style={{width:'fit-content',margin:'0 auto',padding:'0 25px', background: !props.color?'#446beb':null,color:!props.color?null:'#446beb'}} >Contact</Button>
+    <a href="#tryitout" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Try it out</a>
+    <Link onClick={props.headerprop?clickSmile:null} to={props.headerprop?'#': '/signup' } className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"}style={{marginRight:'15px'}}>{props.headerprop?'Sign in':'Sign up'}</Link>
+    <Button onClick={routeChange} className='fontfamilyheaderbtn' variant={!props.color? 'primary':'light'} style={{width:'fit-content',margin:'0 auto',padding:'0 25px', background: !props.color?'#446beb':null,color:!props.color?null:'#446beb'}} >Contact</Button>
     
 
   </Nav>
@@ -110,27 +132,47 @@ function Header(props) {
 </Navbar>
 <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar_menu'>
-          <Link onClick={showSidebar} to='#' className='menu-bars'>
-                <img src={!props.color?toggleicon:togglewhite} style={{marginLeft:'0'}} width="32px" height="15px" />
-          </Link>
+               {!props.headerlogo? <img src={!props.color?curvyegg:curvyeggwhite} width="120px" style={{marginLeft:'20px'}}/>:null} 
+          {!props.headercrossicon ? <Link onClick={showSidebar} to='#' className='menu-bars'>
+                <img src={!props.color?toggleicon:togglewhite} style={{marginLeft:'10px',marginRight:"-20px"}} width="32px" height="15px" />
+          </Link>:<img src={crossicon} onClick={()=>props.onpopupimgclick()} style={{marginLeft:'auto',marginRight:'22px',marginTop:'3px'}} width="30px" />}
         </div>
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className='nav-menu-items' >
+        <nav style={props.color === 'white' ? {background:'white',borderRight:'10px solid #446beb'}:{background:'#446beb',borderRight:'10px solid #fff'}} className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+          <span style={{width:'101%',height:'1px',background:props.color === 'white'?'#446beb':'white',position:'absolute',top:'100px'}}></span>
+          <ul className= {props.color === 'white' ? 'nav-menu-items_blue': 'nav-menu-items'} >
             <li className='navbar-toggle-menu'>
-              <Link to='#' className='menu-bars' onClick={showSidebar}>
-                <AiIcons.AiOutlineClose />
+            <img src={props.color ==='white'?curvyegg:curvyeggwhite} width="120px" style={{marginLeft:'20px'}}/>
+              <Link to='#' className='opennavbarcloseicon' onClick={showSidebar}>
+                <AiIcons.AiOutlineClose style={props.color === 'white' ? {color:'#446beb'}:{color:'white'}}/>
               </Link>
             </li>
-            {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
+           <span className='divider'></span>
+                <li  className='nav-text' >
+                <a href="http://localhost:3000/#aboutcurvy" className='nav-text'><span className='title'>About</span></a>
+      
                 </li>
-              );
-            })}
+                <li  className='nav-text' >
+                <a href="http://localhost:3000/#whycurvy" className='nav-text' ><span className='title'>Why curvy</span></a>
+        
+                </li>
+                <li  className='nav-text' >
+                <a href="http://localhost:3000/#solution" className='nav-text' ><span className='title'>Support</span></a>
+       
+                </li>
+                <li  className='nav-text' >
+                <a href="/glance" className='nav-text' ><span className='title'>Features</span></a>
+    
+                </li>
+                <li  className='nav-text' >
+                <a href="#tryitout" className='nav-text' ><span className='title'>Try it out</span></a>
+    
+                </li>
+                <li  className='nav-text' >
+                <Link to={props.headerprop?'#': '/signup' } ><span className='title'>{props.headerprop?'Sign in':'Sign up'}</span></Link>
+   
+                </li>
+              
+            
           </ul>
         </nav>
       </IconContext.Provider>

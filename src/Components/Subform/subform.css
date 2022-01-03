@@ -176,7 +176,7 @@ margin:30px 0 20px 0;
 border-width: 1px;
 border-color: #c5c5c5;
 border-style: solid;
-background-color: #edeef2;
+background-color: #fff;
 padding:7px 15px;
 margin-right: 10px;
 width: 170px;
@@ -194,5 +194,20 @@ background-color: #446beb;
     margin-top: 20px;;
 }
 
+
+}
+
+@media only screen and (max-width: 360px) {
+.subform_main_head{
+    font-size: 28px !important;
+}
+.subform__main_para{
+    font-size: 13.5px !important;
+}
+.inputBtn {
+   
+    padding: 11.5px 20px;
+    font-size: 11px;
+}
 
 }

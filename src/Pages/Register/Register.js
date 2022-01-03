@@ -1,11 +1,11 @@
 import './Register.css';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import { Signuplist } from './Signuplist';
 import { Signupform } from './Signupform';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import OnlyFooter from '../../Components/OnlyFooter/OnlyFooter';
-
+import { useLocation } from 'react-router-dom';
 
 import supp1 from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/Support-1.svg'
 import supp2 from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/Support-2.svg'
@@ -15,8 +15,14 @@ import faqicon from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG
 import liveicon from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/Support-Live Chat.svg'
 import supp5 from '../../assets/svg/Support/CurvyEgg Support Page Icon Set SVG/Support-5.svg'
 
-function Register() {
-
+function Register(props) {
+  const [headerprop,setHeaderprop] = useState(null)
+  const location = useLocation();
+  useEffect(()=>{
+    if(location.pathname === '/signup'){
+      setHeaderprop('signin')
+    }
+  },[location])
   const [support_card_data,setSupport_card_data] = useState([
     {
         icon:supp1,
@@ -46,9 +52,11 @@ displayCard = support_card_data.map((curr,index)=>(<div className="suport_card_m
         <p className="support_card_text">{curr.text}</p>
 
 </div>))
+
+  
   return (
     <div>
-        <Header/>
+        <Header headerprop/>
       <div class="container">
       <h2 class="home-h" >We Connected Lorem</h2>
      
@@ -77,7 +85,7 @@ displayCard = support_card_data.map((curr,index)=>(<div className="suport_card_m
       <h4 class="home-s" >Why We Lorem</h4>
       <div style={{marginTop:'80px'}}></div>
 
-      <div className="row">
+      <div className='signupmobleft'>
                             <div className="support_grid">
                                 {displayCard}
                             

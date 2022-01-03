@@ -8,6 +8,8 @@ import {motion} from 'framer-motion'
 import './termpolicy.css'
 import PopupTerms from '../Popupterm/Popupterm'
 
+import {useParams} from 'react-router-dom'
+
 export function vakanda()
 {
     if(window.innerWidth > 992)
@@ -19,20 +21,22 @@ export function vakanda()
 
 function varsa()
 {
-    if(window.innerWidth < 992)
-    {
-       const cake = document.getElementsByTagName('body');
-       const lake = document.getElementById('mainer_close');
-       cake[0].style = "overflow: hidden;"
-       lake.style = `max-height: ${lake.offsetHeight+130}px;`
-       lake.style = "margin: 0;"
-       lake.style = "overflow: scroll;";
+    // if(window.innerWidth < 992)
+    // {
+    //    const cake = document.getElementsByTagName('body');
+    //    const lake = document.getElementById('mainer_close');
+    //    cake[0].style = "overflow: hidden;"
+    //    lake.style = `max-height: ${lake.offsetHeight+130}px;`
+    //    lake.style = "margin: 0;"
+    //    lake.style = "overflow: scroll;";
 
-    }
+    // }
     
 }
 function Termpolicy() {
 
+    const {id} = useParams()
+    console.log(id,'id')
     let servicetext = (<motion.div className="para_text"
         initial={{opacity:0}}
         animate={{opacity:1}}
@@ -69,6 +73,7 @@ function Termpolicy() {
     </motion.div>
     )
     const [popupshow,setPopupshow] = useState(false);
+    const onpopupimgclick = ()=>(setPopupshow(false))
     useEffect(()=>{
         setTimeout(()=>setPopupshow(true),1000);
     },[])
@@ -89,9 +94,9 @@ function Termpolicy() {
 
     })
         const[activeterm,setActiveterm] = useState({
-            service:true,
-            privacy:false,
-            accessibility:false
+            service:id === 'service' ? true :false,
+            privacy:id === 'privacy' ? true : false,
+            accessibility:id === 'accessibility' ? true : false
         })
     const setTermactive = (id)=>{
             if(id === 'service'){
@@ -108,10 +113,12 @@ function Termpolicy() {
     vakanda();
     return (
         <div>
-            {popupshow?  <PopupTerms />:null}
+          
+            {popupshow?  <PopupTerms setPopupshow={setPopupshow} />:null}
+        <div className="termpage" id="arslan_easter_egg">
+            <Header headercrossicon={popupshow} onpopupimgclick= {onpopupimgclick}/>
        
-        <div className="termpage" id="arslan_easter_egg" onLoad = {varsa}>
-            <Header/>
+           {!popupshow && <>
             <div style={{objectFit:'contain'}}>
 
             
@@ -141,6 +148,7 @@ function Termpolicy() {
                
             </div>
         <OnlyFooter/>
+           </>}
         </div>
         </div>
     )

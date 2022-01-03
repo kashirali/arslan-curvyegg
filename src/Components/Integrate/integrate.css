@@ -91,7 +91,7 @@ color: #6b7c93;
 
     .integrate_main_head{
         width: 99%;
-        font-size: 40px!important;
+        font-size: 32px!important;
         text-align: center;
         margin-top:80px;
     }
@@ -104,7 +104,7 @@ color: #6b7c93;
         width: 95%;
     }
     
-    .integrate_main_head{
+    /* .integrate_main_head{
         font-family: gothic;
         color: #446beb;
         font-size: 34px;
@@ -112,17 +112,37 @@ color: #6b7c93;
         width: 100%;
         
         }
-        
+         */
         .integrate_main_para{
            
-            width: 100%;
+            width: 93%;
         color: #6b7c93;
         font-size: 17px;
         font-weight: 700;
         line-height: 27px;
-        text-align: justify;
+        text-align: left;
         margin:40px 0px 20px 0px;
         
         }
-   
+   .first_half{
+       width: 95%;
+       margin-left: auto;
+   }
+   .integrate_para {
+    font-family: mulibold !important;
+    font-size: 17px;
+    font-weight: 700;
+    color: #6b7c93;
+    width: 116%;
+}
+}
+
+
+
+@media only screen and (max-width: 360px) {
+
+    .integrate_main_head{
+        font-size: 29px !important;
+    }
+
 }

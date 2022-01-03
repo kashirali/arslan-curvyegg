@@ -122,32 +122,34 @@ color: #ffffff;
 @media only screen and (max-width: 992px) {
     .bg-gradients{
         overflow:hidden;
+        height: 641px;
     }
     .cont_mob{
         width: 95%;
         margin: 0 auto;
     }
     .drop{
-        padding:7px 11px;
+        padding:7px 5px;
+        width: 190px;
     }
     .drop p{
-       
-    font-size: 21px;
+       text-align: center;
+    font-size: 17px;
     
     
     }
-    .dropline{
-        width: 265px;
-        left: 63px;
-        top: -38px;
+    .dropline {
+        width: 228px !important;
+        left: 49px !important;
+        top: -68px !important;
     }
-    .dropdiv1{
-        top:91px;
-        right:19px;
+    .dropdiv1 {
+        top: 72px !important;
+        right: 74px !important;
     }
-    .dropdiv2{
-        top:203px;
-        right:-9px;
+    .dropdiv2 {
+        top: 167px !important;
+        right: -3px !important;
     }
     .left_child{
         margin-bottom: -40px;
@@ -167,4 +169,21 @@ color: #ffffff;
     margin:20px 0px 25px 0px;
     
     }
+}
+
+@media only screen and (max-width: 360px) {
+    .dropline {
+        width: 228px !important;
+        left: 49px !important;
+        top: -68px !important;
+    }
+    .dropdiv1 {
+        top: 72px !important;
+        right: 29px !important;
+    }
+    .dropdiv2 {
+        top: 170px !important;
+        right: -35px !important;
+    }
+
 }

@@ -224,6 +224,7 @@ border: none !important;
     .about_firstSec_subhead{
         font-size:14px ;
         width: 99%;
+        line-height: 24px !important;
     }
     .fstrow{
         margin-top: 50px;
@@ -245,12 +246,12 @@ border: none !important;
         margin:0;
     } */
     .card_main .default{
-        transform:translate(0px);
+        transform:translate(340px);
         transition:transform 0.2s linear;
         
     }
-    .card_main .comMove{
-        transform:translate(330px);
+    .card_main .collMove{
+        transform:translate(0px);
         transition:transform 0.2s linear;
      
         
@@ -267,9 +268,9 @@ border: none !important;
     .hidecurvy_on_web{
         display:block
     }
-    .downimg{
-        width:190px;
-        margin-left:120px;
+    .downimg {
+        width: 182px;
+        margin-left: 158px;
     }
     .mobilebtn{
         display:block;
@@ -277,6 +278,7 @@ border: none !important;
         width: 90%;
         margin:0 auto;
         margin-top: 60px;
+        box-shadow: 0px 0px 5.4px 1px rgb(0 0 0 / 10%);
     }
     .btn-group{
         
@@ -316,4 +318,44 @@ border: none !important;
         
     }
     
+}
+
+
+.about_firstSec_head span:last-child {
+    margin-top: 5px;
+    font-size: 37px !important;
+}
+/* .about_firstSec_head span:last-child {
+    margin-top: 5px;
+    line-height: 10px !important;
+        
+    
+} */
+
+@media only screen and (max-width: 360px) {
+
+    .card_main .default{
+        transform:translate(349px);
+        transition:transform 0.2s linear;
+        
+    }
+    .card_main .collMove{
+        transform:translate(-1px);
+        transition:transform 0.2s linear;
+     
+        
+    }
+    .card_main .contMove{
+        transform:translate(-350px);
+        transition:transform 0.2s linear;
+     
+        
+    }
+.left_first_head {
+    font-size: 30px !important;
+}  
+.downimg {
+    width: 168px;
+    margin-left: 138px;
+}
 }

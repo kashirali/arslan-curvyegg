@@ -72,6 +72,9 @@ text-align: justify;
     cursor: pointer;
     
 }
+.nopurpose >div:last-child{
+    border-bottom: none;
+}
 .nopurpose >p{
     margin-top: 20px;
    
@@ -134,6 +137,9 @@ text-align: justify;
         width:100%;
         margin:0 auto;
        }
+       .index_whycurvy_cards_main{
+           margin-left: -41px !important;
+       }
     .lady_back{
         display:block;
         position: absolute;
@@ -156,7 +162,7 @@ text-align: justify;
 
     }
     .whycurvy_main_head{
-        font-size: 48px;
+        font-size: 42px;
         margin-bottom: 20px;
     }
     .main_subhead{

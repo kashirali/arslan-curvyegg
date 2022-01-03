@@ -129,12 +129,12 @@ background-color: #ffffff; */
 
   @media only screen and (max-width: 992px) {
     .chat {
-      width: 74%;
+      width: 82%;
       margin:0px 10px 40px 5px;
     display: flex;
     flex-direction: column-reverse;
-      height: 450px;
-    padding-bottom: 20px;
+      height: 500px;
+    padding-bottom: 0px;
     
     font: .75rem/1.5 Arial;
     color: #313131;
@@ -149,7 +149,7 @@ background-color: #ffffff; */
     left: -12px !important;
     top: -2px !important;
     height: 9% !important;
-    width: 371px !important;
+    width: 347px !important;
     border-radius: 37px 23px 5px 12px !important;
     -webkit-border-radius: 37px 23px 5px 12px !important;
     -moz-border-radius: 37px 23px 5px 12px !important;

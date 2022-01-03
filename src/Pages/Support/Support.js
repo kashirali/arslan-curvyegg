@@ -24,6 +24,7 @@ import supportsearch from '../../assets/svg/Support/CurvyEgg Support Page Icon S
 
 import {motion} from 'framer-motion'
 import Aos from 'aos';
+import Subscribeform from '../../Components/subscribeform/Subscribeform'
 function Support() {
 
     useEffect(
@@ -63,23 +64,9 @@ function Support() {
             <p className="support_card_text">{curr.text}</p>
 
     </div>))
-    return (
-        <div style={{overflow:'hidden'}} id="nts_tester">
-            <Header color="white"/>
-            {/* {showsubform? <motion.div className='subformonmob' style={{position:'absolute',top:'120px',left:0,width:'100%'}}
-                  animate={{
-                    opacity:1,
-                    scale:1
-                }}
-                initial = {{
-                    opacity:0,
-                    scale:0.5
-                }}
-                >
-                    <Subform kiara = {setShowsubform}/>
-                </motion.div>:null} */}
+    return (<>
 
-                {showsubform?<motion.div className='subscribeblur'
+{showsubform?<motion.div className='subscribeblur'
                        animate={{
                         opacity:1,
                        
@@ -90,76 +77,102 @@ function Support() {
                     }}
                 >
                     <div className='subscribeblurinner'>
-                            <Subform crossicon subscribe setShowsubform={setShowsubform}/>
+                            <Subscribeform crossicon subscribe setShowsubform={setShowsubform}/>
                     </div>
                 </motion.div>:null}
-                
-                <div className="support_showcase">
-                    <img src={sprinkles} width="195px" className="sprinkleLeft"/>
-                    <div className="sprinkleRight"><img src={sprinkles} width="195px"/></div>
-                 
-                    <div className="support_showcase_text" >
-                        <h1>Getting Started </h1>
-                        <h1>CurvyEgg Live Chat</h1>
-                        <p>Penami ofic is to #Code seven sample text is building solutions. pick some contenttemplates, replace the content text brand voice exactly.Penami ofic is to #Code seven sample text is building solutions. pick some content templates, replace the
-ontent text brand voice exac seven sample text is building solutions. pick some content
-templates, replace the content text brand voice exactly.</p>
-                        <div className="follow_div">
-                            <span>Follow</span>
-                            <button onClick={()=>setShowsubform(true)} className="support_showcase_btn">me</button>  
-                            <img src={leftarrow} className="support_showcase_img"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="support_help">
-                    <div className="container">
-                        <div  data-aos="fade-up"  className="support_help_top">
-                            <h3 className="support_help_head">Hi! How can we help you?</h3>
-                            <InputGroup className='supportinputstyle' style={{width:'350px',margin:'0 auto',}}>
-                                <FormControl style={{padding:'9px'}}
-                                placeholder="Ask a question..."
-                                aria-label="ask a question"
-                                aria-describedby="basic-addon2"
-                                />
-                                <Button variant="primary" id="button-addon2">
-                                <img src={supportsearch} width="20px"/>
-                                </Button>
-                            </InputGroup>
-                        </div>
-                        <div  data-aos="fade-up"  className="row">
-                            <div className="support_grid">
-                                {displayCard}
-                            
-                            </div>
-                         
-                        </div>
-                        <div  data-aos="fade-up"  className="row">
-                            <div className="support_grid_two">
-                                    <div style={{cursor:'pointer'}} onClick={()=>setshowFaq(!showFaq)}>
-                                        <img src={faqicon} style={{width:'100px',height:'100px',borderRadius:'50%',}}/>
-                                        <div>
-                                            <h4>FAQ</h4>
-                                            <p>Maybe we've already answered your question. Here's or FAQs.</p>
-                                        </div>
-                            
-                                    </div>
-                                    <div style={{cursor:'pointer'}}>
-                                        <img src={liveicon} style={{width:'100px',height:'100px',borderRadius:'50%',}}/>
-                                        <div>
-                                            <h4>Live Chat</h4>
-                                            <p>Get help with our awesome Customer Support team to resolve your queries.</p>
-                                        </div>
-                            
-                                    </div>
 
-                            </div>
-                         
-                        </div>
+                {
+                    !showsubform && <div style={{overflow:'hidden',}} id="nts_tester">
+                    <div className='supportmobheadstyle'>
+        
+                    <Header color="white"/>
                     </div>
-                </div>
-                {showFaq? <div className="support_faq_margin_remove_mob" style={{marginTop:'-130px'}}><FAQ/></div>:null}
-            <Footer/>
-        </div>
+        
+                    {/* {showsubform? <motion.div className='subformonmob' style={{position:'absolute',top:'120px',left:0,width:'100%'}}
+                          animate={{
+                            opacity:1,
+                            scale:1
+                        }}
+                        initial = {{
+                            opacity:0,
+                            scale:0.5
+                        }}
+                        >
+                            <Subform kiara = {setShowsubform}/>
+                        </motion.div>:null} */}
+        
+                       
+                        
+                        <div className="support_showcase">
+                            <img src={sprinkles} width="195px" className="sprinkleLeft"/>
+                            <div className="sprinkleRight"><img src={sprinkles} width="195px"/></div>
+                         
+                            <div className="support_showcase_text" >
+                                <h1>Getting Started </h1>
+                                <h1>CurvyEgg Live Chat</h1>
+                                <p>Penami ofic is to #Code seven sample text is building solutions. pick some contenttemplates, replace the content text brand voice exactly.Penami ofic is to #Code seven sample text is building solutions. pick some content templates, replace the
+        ontent text brand voice exac seven sample text is building solutions. pick some content
+        templates, replace the content text brand voice exactly.</p>
+                                <div className="follow_div">
+                                    <span>Follow</span>
+                                    <button onClick={()=>setShowsubform(true)} className="support_showcase_btn">me</button>  
+                                    <img src={leftarrow} className="support_showcase_img"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="support_help">
+                            <div className="container">
+                                <div  data-aos="fade-up"  className="support_help_top">
+                                    <h3 className="support_help_head">Hi! How can we help you?</h3>
+                                    <InputGroup className='supportinputstyle' style={{width:'350px',margin:'0 auto',}}>
+                                        <FormControl style={{padding:'9px'}}
+                                        placeholder="Ask a question..."
+                                        aria-label="ask a question"
+                                        aria-describedby="basic-addon2"
+                                        />
+                                        <Button variant="primary" id="button-addon2">
+                                        <img src={supportsearch} width="20px"/>
+                                        </Button>
+                                    </InputGroup>
+                                </div>
+                                <div  data-aos="fade-up"  className="row">
+                                    <div className="support_grid">
+                                        {displayCard}
+                                    
+                                    </div>
+                                 
+                                </div>
+                                <div  data-aos="fade-up"  className="row">
+                                    <div className="support_grid_two">
+                                            <div style={{cursor:'pointer'}} onClick={()=>setshowFaq(!showFaq)}>
+                                                <img src={faqicon} style={{width:'100px',height:'100px',borderRadius:'50%',}}/>
+                                                <div>
+                                                    <h4>FAQ</h4>
+                                                    <p>Maybe we've already answered your question. Here's or FAQs.</p>
+                                                </div>
+                                    
+                                            </div>
+                                            <div style={{cursor:'pointer'}}>
+                                                <img src={liveicon} style={{width:'100px',height:'100px',borderRadius:'50%',}}/>
+                                                <div>
+                                                    <h4>Live Chat</h4>
+                                                    <p>Get help with our awesome Customer Support team to resolve your queries.</p>
+                                                </div>
+                                    
+                                            </div>
+        
+                                    </div>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        {showFaq? <div className="support_faq_margin_remove_mob" style={{marginTop:'-130px'}}><FAQ/></div>:null}
+                    <Footer/>
+                </div> 
+                }
+        
+        </>
+
     )
 }
 

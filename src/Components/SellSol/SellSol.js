@@ -32,7 +32,7 @@ function SellSol() {
                 else setSellText({id:'ecommerce',text:'ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'})
         }
     return (
-        <div data-aos="fade-up" className="sellsol_top">
+        <div id="solution" data-aos="fade-up" className="sellsol_top">
                 <h3  className="sellsol_main_head center ">Selling Solutions, Not Promises</h3>
                 < p className="sellsol_main_para center ">We <span>understand</span> your needs and here you get the best solutions,<span> all in one place.</span></p>
                 <div className="container">

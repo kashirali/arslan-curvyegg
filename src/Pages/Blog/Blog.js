@@ -11,6 +11,8 @@ import Footer from '../../Components/Footer/Footer'
 import MediaCard from '../../UI/MaterialCard/MaterialCard';
 import Review from '../../Components/reviews/Review'
 import sampleimg from '../../assets/sampleimg.png'
+import sampleimground from '../../assets/svg/sampleround.png'
+
 import sampleicon from '../../assets/svg/salvador.jpg'
 import blogsearch from '../../assets/svg/Blogsearch.svg'
 import Aos from 'aos';
@@ -68,9 +70,9 @@ function Blog() {
 
   <div  data-aos="fade-up" className="tester">
   <div className="blogthreecards">
-  <MediaCard threecard={true} img={sampleimg} head="first card" text="this is a text of first card" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
-  <MediaCard threecard={true} img={sampleimg} head="first card" text="this is a text of first card" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
-  <MediaCard threecard={true} img={sampleimg} head="first card" text="this is a text of first card" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
+  <MediaCard threecard={true} img={sampleimground} head="first card" text="this is a text of first card" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
+  <MediaCard threecard={true} img={sampleimground} head="first card" text="this is a text of first card" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
+  <MediaCard threecard={true} img={sampleimground} head="first card" text="this is a text of first card" secText=" Lorem Ipsum is that it has a more-or-less normal distribution of letters"/>
 
   </div>
 </div>
@@ -127,7 +129,7 @@ function Blog() {
 <div style={{borderRadius:"10px",overflow:'hidden',width:'fit-content'}}>
           <img src={sampleimg} />
           </div>
-<div className='div_hd_inner'>
+<div className='div_hd_inner parthideonmob'>
 <p style={{marginTop:'20px'}}><b>Lorem ipsum dolor sit amet, consectetur adipiscing</b></p>
 <div class="avatar_div">
 <div style={{borderRadius:'16px',padding:'5px',background:'lightgrey',marginRight:'10px'}}>
@@ -167,6 +169,20 @@ function Blog() {
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.dolore magna aliqua.sed do eiusmod tempor</p>
 
 </div>
+
+<div className='div_hd_inner partshowonmob'>
+<p style={{marginTop:'20px'}}><b>Lorem ipsum dolor sit amet, consectetur adipiscing</b></p>
+<div class="avatar_div">
+<div style={{borderRadius:'16px',padding:'5px',background:'lightgrey',marginRight:'10px'}}>
+  <Avatar alt="Remy Sharp" src={sampleicon} style={{borderRadius:'15px'}}/>
+    </div><div style={{borderRadius:'16px',padding:'5px',background:'lightgrey'}}>
+  <Avatar alt="Remy Sharp" src={sampleicon} style={{borderRadius:'15px'}}/>
+    </div>
+<h6 id="hd">consectetur adipiscing elit</h6>
+  </div>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+</div>
 </div>
 
 </div>
@@ -185,7 +201,7 @@ function Blog() {
         <div className="col-md-6 col-sm-12">
         <div class="inp_btn">
 
-<input type="text" id="email_inp" placeholder="your company email"/>
+<input className='inputfoucsremove' type="text" id="email_inp" placeholder="your company email"/>
 <button id="submit_btn">submit</button>  
 
 </div>
@@ -226,9 +242,9 @@ function Blog() {
       <Review total = {2}/>
 
       <div>
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'120px',clear:'both',}}>
+      <div className='paginationmob' style={{display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'120px',clear:'both',}}>
 
-      <Pagination count={5} variant="outlined" shape="rounded" />
+      <Pagination count={4} variant="outlined" shape="rounded" />
       </div>
  
         {/* <Pagination

@@ -7,6 +7,7 @@ import '../../assets/fonts/font.css'
 import twitter from '../../assets/svg/Twitter.svg'
 import linkedin from '../../assets/svg/Linkedin.svg'
 import facebook from '../../assets/svg/Facebook.svg'
+import {Link} from 'react-router-dom'
 function OnlyFooter() {
     return (
         <div className="onlyFooter_top" >
@@ -25,41 +26,41 @@ function OnlyFooter() {
                     <div>
                         <h4>Services</h4>
                             <ul>
-                                <li>Agents</li>
-                                <li>Live Chat support</li>
-                                <li>Technical Support</li>
-                                <li>E-Commerce Support</li>
-                                <li>Features</li>
-                                <li>Benefits</li>
+                                <li><a href="#sayno" className="link">Agents</a></li>
+                                <li><a href="#solution" className="link">Live Chat support</a></li>
+                                <li><a href="#solution" className="link">Technical Support</a></li>
+                                <li><a href="#solution" className="link">E-Commerce Support</a></li>
+                                <li><a className="link" href="glance">Features</a></li>
+                                <li><a href="#sayno" className="link" >Benefits</a></li>
                             </ul>
                     </div>
                     <div>
                         <h4>Business</h4>
                         <ul>
-                            <li>Why CurvyEgg?</li>
-                            <li>Performance</li>
-                            <li>Curvy on Linkedin</li>
-                            <li>Curvy on Facebook</li>
-                            <li>Curvy on Twitter</li>
+                            <li><a className="link" href="#whycurvy">Why CurvyEgg?</a></li>
+                            <li><a className="link" href="wehave">Performance</a></li>
+                            <li><a className="link" href="#">Curvy on Linkedin</a></li>
+                            <li><a className="link" href="#">Curvy on Facebook</a></li>
+                            <li><a className="link" href="#">Curvy on Twitter</a></li>
                         </ul>
                     </div>
                     <div>
                         <h4>Company</h4>
                         <ul>
-                            <li>About</li>
-                            <li>Our Values</li>
-                            <li>Blog</li>
-                            <li>Become a Partner</li>
-                            <li>Contact</li>
-                            <li>Careers</li>
+                            <li><a className="link" href="aboutcurvy">About</a></li>
+                            <li><a className="link" href="#whycurvy">Our Values</a></li>
+                            <li><a className="link" href="/blog">Blog</a></li>
+                            <li><Link className="link" to="#">Become a Partner</Link></li>
+                            <li><Link className="link" to="#">Contact</Link></li>
+                            <li><Link className="link" to="#">Careers</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h4>Support</h4>
                         <ul>
-                            <li>FAQ</li>
-                            <li>Help Center</li>
-                            <li>Getting Started</li>
+                            <li><a className="link" href="#FAQ">FAQ</a></li>
+                            <li><Link className="link" to="#">Help Center</Link></li>
+                            <li><a className="link" href="/support">Getting Started</a></li>
                         </ul>
                     </div>
                 </div>
@@ -67,19 +68,19 @@ function OnlyFooter() {
                
             
                 <div className="two-grid">
-                    <div>
+                <div>
                         <ul>
-                            <li>Terms of Services</li>
-                            <li>Privacy Policy</li>
-                            <li>Accessiblilty</li>
-                            <li>Sitemap</li>
+                            <li><a className="link" href="/term/service">Terms of Services</a></li>
+                            <li><a className="link" href="/term/privacy">Privacy Policy</a></li>
+                            <li><a className="link" href="/term/accessibility">Accessiblilty</a></li>
+                            <li><a className="link" to="#">Sitemap</a></li>
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li><img src={facebook} width="20px"/></li>
-                            <li><img src={twitter} width="20px"/></li>
-                            <li><img src={linkedin} width="20px"/></li>
+                            <li><Link to="#"><img src={facebook} width="20px"/></Link></li>
+                            <li><Link to="#"><img src={twitter} width="20px"/></Link></li>
+                            <li><Link to="#"><img src={linkedin} width="20px"/></Link></li>
                         </ul>
                     </div>
                 </div>

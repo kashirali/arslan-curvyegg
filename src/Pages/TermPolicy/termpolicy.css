@@ -83,8 +83,9 @@ cursor:pointer;
 
 @media only screen and (max-width: 992px) {
     .btngroup{
-        padding:10px 20px 10px 20px;
-    font-size: 16px;
+        padding:10px 10px 10px 10px;
+    font-size: 12.9px;
+    width: 100%;
    
     }
     .somethingText{
@@ -93,9 +94,47 @@ cursor:pointer;
      
     }
     .termhead{
-        font-size: 50px;
+        font-size: 40px;
      
         margin-bottom: 25px;
     }
-    
+    .submitbtn{
+        display: flex;
+        width: 95%;
+        /* justify-content: space-around; */
+    }
+    .submitbtn button{
+        margin-right: 10px;
+        margin-left: 0;
+    }
 }
+
+@media only screen and (max-width: 360px) {
+  
+    .btngroup {
+        font-size: 10.9px !important;
+      
+    }
+    .btn-group {
+       
+        margin-left: -0px !important;
+    }
+    .submitbtn button {
+        margin-right: 13px !important;
+      
+    }
+    .termhead {
+        font-size: 36px !important;
+     
+    }
+    .para_text {
+     
+        font-size: 15px !important;
+    
+    }
+    
+    .submitbtn button {
+        padding: 10px 45px !important;
+        
+    }
+  }

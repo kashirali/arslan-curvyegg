@@ -21,7 +21,7 @@ function SayNo() {
     const [data,setData] = useState({
         sales : {
             img:analytics,
-            text:'Utilize our chat agents! Give them knowledge about your product so they keep giving you the best quality sales’ service 24/7, with their well-cultivated customer handling expertise.'
+            text:'Utilize our chat agents! Give them knowledge about your product so they keep giving you the best quality sales’ service <span>24/7</span>, with their well-cultivated customer handling expertise.'
             ,head:'Say No to More Sales Staff'
         },
         research:{
@@ -58,11 +58,11 @@ function SayNo() {
         })
     }
     return (
-        <div style={{width:'100%',minheight:'680px',marginTop:'50px',marginBottom:'50px',overflow:'hidden'}}>
-                <div className="row" style={{width:'100%',marginTop:'80px'}}>
+        <div id="sayno" style={{width:'100%',minheight:'680px',marginTop:'50px',marginBottom:'50px',overflow:'hidden'}}>
+                <div className="row" style={{marginTop:'80px'}}>
                     <div className="col-md-7 col-sm-12" >
                         {/* <img src={analytics} style={{width:'95%',maxHeight:'557px'}}  /> */}
-                        <div data-aos="fade-right" className="main_left_img" style={{border:'1px solid blue'}}>
+                        <div data-aos="fade-right" className="main_left_img">
                             <div className="main_left_img_inner_1">
 
                             </div>

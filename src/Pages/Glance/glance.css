@@ -146,12 +146,13 @@ margin-left: 15px;
 
    }
    .glancesprinkles:first-child{
-       left:-130px;
-        top:-20px;
+       left:-120px;
+        top:60px;
+        transform: rotate(90deg);
    }
    .glancesprinkles:nth-child(2){
-       right:-130px;
-        top:120px;
+       right:-120px;
+        top:170px;
    }
     .flexCard{
         display: flex;
@@ -171,7 +172,7 @@ margin-left: 15px;
     }
     .glance_left{
         width: 80%;
-        margin:50px auto 0px auto;
+        margin:20px auto 0px auto;
     }
     .glance_left>*{
         width: 100%;
@@ -184,7 +185,7 @@ margin-left: 15px;
     .glance_head{
         font-size: 41px;
         line-height: 1.2em;
-        margin:20px auto;
+        margin:0px auto 20px auto;
     }
     .glance_left >span{
       
@@ -193,14 +194,32 @@ margin-left: 15px;
     margin-bottom: 15px;
     }
     .glance_para{
-
+        margin-left: 0px;
         font-size:15px;
     }
     .flexCard>div>i{
         margin-top: 60px;
     }
+    .glancesubformmarginmob{
+        margin-top: -0px !important;
+    }
     .king> .footer_top
 {
     min-height: 1300px;
 }
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    .glanceCard {
+        max-width: 103px !important;
+        height: 150px;
+    }
+    .glance_para {
+       
+        font-size: 14px !important;
+    }
+    
+    
 }
