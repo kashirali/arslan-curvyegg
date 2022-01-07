@@ -9,6 +9,7 @@ import linkedin from '../../assets/svg/Linkedin.svg'
 import facebook from '../../assets/svg/Facebook.svg'
 import {Link} from 'react-router-dom'
 function OnlyFooter() {
+    const baseURL = window.location.origin;
     return (
         <div className="onlyFooter_top" >
              <div className="logo only_footer_img_hide">
@@ -25,20 +26,20 @@ function OnlyFooter() {
                    
                     <div>
                         <h4>Services</h4>
-                            <ul>
-                                <li><a href="#sayno" className="link">Agents</a></li>
-                                <li><a href="#solution" className="link">Live Chat support</a></li>
-                                <li><a href="#solution" className="link">Technical Support</a></li>
-                                <li><a href="#solution" className="link">E-Commerce Support</a></li>
-                                <li><a className="link" href="glance">Features</a></li>
-                                <li><a href="#sayno" className="link" >Benefits</a></li>
+                        <ul>
+                                <li><a href={`${baseURL}/#sayno`} className="link">Agents</a></li>
+                                <li><a href={`${baseURL}/#solution`} className="link">Live Chat support</a></li>
+                                <li><a href={`${baseURL}/#solution`} className="link">Technical Support</a></li>
+                                <li><a href={`${baseURL}/#solution`} className="link">E-Commerce Support</a></li>
+                                <li><a className="link" href="/glance">Features</a></li>
+                                <li><a href={`${baseURL}/#sayno`} className="link" >Benefits</a></li>
                             </ul>
                     </div>
                     <div>
                         <h4>Business</h4>
                         <ul>
-                            <li><a className="link" href="#whycurvy">Why CurvyEgg?</a></li>
-                            <li><a className="link" href="wehave">Performance</a></li>
+                            <li><a className="link" href={`${baseURL}/#whycurvy`}>Why CurvyEgg?</a></li>
+                            <li><a className="link" href={`${baseURL}/wehave`}>Performance</a></li>
                             <li><a className="link" href="#">Curvy on Linkedin</a></li>
                             <li><a className="link" href="#">Curvy on Facebook</a></li>
                             <li><a className="link" href="#">Curvy on Twitter</a></li>
@@ -47,9 +48,9 @@ function OnlyFooter() {
                     <div>
                         <h4>Company</h4>
                         <ul>
-                            <li><a className="link" href="aboutcurvy">About</a></li>
-                            <li><a className="link" href="#whycurvy">Our Values</a></li>
-                            <li><a className="link" href="/blog">Blog</a></li>
+                            <li><a className="link" href={`${baseURL}/#aboutcurvy`}>About</a></li>
+                            <li><a className="link" href={`${baseURL}/#whycurvy`}>Our Values</a></li>
+                            <li><a className="link" href={`${baseURL}/blog`}>Blog</a></li>
                             <li><Link className="link" to="#">Become a Partner</Link></li>
                             <li><Link className="link" to="#">Contact</Link></li>
                             <li><Link className="link" to="#">Careers</Link></li>
@@ -58,9 +59,10 @@ function OnlyFooter() {
                     <div>
                         <h4>Support</h4>
                         <ul>
-                            <li><a className="link" href="#FAQ">FAQ</a></li>
+                            <li><a className="link" href={`${baseURL}/#FAQ`}>FAQ</a></li>
                             <li><Link className="link" to="#">Help Center</Link></li>
-                            <li><a className="link" href="/support">Getting Started</a></li>
+                            <li><a className="link" href={`${baseURL}/support`}>Getting Started</a></li>
+
                         </ul>
                     </div>
                 </div>

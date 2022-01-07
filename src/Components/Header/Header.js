@@ -115,13 +115,13 @@ function Header(props) {
       <Nav className="me-auto mob_view">
     
         <a href={`${baseURL}/#aboutcurvy`} className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"}  style={{marginLeft:'-5px'}}>About</a>
-        <a href="http://localhost:3000/#whycurvy" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Why Curvy</a>
-        <a href="http://localhost:3000/#solution" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Solutions</a>
-        <Link to="/glance" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Features</Link>
+        <a href={`${baseURL}/#whycurvy`} className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Why Curvy</a>
+        <a href={`${baseURL}/#solution`} className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Solutions</a>
+        <a href="/glance" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Features</a>
     
       </Nav>
       <Nav className="mr-0 mob_view">
-    <a href="#tryitout" className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Try it out</a>
+    <a href={`${baseURL}/#tryitout`} className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"} >Try it out</a>
     <Link onClick={props.headerprop?clickSmile:null} to={props.headerprop?'#': '/signup' } className={!props.color? "nav_text nav_text_grey":"nav_text nav_text_white"}style={{marginRight:'15px'}}>{props.headerprop?'Sign in':'Sign up'}</Link>
     <Button onClick={routeChange} className='fontfamilyheaderbtn' variant={!props.color? 'primary':'light'} style={{width:'fit-content',margin:'0 auto',padding:'0 25px', background: !props.color?'#446beb':null,color:!props.color?null:'#446beb'}} >Contact</Button>
     
@@ -148,15 +148,15 @@ function Header(props) {
             </li>
            <span className='divider'></span>
                 <li  className='nav-text' >
-                <a href="http://localhost:3000/#aboutcurvy" className='nav-text'><span className='title'>About</span></a>
+                <a href={`${baseURL}/#aboutcurvy`} className='nav-text'><span className='title'>About</span></a>
       
                 </li>
                 <li  className='nav-text' >
-                <a href="http://localhost:3000/#whycurvy" className='nav-text' ><span className='title'>Why curvy</span></a>
+                <a href={`${baseURL}/#whycurvy`} className='nav-text' ><span className='title'>Why curvy</span></a>
         
                 </li>
                 <li  className='nav-text' >
-                <a href="http://localhost:3000/#solution" className='nav-text' ><span className='title'>Support</span></a>
+                <a href={`${baseURL}/#solution`} className='nav-text' ><span className='title'>Support</span></a>
        
                 </li>
                 <li  className='nav-text' >
@@ -164,7 +164,7 @@ function Header(props) {
     
                 </li>
                 <li  className='nav-text' >
-                <a href="#tryitout" className='nav-text' ><span className='title'>Try it out</span></a>
+                <a href={`${baseURL}#tryitout`} className='nav-text' ><span className='title'>Try it out</span></a>
     
                 </li>
                 <li  className='nav-text' >
